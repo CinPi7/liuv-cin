@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+
+    <!-- Styles Sheets -->
+    <link rel="stylesheet" href="../src/styles/global.css" />
+    <link rel="stylesheet" href="../src/styles/common/header.css" />
+    <link rel="stylesheet" href="../src/styles/FAQs/ajuda.css" />
+    <link rel="stylesheet" href="../src/styles/common/footer.css">
+
+    <!-- Materialize -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="help-body">
+    <!-- Header Navegation -->
+    <header class="liuv-header">
+      <img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" />
+      <nav class="nav" role="navigation">
+        <a href="/" class="left">A Liuv</a>
+        <a href="./restaurant.html" class="left">Para seu Restaurante</a>
+        <a href="./client.html" class="left">Para você</a>
+        <a href="./ajuda.html" class="left">Ajuda</a>
+        <a href="./contato.html" class="left">Fale com a gente</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">
+          Blog
+        </a>
+      </nav>
+      <button type="button" class="login">Login</button>
+
+      <!-- For Hamburguer Menu -->
+      <div id="liuvSideNav" class="sidenav">
+        <img src="../assets/logos/logo-grad.png" alt="Logo LIUV" />
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;</a>
+        <a href="/" class="left">A Liuv</a>
+        <a href="./client.html" class="left">Usuários</a>
+        <a href="/" class="left">Como funciona</a>
+        <a href="./ajuda.html" class="left">Ajuda</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">
+          Blog
+        </a>
+        <a href="./contato.html" class="left">Contato</a>
+        <a href="/" class="left">Sair</a>
+        <button>Eu quero</button>
+      </div>
+      <span class="hamburguer" onclick="openNav()">
+        <img src="../src/assets/icons/menu.png" alt="Menu"/>
+      </span>
+    </header>
+    <hr />
+    <main>
+      <div id="main">
+        <div><h1>Ajuda</h1></div>
+
+        <div class="choose-buttons">
+          <button class="choose-restaurant" onclick="FAQsRestaurant()">
+            <img src="../src/assets/icons/ajuda-restaurante.png" alt="Restaurant FAQs" />
+            <span>Sou Restaurante</span>
+          </button>
+          <button class="choose-client" onclick="FAQsClient()">
+            <img src="../src/assets/icons/ajuda-cliente.png" alt="Client FAQs" />
+            <span>Sou Cliente</span>
+          </button>
+        </div>
+
+        <!-- FAQs Restaurante -->
+        <div id="restaurant-faqs" class="faqs" style="display: none">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Como faço
+                para ter Liuv no meu estabelecimento?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >É só entrar em contato com a nossa equipe comercial por
+                  e-mail: comercial@liuv.it. Nosso time entrará em contato para
+                  conversar melhor com você e sua equipe.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Como a saída
+                do meu cliente é liberada?
+              </div>
+              <div class="collapsible-body">
+                <span>
+                  A Liuv integra com o seu sistema de Gestão, por isso, ao
+                  pagar a conta via app automaticamente é efetuado a baixa no
+                  seu sistema, e a saída do cliente é liberada.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Com quais
+                sistemas que a Liuv já possui integração?
+              </div>
+              <div class="collapsible-body">
+                <span>
+                  A Liuv possui integração e parceria com os principais sistemas
+                  de Gestão, por exemplo: Totvs, Teknisa, Linx, Colibri, NCR
+                  Aloha, Altec, EPoc entre outros.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Quais são os
+                benefícios de ter Liuv no meu estabelecimento?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Com Liuv você conhece melhor a jornada do seu cliente,
+                  aumenta o fluxo de pessoas e ainda tem uma melhor gestão da
+                  sua equipe.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Posso ter
+                meu programa de fidelidade dentro da Liuv?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Claro! O programa fidelidade da Liuv é totalmente
+                  customizável.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Meu
+                restaurante não tem comanda. Mesmo assim posso ter Liuv?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Claro! Além do pagamento de comanda temos outros tipos de
+                  serviço como: pré pedido, QR Code e Mesa.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Como tenho
+                acesso as vendas diárias que foram pagas com Liuv?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Todo estabelecimento parceiro Liuv tem acesso a uma
+                  plataforma exclusiva para gestão, onde o estabelecimento tem
+                  acesso das vendas diárias e diversas outras informações
+                  necessárias.
+                </span>
+              </div>
+            </li>
+          </ul>
+          <p>
+            Ainda com dúvidas? Entre em contato com a gente:
+            <span class="contact"> contato@liuv.it. </span>
+          </p>
+        </div>
+
+        <!-- FAQs Clientes -->
+        <div id="client-faqs" class="faqs">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Não consigo
+                acessar meu App, perdi minha senha. Como faço para recuperá-la?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Na tela inicial do App tem a opção “Esqueci Minha Senha”,
+                  você receberá em seu e-mail cadastrado um link para criar sua
+                  nova senha.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Estou com problema na câmera do meu celular. Como posso fazer o
+                pagamento da minha comanda?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Você consegue digitar o código da sua comanda para efetuar o
+                  pagamento.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                O meu restaurante preferido não está na Liuv. Como faço uma
+                indicação?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Pelo app da Liuv você possui a área de indicação de um
+                  restaurante no final da lista dos estabelecimentos que já são
+                  Liuv e, você também pode enviar um e-mail para contato@liuv.it
+                  com a sua indicação.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i> Como criar
+                uma conta?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >É bem simples! Baixe o app da Liuv, inicie um novo cadastro
+                  ou faça o login com o Facebook e depois é só adicionar o seu
+                  cartão de crédito e/ou vale refeição.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>Existe
+                tarifa?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Você não paga nada para baixar o aplicativo da Liuv. Não há
+                  anuidade, mensalidade ou qualquer taxa de adesão. Além de você
+                  não pagar nada por efetuar o pagamento de sua comanda ou conta
+                  dos restaurantes parceiros.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como recebo o cupom de NF?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Fique tranquilo, o seu cupom fiscal é enviado para o seu
+                  e-mail cadastrado. Você receberá a chave de acesso para
+                  acessar o link que está no e-mail.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como faço para cadastrar meu cartão de crédito?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Em nosso app, você terá o ícone de carteira, basta você
+                  clicar lá e preencher os dados do seu cartão de crédito. Não
+                  se esqueça que você também pode cadastrar o seu vale refeição
+                  (Alelo, Sodexo, Ticket, VR).
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como eu faço para pagar uma comanda?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >A Liuv está aqui para facilitar sua vida. Então, basta você
+                  abrir seu aplicativo, selecionar o restaurante que está e
+                  escanear a sua comanda ou digitar o código, verificar o seu
+                  consumo e clicar em pagar. Prontinho.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como fazer um pedido?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >É super fácil, você entra no restaurante que deseja pedir,
+                  seleciona os itens do cardápio, verifica seu consumo e efetua
+                  o pagamento. O restaurante receberá o seu pedido e você
+                  receberá uma notificação quando seu prato estiver pronto para
+                  retirada.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Fiz o meu pedido e ele foi rejeitado pelo restaurante. Como
+                pedir o estorno do valor?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Se o estabelecimento rejeita o seu pedido, o pagamento é
+                  automaticamente cancelado. Não sendo cobrado em seu cartão.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como funcionam as promoções da Liuv?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Sempre que tiver uma promoção rolando na Liuv, você poderá
+                  receber por uma notificação.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como inserir um cupom de desconto no meu pagamento?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Os seus cupons de desconto disponíveis ficarão na área da
+                  Carteira no App. Na hora do pagamento terá a opção de
+                  adicionar um cupom antes de concluir o pagamento.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como faço para pontuar no Programa de Fidelidade?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Cada restaurante parceiro da Liuv possui uma regra exclusiva.
+                  Você consegue checar as regradas na área Minhas Recompensas do
+                  App.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como resgatar meus pontos?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Cada restaurante parceiro da Liuv possui uma regra exclusiva.
+                  Você consegue checar as regradas na área Minhas Recompensas do
+                  App.
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <i class="large material-icons">arrow_drop_down</i>
+                Como resgatar meus pontos?
+              </div>
+              <div class="collapsible-body">
+                <span
+                  >Com o app da Liuv é fácil, na sua próxima visita ao
+                  restaurante, antes de finalizar o seu pagamento, você terá um
+                  cupom disponível, basta clicar em inserir cupom e pronto, seu
+                  bônus foi resgatado.
+                </span>
+              </div>
+            </li>
+          </ul>
+          <p>
+            Ainda com dúvidas? Entre em contato com a gente:
+            <span class="contact"> contato@liuv.it. </span>
+          </p>
+        </div>
+
+        <hr />
+    <br />
+    <!-- Footer -->
+    <footer class="liuv-footer">
+      <div class="downloads">
+        <a href="/"
+          ><img
+            src="../src/assets/logos/logo-grad.png"
+            class="logofooter"
+            alt="LIUV Logo"
+        /></a>
+        <a href="/"
+          ><img
+            src="../src/assets/icons/appe.png"
+            class="apple-store"
+            alt="Apple Store"
+        /></a>
+        <a href="/"
+          ><img
+            src="../src/assets/icons/pay.png"
+            class="play-store"
+            alt="Play Store"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <div class="first-row">
+          <div class="column">
+            <h4>Produtos</h4>
+            <p>
+              Usuários <br />
+              Restaurantes <br />
+              Intergrações PDV <br />
+              Como funciona? <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Recursos</h4>
+            <p>
+              Blog <br />
+              Apoio suporte <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Empresa</h4>
+            <p>
+              Sobre <br />
+              Carreiras <br />
+              Termos de Uso <br />
+              Política de Privacidade <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Outros</h4>
+            <p>
+              Login de restaurantes <br />
+              Login de usuários <br />
+              Contato <br />
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="second-row">
+          <div class="column">
+            <h4>Brasil</h4>
+            <p>
+              Rua Jesuíno Arruda 797, CJ 72, Itaim Bibi <br />
+              São Paulo <br />
+              +55 (11) 3854-1771 <br />
+              +55 (11) 3230-9223 <br />
+            </p>
+          </div>
+          <div class="column">
+            <div class="media-icons">
+              <a href="#"
+                ><img src="../src/assets/icons/facebook.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="../src/assets/icons/instagram.png" alt="Instgram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+      </div>
+
+    </main>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="../src/scripts/hamburguer.js"></script>
+    <script src="../src/scripts/FAQs.js"></script>
+  </body>
+</html>

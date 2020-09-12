@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliente LIUV</title>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../src/styles/global.css" />
+    <link rel="stylesheet" href="../src/styles/common/header.css" />
+    <link rel="stylesheet" href="../src/styles/common/about.css" />
+    <link rel="stylesheet" href="../src/styles/common/melhor.css" />
+    <link rel="stylesheet" href="../src/styles/common/pagamentos.css" />
+    <link rel="stylesheet" href="../src/styles/client/search.css" />
+    <link rel="stylesheet" href="../src/styles/common/parceiros.css" />
+    <link rel="stylesheet" href="../src/styles/common/footer.css" />
+
+    <!-- Materialize -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+  </head>
+  <body id="client-body">
+    <!-- Header Navegation -->
+    <header class="liuv-header">
+      <img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" />
+      <nav class="nav" role="navigation">
+        <a href="/" class="left">A Liuv</a>
+        <a href="./restaurant.html" class="left">Para seu Restaurante</a>
+        <a href="./client.html" class="left">Para você</a>
+        <a href="./ajuda.html" class="left">Ajuda</a>
+        <a href="./contato.html" class="left">Fale com a gente</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">
+          Blog</a>
+      </nav>
+      <button type="button" class="login">Login</button>
+
+      <!-- For Hamburguer Menu -->
+      <div id="liuvSideNav" class="sidenav">
+        <img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" />
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;</a>
+        <a href="/" class="left">A Liuv</a>
+        <a href="./client.html" class="left">Usuários</a>
+        <a href="/" class="left">Como funciona</a>
+        <a href="./ajuda.html" class="left">Ajuda</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">Blog</a>
+        <a href="./contato.html" class="left">Contato</a>
+        <a href="/" class="left">Sair</a>
+        <button>Eu quero</button>
+      </div>
+      <span class="hamburguer" onclick="openNav()">
+        <img src="../src/assets/icons/menu.png" alt="Menu"/>
+      </span>
+    </header>
+
+    <main>
+      <div class="main">
+        <!-- First Section, ABOUT Liuv Client -->
+        <div class="intro">
+          <div class="title-intro">
+            <h1>Ganhe tempo e receba promoções exclusivas!</h1>
+            <a href="/">Assista ao vídeo 
+              <img src="../src/assets/icons/play.svg" alt="Play"/></a>
+          </div>
+        </div>
+
+        <!-- Entenda porque LIUV é a melhor no seu dia a dia -->
+        <div class="liuv-melhor">
+          <div>
+            <h2>Porque a LIUV é a melhor no seu dia a dia?</h2>
+          </div>
+          <div class="cards-box">
+            <div class="cards programa-fidelidade">
+              <div class="module">
+                <img src="../src/assets/icons/clock.png" alt="Ganhe Tempo" />
+              </div>
+              <div class="melhor-content">
+                <h3>Ganhe Tempo</h3>
+                <p>
+                  Não espere a conta chegar na mesa nem pegue filas
+                  intermináveis nos caixas.
+                </p>
+              </div>
+            </div>
+            <div class="cards promos-melhor">
+              <div class="module-second">
+                <img
+                  src="../src/assets/icons/fidelity.png"
+                  alt="Promoções Exclusivas"
+                />
+              </div>
+              <div class="melhor-content">
+                <h3>Promoções Exclusivas</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. nec
+                  eu metus.
+                </p>
+              </div>
+            </div>
+            <div class="cards faturamento-melhor">
+              <div class="module-third">
+                <img src="../src/assets/icons/prquinh.png" alt="Economize" />
+              </div>
+              <div class="melhor-content">
+                <h3>Economize</h3>
+                <p>
+                  Receba promoções e descontos exclusivos dos estabelecimentos
+                  que você frequenta.
+                </p>
+              </div>
+            </div>
+            <div class="cards conheca-melhor">
+              <div class="module-fourth">
+                <img src="../src/assets/icons/astcard.png" alt="Pague com app" />
+              </div>
+              <div class="melhor-content">
+                <h3>Pague com o App</h3>
+                <p>
+                  Use o smartphone para fazer pagamentos de forma prática e
+                  segura.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-liuv">
+          <h1>Onde encontrar a LIUV?</h1>
+          <!-- Map Google -->
+          <div class="search-container">
+            <div id="search-box">
+              <h2>Restaurantes próximos</h2>
+              <form action="">
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  placeholder="Buscar Restaurante"
+                />
+                <button type="submit" id="searcher"></button>
+              </form>
+              <div id="foundLocationsCard"></div>
+            </div>
+            <div id="map"></div>
+          </div>
+        </div>
+
+        <!-- Section Pagamentos Aceitos -->
+        <div class="pagamentos-aceitos">
+          <div><h2>Pagamentos Aceitos</h2></div>
+          <div class="meios-pagamentos">
+            <div class="credito">
+              <h3>Crédito</h3>
+              <p>
+                Para utilizar a LIUV ao máximo, é ideal cadastrar seu cartão de
+                crédito. Com ele, você faz pagamentos, que virão na sua conta.
+              </p>
+              <div class="cartoes">
+                <img class="visa" src="../src/assets/icons/visa.svg" alt="Visa" />
+                <img
+                  class="master"
+                  src="../src/assets/icons/master.svg"
+                  alt="Master Card"
+                />
+                <img class="elo" src="../src/assets/icons/elo.svg" alt="Elo" />
+              </div>
+            </div>
+            <div class="vl"></div>
+            <div class="voucher">
+              <h3>Voucher</h3>
+              <p>
+                Mas se você não tem cartão de crédito, tudo bem. Também é
+                possível inserir seu vale-refeição na LIUV.
+              </p>
+              <div class="vales">
+                <img
+                  class="alelo"
+                  src="../src/assets/icons/alelo.svg"
+                  alt="Alelo"
+                />
+                <img
+                  class="ticket"
+                  src="../src/assets/icons/ticket-restaurante.png"
+                  alt="Ticket Restaurante"
+                />
+                <img
+                  class="sodexo"
+                  src="../src/assets/icons/sodexo.png"
+                  alt="Sodexo"
+                />
+                <img
+                  class="vr"
+                  src="../src/assets/icons/vr.png"
+                  alt="VR Refeição"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parceiros">
+          <h2>Quem já usa o App da LIUV</h2>
+          <div class="testemunials">
+            <div class="primeiro-parceiro parceiro">
+              <img
+                src="../src/assets/images/primeiro-parceiro.jpg"
+                alt="Cliente LIUV"
+              />
+              <p>
+                Curabitur posuere nisi eget augue gravida, non fermentum neque
+                pellentesque. Etiam eget tortor non urna tincidunt feugiat
+                maximus non turpis. Proin nec felis et odio sodales aliquam a at
+                neque. Praesent imperdiet odio eu ultrices mollis. Aenean augue
+                neque, viverra non egestas vitae, efficitur sit amet turpis.
+              </p>
+              <span><b>Paula Albino, cliente da LIUV.</b></span>
+            </div>
+            <div class="segundo-parceiro parceiro">
+              <img
+                src="../src/assets/images/segundo-parceiro.jpg"
+                alt="Cliente LIUV"
+              />
+              <p>
+                Curabitur posuere nisi eget augue gravida, non fermentum neque
+                pellentesque. Etiam eget tortor non urna tincidunt feugiat
+                maximus non turpis. Proin nec felis et odio sodales aliquam a at
+                neque. Praesent imperdiet odio eu ultrices mollis. Aenean augue
+                neque, viverra non egestas vitae, efficitur sit amet turpis.
+              </p>
+              <span
+                ><b
+                  >Augusto Santos, proprietário Restaurante Villa Gusto.</b
+                ></span
+              >
+            </div>
+            <div class="terceiro-parceiro parceiro">
+              <div class="segundo-parceiro">
+                <img
+                  src="../src/assets/images/terceiro-parceiro.jpg"
+                  alt="Cliente LIUV"
+                />
+                <p>
+                  Curabitur posuere nisi eget augue gravida, non fermentum neque
+                  pellentesque. Etiam eget tortor non urna tincidunt feugiat
+                  maximus non turpis. Proin nec felis et odio sodales aliquam a
+                  at neque. Praesent imperdiet odio eu ultrices mollis. Aenean
+                  augue neque, viverra non egestas vitae, efficitur sit amet
+                  turpis.
+                </p>
+                <span><b>João Melo, cliente da LIUV.</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr />
+    <br />
+    <!-- Footer -->
+    <footer class="liuv-footer">
+      <div class="downloads">
+        <a href="/"
+          ><img
+            src="../src/assets/logos/logo-grad.png"
+            class="logofooter"
+            alt="LIUV Logo"
+        /></a>
+        <a href="/"
+          ><img
+            src="../src/assets/icons/appe.png"
+            class="apple-store"
+            alt="Apple Store"
+        /></a>
+        <a href="/"
+          ><img
+            src="../src/assets/icons/pay.png"
+            class="play-store"
+            alt="Play Store"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <div class="first-row">
+          <div class="column">
+            <h4>Produtos</h4>
+            <p>
+              Usuários <br />
+              Restaurantes <br />
+              Intergrações PDV <br />
+              Como funciona? <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Recursos</h4>
+            <p>
+              Blog <br />
+              Apoio suporte <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Empresa</h4>
+            <p>
+              Sobre <br />
+              Carreiras <br />
+              Termos de Uso <br />
+              Política de Privacidade <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Outros</h4>
+            <p>
+              Login de restaurantes <br />
+              Login de usuários <br />
+              Contato <br />
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="second-row">
+          <div class="column">
+            <h4>Brasil</h4>
+            <p>
+              Rua Jesuíno Arruda 797, CJ 72, Itaim Bibi <br />
+              São Paulo <br />
+              +55 (11) 3854-1771 <br />
+              +55 (11) 3230-9223 <br />
+            </p>
+          </div>
+          <div class="column">
+            <div class="media-icons">
+              <a href="#"
+                ><img src="../src/assets/icons/facebook.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="../src/assets/icons/instagram.png" alt="Instgram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr9VFQ_t80Cm7GDYXH6GhIJQego96RW2Q&callback=initMap"
+    ></script>
+
+    <script src="../src/scripts/hamburguer.js"></script>
+    <script src="../src/scripts/carousel-restaurant.js"></script>
+    <script src="../src/scripts/solutions.js"></script>
+    <script src="../src/scripts/search.js"></script>
+  </body>
+</html>
