@@ -1,0 +1,106 @@
+/* Fale com a LIUV */
+
+#fale-com-liuv main {
+  height: 50vh;
+}
+
+#fale-com-liuv div.contacts p a {
+  color: var(--primary-color-orange);
+}
+
+#fale-com-liuv div.contacts p {
+  font-size: 1rem;
+  color: var(--gray);
+  line-height: 1.6rem;
+}
+
+#fale-com-liuv div.contacts p:nth-child(1) {
+  color: var(--shadow);
+  padding-top: 2rem;
+}
+
+#fale-com-liuv div.contacts {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: auto;
+}
+
+#fale-com-liuv div.contacts div.first-column p:nth-child(2),
+div.first-column p:nth-child(3) {
+  padding-top: 1rem;
+}
+
+/* form */
+
+#fale-com-liuv form {
+  margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#fale-com-liuv form input:nth-child(1) {
+  margin-top: 1.6rem;
+}
+
+#fale-com-liuv form input,
+form select,
+form #textarea1 {
+  width: 90%;
+  padding-left: 1.2rem;
+  margin-right: 1.2rem;
+  border-radius: 4px;
+  border-bottom: none;
+
+  background: var(--white-darker);
+  color: black;
+  font: 1.4rem;
+  background-size: 20px;
+}
+
+#fale-com-liuv .broweser-default,
+form select {
+  font-family: "Bariol Regular";
+  font-size: 1rem !important;
+  width: 93%;
+}
+
+#fale-com-liuv form input[type="text"]:focus,
+#textarea1:focus {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+#fale-com-liuv form input::placeholder {
+  color: var(--gray);
+}
+
+form #textarea1 {
+  margin-top: 1.4rem;
+}
+
+#fale-com-liuv button {
+  border: var(--primary-color-pink);
+}
+
+/* Responsive */
+@media (min-width: 700px) {
+  .map-contato > div h1 {
+    margin-left: 4.5%;
+  }
+  #fale-com-liuv div.contacts {
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 1rem;
+  }
+  #fale-com-liuv div.second-column {
+    padding-left: 1rem;
+  }
+}

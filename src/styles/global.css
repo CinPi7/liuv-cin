@@ -1,0 +1,87 @@
+:root {
+  --primary-color-orange: #ff6b2b;
+  --primary-color-pink: #ee2f53;
+  --white: #fff;
+  --white-darker: rgba(237, 237, 237, 1);
+  --gray: #767676;
+  --green: #7fd48c;
+  --green-darker: #7cc788;
+  --black: #000;
+  --shadow: rgb(160, 160, 160);
+  --card-01: #d15c3d;
+  --card-02: #ce3c5d;
+  --card-03: #d46a32;
+  --card-04: #d04a4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+:root {
+  height: 100vh;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  min-width: 220px;
+}
+
+body,
+input,
+button,
+textarea,
+a,
+p {
+  font-size: 2rem;
+  color: var(--white);
+  font-family: "Bariol Regular";
+}
+
+a {
+  text-decoration: none;
+  font-family: "Bariol Regular";
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bariol Regular";
+  font-size: 2.6rem;
+}
+
+h2,
+h3 {
+  font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 90.5%;
+  }
+}
+
+@font-face {
+  font-family: "Bariol Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Regular"), url("Bariol_Regular_0.woff") format("woff");
+  src: url("./Bariol_Regular_0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bariol Regular Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Regular Italic"),
+    url("Bariol_Regular_Italic.woff") format("woff");
+  src: url("./Bariol_Regular_Italic.woff");
+}

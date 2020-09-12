@@ -1,0 +1,137 @@
+#restaurant-body .modal {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.9) 0%,
+    rgba(238, 47, 83, 0.9) 100%
+  );
+  height: auto;
+}
+
+#restaurant-body .modal-content {
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#restaurant-body .modal h4 {
+  font-size: 1.6rem;
+}
+
+#restaurant-body .modal p {
+  font-size: 0.8rem;
+}
+
+#restaurant-body .modal .modal-footer {
+  background: transparent;
+  bottom: 0;
+}
+
+#restaurant-body .modal a {
+  color: white;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 0.2rem;
+  background-color: rgba(231, 103, 130, 0.8267507686668417);
+  border-radius: 50%;
+  border: 1px solid rgba(235, 156, 123, 0.468207351299895);
+  line-height: 2.5rem;
+  padding-right: 13px;
+  padding-left: 13px;
+}
+
+/* Modal Form */
+#restaurant-body .modal form fieldset {
+  margin-top: 10px;
+  border: 0;
+}
+#restaurant-body .modal form .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem;
+  height: 4.2rem;
+}
+
+#restaurant-body .modal .field-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.1rem;
+}
+
+@media (min-width: 700px) {
+  #restaurant-body .modal .field-group {
+    display: flex;
+    flex-direction: row;
+  }
+  #restaurant-body .modal form .field {
+    padding-right: 1rem;
+    padding-left: 1.6rem;
+    margin: 0;
+  }
+  #restaurant-body .modal button {
+    width: 20rem;
+  }
+  #restaurant-body .modal a {
+    margin-right: 0.4rem;
+  }
+}
+
+#restaurant-body .modal form input,
+select {
+  border-radius: 5px;
+  border-bottom: none;
+  background: linear-gradient(
+    90deg,
+    rgba(235, 156, 123, 0.468207351299895) 0%,
+    rgba(231, 103, 130, 0.8267507686668417) 100%
+  );
+  padding-left: 1rem;
+  margin: 0;
+  color: black;
+}
+
+#restaurant-body .modal form input[type="text"]:focus {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+#restaurant-body .modal form input::placeholder {
+  color: white;
+}
+
+#restaurant-body .modal .broweser-default,
+form select {
+  font-family: "Bariol Regular";
+  font-size: 1rem !important;
+  width: 105%;
+  background-color: rgba(231, 103, 130, 0.8267507686668417);
+  border: none;
+  border-radius: 3px;
+}
+
+#restaurant-body .modal [type="checkbox"] + label {
+  color: white;
+}
+
+#restaurant-body .modal .modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#restaurant-body .modal button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--green);
+  height: 3rem;
+  width: 10rem;
+  float: bottom;
+}

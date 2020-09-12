@@ -1,0 +1,108 @@
+/* # Restaurante - Integrações  */
+main div.integracoes {
+  background-color: var(--white-darker);
+  height: auto;
+  padding: 0 2rem 0.4rem 2rem;
+}
+
+main div.integracoes > div {
+  margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main div.integracoes div > h2 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+main div.integracoes div.integra-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main div.integracoes div.box-integracoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-right: 2rem;
+}
+
+div.integracoes div.box-integracoes > p {
+  font-size: 1rem;
+  color: var(--black);
+}
+
+div.integracoes div.box-integracoes > a {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--primary-color-pink);
+  box-shadow: 2px 2px 1px var(--shadow);
+  width: 13rem;
+  height: 2.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.4rem;
+
+  margin-bottom: 1rem;
+
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--white);
+}
+
+div.integracoes div.box-integracoes .btn {
+  text-transform: none !important;
+  line-height: 0.5rem;
+}
+
+div.integracoes div.organizer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 15rem;
+  margin-right: 7%;
+}
+
+div.integracoes div.organizer > .carousel > .carousel-item {
+  margin-top: -2.5rem;
+  height: 5em !important;
+}
+
+div.integracoes div.organizer p {
+  font-size: 0.8rem;
+  color: var(--black);
+}
+
+/* Responsive */
+
+@media (min-width: 700px) {
+  main div.integracoes div.integra-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  main div.integracoes > div > h2 {
+    max-width: 1440px;
+    margin-left: 5%;
+  }
+  div.integracoes div.box-integracoes {
+    padding-left: 7%;
+  }
+}
+
+@media (min-width: 1510px) {
+  main div.integracoes > div > h2 {
+    margin-left: 6.5%;
+  }
+}

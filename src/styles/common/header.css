@@ -1,0 +1,206 @@
+/* Restaurant Entire Body Set */
+#restaurant-body,
+#client-body,
+#fale-com-liuv {
+  background-color: var(--white);
+}
+
+/* Restaurant Page - Header */
+header.liuv-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0.8rem auto;
+  max-width: 1400px;
+  height: auto;
+}
+
+header.liuv-header > img {
+  height: 2.4rem;
+  width: 6.8rem;
+
+  margin-top: 0.5rem;
+  margin-left: 4rem;
+}
+
+@media (max-width: 318px) {
+  header.liuv-header > img {
+    margin-left: 2rem;
+  }
+}
+
+header.liuv-header nav,
+button {
+  display: none;
+}
+
+/* Hamburguer Menu */
+header.liuv-header span.hamburguer {
+  margin-top: 0.6rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+
+.hamburguer > img {
+  height: 3rem;
+  width: 4rem;
+  margin-right: 1rem;
+  margin-top: 0.6rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidenav a {
+  padding: 5px 8px 2px 32px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--primary-color-pink);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:nth-child(9) {
+  margin-top: 2.4rem;
+}
+
+.sidenav a:hover {
+  color: var(--primary-color-orange);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 2.6rem;
+  font-size: 36px;
+  margin-left: 50px;
+  color: var(--primary-color-pink);
+  height: 100%;
+  width: 0.4rem;
+  background-color: var(--white-darker);
+}
+
+.sidenav .closebtn:hover {
+  color: var(--shadow);
+}
+
+.sidenav > img {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  height: 2.4rem;
+  width: 6.6rem;
+}
+
+.main {
+  transition: margin-left 0.5s;
+}
+
+.sidenav button{
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 30px;
+  background-color: var(--green);
+  width: 8rem;
+  height: 2.6rem;
+
+  margin-left: 2rem;
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav 
+(less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* Responsive */
+@media (min-width: 890px) {
+  header.liuv-header nav.nav {
+    display: flex;
+    box-shadow: none;
+    background-color: var(--white);
+    justify-content: center;
+  }
+
+  header.liuv-header nav.nav a {
+    color: var(--primary-color-pink);
+    font-size: 1.2rem;
+    padding: 2rem 1.6rem 0 0;
+    line-height: 0;
+    margin-bottom: 0;
+  }
+
+  header.liuv-header nav.nav a.left {
+    position: relative;
+  }
+  header.liuv-header nav.nav a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.6px;
+    bottom: 1rem;
+    left: 0;
+    background-color: var(--primary-color-pink);
+    background-repeat: repeat-x;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  header.liuv-header nav.nav a.left:hover:before {
+    visibility: visible;
+    width: 90%;
+    margin-left: -0.4rem;
+  }
+  header.liuv-header button.login {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 35px;
+    background-color: var(--white-darker);
+    color: var(--primary-color-pink);
+    cursor: pointer;
+    margin-right: 1.6rem;
+    margin-top: -5px;
+  }
+  header.liuv-header button.login:hover {
+    background-color: #ebe8e8;
+  }
+  header.liuv-header span.hamburguer {
+    display: none;
+  }
+}
+
+#fale-com-liuv > hr,
+#help-body > hr {
+  margin-top: 0.6em;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 0.5px solid var(--white-darker);
+}

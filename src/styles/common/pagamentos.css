@@ -1,0 +1,125 @@
+main .pagamentos-aceitos {
+  height: auto;
+  padding: 1rem 2rem 1.6rem 2rem;
+}
+
+#client-body main .pagamentos-aceitos {
+  background-color: var(--white-darker);
+}
+
+main.pagamentos-aceitos > div {
+  margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+main .pagamentos-aceitos h2 {
+  font-size: 2rem;
+  color: var(--black);
+}
+main .pagamentos-aceitos .meios-pagamentos {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1440px;
+  margin: 0 auto;
+
+  text-align: left;
+}
+main .pagamentos-aceitos .meios-pagamentos h3 {
+  color: var(--black);
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+main .pagamentos-aceitos .meios-pagamentos p {
+  color: var(--black);
+  font-size: 1rem;
+}
+
+/* to the images */
+main .pagamentos-aceitos .meios-pagamentos .cartoes,
+.vales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+main .pagamentos-aceitos .meios-pagamentos img.visa {
+  height: 2.2em;
+  width: 2.2em;
+}
+main .pagamentos-aceitos .meios-pagamentos img.master {
+  height: 1em;
+  width: 1.4em;
+  margin-left: 0.4em;
+}
+main .pagamentos-aceitos .meios-pagamentos img.elo {
+  height: 1em;
+  width: 1.5em;
+  margin-left: 0.4em;
+}
+main .pagamentos-aceitos .meios-pagamentos div.voucher img.alelo {
+  height: 1em;
+  width: 1.6em;
+}
+main .pagamentos-aceitos .meios-pagamentos div.voucher img.ticket {
+  width: 4.6em;
+  height: 0.8em;
+}
+main .pagamentos-aceitos .meios-pagamentos div.voucher img.sodexo {
+  width: 2.6em;
+  height: 2em;
+}
+main .pagamentos-aceitos .meios-pagamentos div.voucher img.vr {
+  width: 2.4em;
+  height: 1.6em;
+}
+main .pagamentos-aceitos hr {
+  margin-top: 1em;
+  width: 100%;
+  border: 0.5px solid var(--white-darker);
+}
+main .pagamentos-aceitos .meios-pagamentos .vl {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  main .pagamentos-aceitos .meios-pagamentos {
+    flex-direction: row;
+  }
+  main .pagamentos-aceitos .meios-pagamentos .vl {
+    display: flex;
+    border-left: 0.5px solid var(--white-darker);
+    height: 180px;
+  }
+  main .pagamentos-aceitos .meios-pagamentos div.credito {
+    margin-right: 1rem;
+  }
+  main .pagamentos-aceitos .meios-pagamentos div.voucher {
+    margin-left: 2rem;
+  }
+  main .meios-pagamentos {
+    padding-left: 8%;
+    padding-right: 10%;
+  }
+  main .pagamentos-aceitos > div h2 {
+    padding-left: 6%;
+  }
+}
+@media (min-width: 910px) {
+  main .meios-pagamentos {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  main .pagamentos-aceitos > div {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1500px) {
+  main .pagamentos-aceitos > div h2 {
+    margin-left: 1rem;
+  }
+}

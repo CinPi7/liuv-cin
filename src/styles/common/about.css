@@ -1,0 +1,136 @@
+/* First Restaurant & Client Section */
+#restaurant-body main div.intro {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 107, 43, 0.8) 0%,
+      rgba(242, 44, 80, 0.8) 100%
+    ),
+    url("../../assets/images/B2B.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 40rem;
+  padding: 0.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--white);
+}
+
+#client-body main div.intro {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 107, 43, 0.8) 0%,
+      rgba(242, 44, 80, 0.8) 100%
+    ),
+    url("../../assets/images/B2C.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 40rem;
+  padding: 0.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--white);
+}
+
+main div.intro div.title-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main div.intro div.title-intro > h1 {
+  margin-top: 1.6rem;
+  font-size: 2rem;
+}
+
+
+main div.intro > div.title-intro img {
+  height: 15px;
+  width: 15px;
+  padding-left: 5px;
+  padding-top: 2px;
+
+  filter: invert(1);
+}
+
+main div.intro > div.title-intro a {
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 30px;
+  background-color: var(--green);
+  width: 10rem;
+  height: 2.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main div.intro div.title-intro > a:visited,
+div.title-intro > a:checked,
+div.title-intro > a:active {
+  color: var(--white-dark);
+}
+
+main div.intro div.title-intro > a:hover {
+  background-color: var(--green-darker);
+}
+
+main div.intro div.carousel img {
+  margin-top: 9rem;
+  margin-left: 1.4rem;
+
+  height: 10rem;
+  width: 10rem;
+
+ /* filter: brightness(0.2) invert(1); */
+}
+
+/* Responsive */
+@media (min-width: 378px) {
+  main div.intro div.title-intro > h1 {
+    margin-top: -9rem;
+  }
+}
+
+@media (min-width: 500px) {
+  main div.intro div.title-intro > h1 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 890px) {
+  main div.intro > div.title-intro {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 40rem;
+    margin-top: 3.6rem;
+    margin-left: -1rem;
+  }
+  main div.intro div.title-intro > h1 {
+    font-size: 2rem;
+    width: 55%;
+    text-align: left;
+  }
+  main div.intro div.title-intro > a {
+    margin-left: -12rem;
+  }
+}
+
+@media (min-width: 1570px) {
+  main div.intro > div.title-intro {
+    margin-left: 9%;
+  }
+}

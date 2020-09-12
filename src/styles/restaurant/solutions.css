@@ -1,0 +1,183 @@
+/* Solutions Section */
+#restaurant-body main div.solutions > div.solution-types {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+
+  padding-left: 2rem;
+
+  height: auto;
+  margin-top: 2rem;
+  max-width: 1400px;
+}
+
+#restaurant-body main div.solutions div.solution-types p:nth-child(1) {
+  color: var(--shadow);
+  font-size: 1rem;
+}
+
+#restaurant-body main div.solutions div.solution-types p {
+  color: var(--black);
+  font-size: 1.2rem;
+  padding-right: 3rem;
+}
+
+#restaurant-body main div.solutions div.solution-types h1 {
+  font-size: 2.4rem;
+  color: var(--black);
+  margin-top: 0.3rem;
+}
+
+/* Show Text from Buttons */
+
+#restaurant-body main div.solutions div.solution-types button.buttonSolution {
+  display: flex;
+  background-color: transparent;
+  color: var(--primary-color-pink);
+  font-size: 1.6rem;
+  border: none;
+  border-left: 1px solid lightgray;
+  padding-left: 1em;
+  outline: none;
+}
+
+#restaurant-body
+  main
+  div.solutions
+  div.solution-types
+  div.buttonsContainer
+  .buttonSolution.active,
+.buttonSolution:hover {
+  border-left: 2px solid var(--primary-color-pink);
+  background-color: none;
+  color: var(--primary-color-pink);
+}
+
+#restaurant-body main div.solutions div.solution-types div#solutionCardapio,
+div#solutionComanda,
+div#solutionDelivery,
+div#solutionPagamentoNaMesa,
+div#solutionPre,
+div#solutionQRCode {
+  display: none;
+  flex-direction: column;
+  margin-top: 2rem;
+  color: var(--black);
+  font-size: 1.2rem;
+}
+
+#restaurant-body
+  main
+  div.solutions
+  div.solution-types
+  div.buttonsContainer
+  button:nth-child(1) {
+  color: var(--primary-color-orange) !important;
+  background-color: transparent;
+}
+
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.sheen:after {
+  animation: sheen 1s 4s forwards;
+  animation-iteration-count: 3;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent
+  );
+  transform: rotateZ(60deg) translate(-1em, 4em);
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(0, -4em);
+  }
+}
+
+#restaurant-body main div.solutions div.solution-types div.center-image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: -4rem;
+  margin-top: 2rem;
+}
+
+#restaurant-body main div.solutions div.solution-types a {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--primary-color-pink);
+  box-shadow: 2px 2px 1px var(--shadow);
+  color: var(--white);
+  width: 10rem;
+  height: 2.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 1.6rem;
+  margin-top: 1rem;
+}
+
+#restaurant-body main div.solutions div.solution-types img {
+  margin-top: 1rem;
+
+  width: 100%;
+  height: 100%;
+  max-width: 35rem;
+  max-height: 30rem;
+  margin-left: -5rem;
+}
+
+#restaurant-body
+  main
+  div.solutions
+  div.solution-types
+  div.side-position
+  div.draw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  #restaurant-body main div.solutions {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  #restaurant-body main div.solutions > div.solution-types {
+    padding-left: 7%;
+    padding-right: 5%;
+  }
+  #restaurant-body main .side-position {
+    display: flex;
+    flex: row;
+  }
+  #restaurant-body main .side-position div.draw {
+    margin-top: -23rem;
+  }
+  #restaurant-body main div.solutions div.solution-types div.buttonsContainer {
+    width: 50%;
+  }
+  #restaurant-body main div.solutions div.solution-types img {
+    width: 43rem;
+    height: 30rem;
+    max-width: none;
+    padding-right: 2rem;
+  }
+  #restaurant-body main div.solutions div.solution-types p {
+    width: 95%;
+  }
+}

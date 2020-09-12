@@ -1,0 +1,16 @@
+/* Gallery Logos Restaurant */
+main div.carousel .initialized {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main div.carousel {
+  height: 250px !important;
+}
+
+main div.carousel-footer img {
+  margin-top: 1rem;
+
+  height: 15rem;
+}

@@ -1,0 +1,114 @@
+footer.liuv-footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+  max-width: 1440px;
+}
+
+footer.liuv-footer .downloads {
+  margin-top: 2rem;
+  margin-right: 7rem;
+  width: 15%;
+
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+@media (max-width: 318px) {
+  footer.liuv-footer .downloads > a > img {
+    margin-left: 2rem;
+  }
+} /* logo recuo */
+
+footer.liuv-footer .downloads > a > img.logofooter {
+  height: 2.4rem;
+  width: 6.8rem;
+  margin-left: 0.2rem;
+}
+
+footer.liuv-footer .downloads img.apple-store {
+  height: 4rem;
+  width: 8.4rem;
+  margin-left: -0.5rem;
+}
+
+footer.liuv-footer .downloads img.play-store {
+  width: 8rem;
+  margin-left: 0;
+  margin-top: -0.8rem;
+}
+
+footer.liuv-footer div.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0.4rem;
+  color: var(--gray);
+}
+
+footer.liuv-footer div.first-row,
+div.second-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer.liuv-footer div.media-icons img {
+  cursor: pointer;
+  margin-top: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+footer.liuv-footer h4 {
+  font-size: 1rem;
+}
+
+footer.liuv-footer p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+@media (min-width: 600px) {
+  footer.liuv-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  footer.liuv-footer .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  footer.liuv-footer div.first-row,
+  div.second-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer.liuv-footer div.column {
+    padding-left: 3rem;
+  }
+}
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 0.5px solid var(--white-darker);
+}
+
+@media (min-width: 970px) {
+  footer.liuv-footer div.second-row div.column:nth-child(2),
+  div.second-row div.column:nth-child(3) {
+    margin-left: 2.6rem;
+  }
+}

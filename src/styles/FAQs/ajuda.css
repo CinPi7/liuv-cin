@@ -1,0 +1,139 @@
+#help-body main > div {
+  margin: 0 auto;
+  height: auto;
+  padding: 2rem;
+}
+
+#help-body main > div h1 {
+  color: black;
+  font-size: 2rem;
+  margin-top: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+#help-body main div.choose-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  #help-body main div.choose-buttons {
+    flex-direction: row;
+    width: 40rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
+  #help-body main div.choose-buttons button.choose-client {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #help-body main div.choose-buttons button.choose-restaurant {
+    margin: 0;
+  }
+  #help-body main div.choose-buttons button {
+    width: 20rem;
+  }
+}
+
+#help-body main div.choose-buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 10rem;
+  width: 80%;
+  margin: 10px;
+
+  background-color: none;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.9) 0%,
+    rgba(238, 47, 83, 0.9) 100%
+  );
+  box-shadow: 1px 1px 1px var(--shadow);
+}
+
+#help-body main div.choose-buttons button span{
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
+
+#help-body main div.choose-buttons .choose-restaurant {
+  margin-top: 2rem;
+}
+
+#help-body main div.choose-buttons .choose-client {
+  margin-bottom: 1rem;
+}
+
+#help-body main div.choose-buttons button:hover {
+  background-color: var(--green-darker);
+}
+
+#help-body main div.choose-buttons img {
+  padding-top: 1rem;
+  height: 6rem;
+}
+
+#help-body main .client-faqs,
+.restaurant-faqs {
+  display: none;
+}
+
+#help-body main ul {
+  margin-top: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#help-body span,
+li {
+  color: white;
+  font-size: 1rem;
+}
+
+#help-body .collapsible-header,
+.collapsible-body {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.9) 0%,
+    rgba(238, 47, 83, 0.9) 100%
+  );
+}
+
+.faqs p {
+  margin-left: 1.2rem;
+  color: black;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+#help-body div.faqs p{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#help-body div.faqs p span.contact{
+  color: var(--primary-color-orange);
+  padding-left: 0.4rem;
+}
+
+.faqs img {
+  margin-right: 1rem;
+  height: 1.6rem;
+  width: 1.6rem;
+}

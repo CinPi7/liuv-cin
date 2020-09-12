@@ -1,0 +1,246 @@
+/* Liuv a Melhor - Cards */
+main div.liuv-melhor {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem 3rem 2rem;
+  max-width: 1440px;
+}
+
+main div.liuv-melhor > div {
+  margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3%;
+}
+
+main div.liuv-melhor > div h2 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+@media (min-width: 900px) {
+  main div.liuv-melhor > div {
+    justify-content: center;
+  }
+}
+
+/* Cards */
+main div.liuv-melhor .cards-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+main div.liuv-melhor .cards {
+  height: 22rem;
+  width: 14rem;
+
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgb(153, 153, 158);
+  padding: 1.6rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0.6rem;
+}
+
+/* Cards Customization */
+main div.liuv-melhor .cards > div.melhor-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Programa Fidelidade e Ganhe Tempo */
+main div.liuv-melhor .cards > div.module {
+  width: 8rem;
+  height: 7rem;
+  padding: 5px;
+  border: 1px solid rgba(219, 165, 151, 0.5);
+  box-shadow: 0 0 0 8px var(--card-01), 0 0 0 9px rgba(219, 165, 151, 0.5);
+  border-radius: 50%;
+
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main div.liuv-melhor .cards > div.module > img {
+  height: 7rem;
+}
+
+/* Promoções Exclusivas */
+main div.liuv-melhor .cards > div.module-second {
+  width: 8rem;
+  height: 7rem;
+  padding: 5px;
+  border: 1px solid rgba(219, 165, 151, 0.5);
+  box-shadow: 0 0 0 8px var(--card-02), 0 0 0 9px rgba(219, 165, 151, 0.5);
+  border-radius: 50%;
+
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main div.liuv-melhor .cards > div.module-second > img {
+  height: 6rem;
+  padding-right: 1rem;
+}
+
+#restaurant-body main div.liuv-melhor .cards > div.module-second > img {
+  height: 7rem;
+  padding-right: 0;
+}
+
+/* Maior Faturamento e Economize */
+main div.liuv-melhor .cards > div.module-third {
+  width: 8rem;
+  height: 7rem;
+  padding: 5px;
+  border: 1px solid rgba(219, 165, 151, 0.5);
+  box-shadow: 0 0 0 8px var(--card-03), 0 0 0 9px rgba(219, 165, 151, 0.5);
+  border-radius: 50%;
+
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#restaurant-body main div.liuv-melhor .cards > div.module-third {
+  margin-top: 1.2rem;
+}
+
+main div.liuv-melhor .cards > div.module-third > img {
+  height: 7rem;
+  padding-top: 0.6rem;
+}
+
+#restaurant-body main div.liuv-melhor .cards > div.module-third > img {
+  height: 8rem;
+  padding-right: 0.4rem;
+}
+
+/* Conheça seu cliente */
+main div.liuv-melhor .cards > div.module-fourth {
+  width: 8rem;
+  height: 7rem;
+  padding: 5px;
+  border: 1px solid rgba(219, 165, 151, 0.5);
+  box-shadow: 0 0 0 8px var(--card-04), 0 0 0 9px rgba(219, 165, 151, 0.5);
+  border-radius: 50%;
+
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#restaurant-body main div.liuv-melhor .cards > div.module-fourth {
+  margin-top: 1.2rem;
+}
+
+main div.liuv-melhor .cards > div.module-fourth > img {
+  height: 7rem;
+  padding-top: 0.6rem;
+}
+
+#restaurant-body main div.liuv-melhor .cards > div.module-fourth > img {
+  margin-left: 0;
+  padding: 0;
+}
+
+main div.liuv-melhor .cards > div img {
+  margin-left: 0.6rem;
+  width: 13rem;
+  height: 10rem;
+}
+
+main div.liuv-melhor .cards h3 {
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+}
+
+main div.liuv-melhor .cards p {
+  font-size: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+main div.liuv-melhor .programa-fidelidade {
+  background-color: var(--card-01);
+}
+
+main div.liuv-melhor .promos-melhor {
+  background-color: var(--card-02);
+}
+
+main div.liuv-melhor .faturamento-melhor {
+  background-color: var(--card-03);
+}
+
+main div.liuv-melhor .conheca-melhor {
+  background-color: var(--card-04);
+}
+
+/* Responsive */
+
+@media (min-width: 350px) {
+  main div.liuv-melhor .cards {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 650px) {
+  main div.liuv-melhor > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  main div.liuv-melhor > div {
+    margin-left: 4.5%;
+    margin-right: 7%;
+  }
+}
+
+@media (min-width: 890px) {
+  main div.liuv-melhor > div {
+    display: flex;
+  }
+  main div.liuv-melhor > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main div.liuv-melhor .cards-box {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1445px) {
+  main div.liuv-melhor .cards-box {
+    flex-wrap: nowrap;
+  }
+}

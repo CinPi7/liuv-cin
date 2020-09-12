@@ -1,0 +1,55 @@
+/* Video LIUV Simplifica */
+
+main .simplifica {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+
+  background: rgb(237, 237, 237);
+  background: linear-gradient(
+    175deg,
+    rgb(227, 225, 225) 0%,
+    rgb(247, 246, 246) 100%
+  );
+}
+
+main .simplifica > h2 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+main .simplifica p {
+  color: var(--black);
+  font-size: 1rem;
+}
+
+main .simplifica div.caseStudy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 2rem;
+}
+
+main .simplifica video {
+  height: 100%;
+  width: 100%;
+}
+
+/* Responsive */
+@media (min-width: 700px) {
+  main .simplifica h2,
+  .simplifica p {
+    display: flex;
+    justify-content: center;
+  }
+  main .simplifica video {
+    height: 60%;
+    width: 60%;
+  }
+}
