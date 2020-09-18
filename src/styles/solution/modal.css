@@ -26,6 +26,13 @@
   text-align: center;
 }
 
+@media(min-width: 300px){
+  .form-b2b .modal-introduction{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
 .form-b2b .modal-content > h3{
   font-size: 2rem;
 }
@@ -75,7 +82,7 @@
 .form-b2b form select, form textarea {
   font-family: "Bariol Regular";
   font-size: 1rem !important;
-  width: 100%;
+  width: 105%;
   background: linear-gradient(
     90deg,
     rgba(235, 156, 123, 0.468207351299895) 0%,
@@ -83,6 +90,11 @@
   );
   border: none;
   border-radius: 9px;
+}
+
+.form-b2b form textarea{
+  margin-top: 1.4rem;
+  padding-top: 0.8rem;
 }
 
 .form-b2b form::placeholder {
@@ -138,5 +150,8 @@ select {
   .form-b2b form select,
   .form-b2b form textarea{
     width: 105%;
+  }
+  .form-b2b form textarea{
+    margin-top: 0;
   }
 }
