@@ -3,6 +3,8 @@ $(document).ready(function(){
 
     setInterval(function(){
         $('.carousel').carousel('next');
-    }, 1800);
+    }, 3500);
 });
-$('.carousel.carousel-slider').carousel({fullWidth: false});
+
+
+$('.carousel.carousel-slider').carousel({fullWidth: true});
