@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIUV | Restaurante</title>
+
+    <link
+      rel="shortcut icon"
+      href="../src/assets/logos/faviconliuv.png"
+      type="image/x-icon"
+    />
     <!-- Sytles Sheets -->
     <link rel="stylesheet" href="../src/styles/global.css" />
     <link rel="stylesheet" href="../src/styles/common/header.css" />
@@ -11,11 +17,12 @@
     <link rel="stylesheet" href="../src/styles/restaurant/solutions.css" />
     <link rel="stylesheet" href="../src/styles/common/melhor.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/integracoes.css" />
-    <link rel="stylesheet" href="../src/styles/restaurant/modal.css" />
+    <link rel="stylesheet" href="../src/styles/common/form.css">
+    <link rel="stylesheet" href="../src/styles/solution/modal.css"> 
     <link rel="stylesheet" href="../src/styles/common/pagamentos.css" />
     <link rel="stylesheet" href="../src/styles/common/parceiros.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/simplifica.css" />
-    <link rel="stylesheet" href="../src/styles/restaurant/form.css" />
+    <link rel="stylesheet" href="../src/styles/common/form.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/carousel.css">
     <link rel="stylesheet" href="../src/styles/common/footer.css" />
     <!-- Materialize -->
@@ -29,9 +36,9 @@
     
     <!-- Header Navegation -->
     <header class="liuv-header">
-      <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" />
+      <a href="/"><img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" /></a> 
       <nav class="nav" role="navigation">
-        <a href="/" class="left">A Liuv</a>
+        <a href="./liuv.html" class="left">A Liuv</a>
         <a href="./restaurant.html" class="left">Para seu Restaurante</a>
         <a href="./client.html" class="left">Para você</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
@@ -56,14 +63,44 @@
         <img src="../src/assets/icons/menu.png" alt="Menu"/>
       </span>
     </header>
+
     <main>
       <div id="main">
-        <!-- First Section, ABOUT Liuv Restaurat -->
-        <div class="intro">
-          <div class="title-intro">
-            <h1>Muito mais economia com LIUV no seu restaurante</h1>
-            <a href="/">Assista ao vídeo <img src="../src/assets/icons/play.svg" alt="play"/></a>
-          </div>
+
+        <!-- First Section, ABOUT Liuv Restaurate -->
+        <div class="about">
+          <div class="carousel carousel-slider center">
+
+            <div class="carousel-item cardapio" href="#one!">
+              <div class="about-content">
+                <h1>Cardápio Digital</h1>
+                <span>A nova solução gratuita da <a href="./solucoes.html#cardapio">LIUV.</a> </span>
+              </div>
+            </div>
+    
+            <div class="carousel-item b2b-2" href="#two!">
+              <div class="about-content">
+                <span>Cada restaurante tem um jeito de receber seus pagamentos, a LIUV tem todos. 
+                  Saiba mais sobre as opções de pagamento da LIUV.</span>
+                <a href="./solucoes.html" class="btn-solution">Saiba mais</a>
+              </div>
+            </div>
+
+            <div class="carousel-item b2b-3" href="#three!">
+              <div class="about-content">
+                <h1>Benefícios da LIUV</h1>
+                <span>Sem fila, segurança com pedido e pagamento</span>
+              </div>
+            </div>
+
+            <div class="carousel-item b2b-4" href="#four!">
+              <div class="about-content">
+                <span>Integração com os principais sistemas de PDV.</span>
+                <a href="./solucoes.html" class="btn-solution">Saiba mais</a>
+              </div>
+            </div>
+
+          </div>  
         </div>
 
         <!-- Solutions -->
@@ -341,15 +378,32 @@
           </div>
         </div>
 
-        <!-- Modal -->
-        <div id="modal1" class="modal">
+        <!-- Form B2B e Solutions - same base -->
+        <div class="solution-page">
+          <h2>Pronto para inovar?</h2>
+          <p>
+            Veja como a LIUV permite que restaurantes, padarias, bares e baladas
+            aumentam o faturamento, fidelizando o cliente e com ações exclusivas
+            para seus clientes.
+          </p>
+          <br/>
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Entrar em contato</a>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal form-b2b">
           <a
             href="#!"
-            class="modal-action modal-close waves-effect waves-green btn-flat">
-            &#10005;</a>
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >&#10005;
+          </a>
           <div class="modal-content">
-            <h4>Quer saber mais?</h4>
-            <p>Envie seus dados e entramos em contato com você.</p>
+
+            <div class="modal-introduction">
+              <h3>Quer saber mais?</h3>
+              <p>Envie seus dados e entramos em contato com você.</p>
+            </div>
 
             <form action="#" method="">
               <fieldset>
@@ -358,7 +412,7 @@
                   <div class="field">
                     <input
                       type="text"
-                      placeholder="Nome do restaurante"
+                      placeholder="Nome do Restaurante"
                       required="required"
                       name="restaurante"
                     />
@@ -366,46 +420,40 @@
                   <div class="field">
                     <input
                       type="text"
-                      placeholder="Seu nome"
+                      placeholder="Endereço"
                       required="required"
-                      name="nome"
+                      name="address"
                     />
                   </div>
                 </div>
                 <!-- second line -->
                 <div class="field-group">
                   <div class="field">
-                    <select class="browser-default">
-                      <option value="" disabled selected name="fluxo">
-                        Tipo do fluxo
-                      </option>
-                      <option value="1">Assunto 1</option>
-                      <option value="2">Assunto 2</option>
-                      <option value="3">Assunto 3</option>
-                    </select>
+                    <input
+                      type="text"
+                      placeholder="Nome do Responsável"
+                      required="required"
+                      name="nome"
+                    />
                   </div>
                   <div class="field">
-                    <select class="browser-default">
-                      <option value="" disabled selected name="setor">
-                        Setor que trabalha
-                      </option>
-                      <option value="1">Assunto 1</option>
-                      <option value="2">Assunto 2</option>
-                      <option value="3">Assunto 3</option>
-                    </select>
+                    <input
+                      type="text"
+                      placeholder="Sistema Emissor de Notas"
+                      required="required"
+                      name="note"
+                    />
                   </div>
                 </div>
                 <!-- third line -->
                 <div class="field-group">
                   <div class="field">
-                    <select class="browser-default">
-                      <option value="" disabled selected nome="sistema">
-                        Sistema
-                      </option>
-                      <option value="1">Assunto 1</option>
-                      <option value="2">Assunto 2</option>
-                      <option value="3">Assunto 3</option>
-                    </select>
+                    <input
+                      type="text"
+                      placeholder="Telefone"
+                      required="required"
+                      name="tel"
+                    />
                   </div>
                   <div class="field">
                     <input
@@ -416,47 +464,25 @@
                     />
                   </div>
                 </div>
-                <!-- fourth line -->
                 <div class="field-group">
                   <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Código Postal"
-                      required="required"
-                      name="postal"
-                    />
+                    <select class="browser-default">
+                      <option value="" disabled selected nome="sistema">
+                        Produto de maior interesse
+                      </option>
+                      <option value="1">Cardápio Digital</option>
+                      <option value="2">Fluxos de Pagamento</option>
+                      <option value="3">Delivery</option>
+                    </select>
                   </div>
                   <div class="field">
-                    <input
+                    <textarea
+                      placeholder="Observações"
+                      id="observation"
                       type="text"
-                      placeholder="Celular"
-                      required="required"
-                      name="celular"
-                    />
-                  </div>
-                </div>
-                <!-- fifth line -->
-                <div class="field-group">
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Fatura média por cliente"
-                      required="required"
-                      name="fatura"
-                    />
-                  </div>
-                  <div class="field check">
-                    <p>
-                      <input
-                        type="checkbox"
-                        class="filled-in"
-                        id="filled-in-box"
-                      />
-                      <label for="filled-in-box"
-                        >Eu não desejo receber ofertas especiais nem
-                        comunicações via e-mail e SMS da LIUV.</label
-                      >
-                    </p>
+                      class="validate"
+                    ></textarea>
+                    <label for="observation" class="active"></label>
                   </div>
                 </div>
               </fieldset>
@@ -589,56 +615,115 @@
           </div>
         </div>
 
-        <!-- Form B2B -->
-        <div class="form-b2b">
+        <!-- Form B2B e Solutions - same base -->
+        <div class="solution-page">
           <h2>Pronto para inovar?</h2>
           <p>
             Veja como a LIUV permite que restaurantes, padarias, bares e baladas
             aumentam o faturamento, fidelizando o cliente e com ações exclusivas
             para seus clientes.
           </p>
-          <a href="restaurant.html#formb2b">
-            <button id="formButton" onclick="showFormB2B()">
-              Marcar uma demonstração
-            </button></a>
-          <div id="formb2b">
-            <form action="">
+          <br/>
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Entrar em contato</a>
+        </div>
+         <!-- Modal Structure -->
+         <div id="modal1" class="modal form-b2b">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >&#10005;
+          </a>
+          <div class="modal-content">
+
+            <div class="modal-introduction">
+              <h3>Quer saber mais?</h3>
+              <p>Envie seus dados e entramos em contato com você.</p>
+            </div>
+
+            <form action="#" method="">
               <fieldset>
-                <div class="row">
-                  <div class="input-field">
+                <!-- first line -->
+                <div class="field-group">
+                  <div class="field">
                     <input
-                      placeholder="Seu Nome"
-                      id="first_name"
                       type="text"
-                      class="validate"/>
-                    <label for="first_name" class="active"></label>
+                      placeholder="Nome do Restaurante"
+                      required="required"
+                      name="restaurante"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Endereço"
+                      required="required"
+                      name="address"
+                    />
                   </div>
                 </div>
-                <div class="row">
-                  <div class="input-field">
+                <!-- second line -->
+                <div class="field-group">
+                  <div class="field">
                     <input
-                      placeholder="Assunto da Mensagem"
-                      id="assunto"
                       type="text"
-                      class="validate"/>
-                    <label for="assunto" class="active"></label>
+                      placeholder="Nome do Responsável"
+                      required="required"
+                      name="nome"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Sistema Emissor de Notas"
+                      required="required"
+                      name="note"
+                    />
                   </div>
                 </div>
-                <div class="row">
-                  <div class="input-field textarea-restaurant">
+                <!-- third line -->
+                <div class="field-group">
+                  <div class="field">
                     <input
-                      placeholder="Mensagem"
-                      id="textarea1"
                       type="text"
-                      class="materialize-textarea"/>
-                    <label for="textarea1" class="active"></label>
+                      placeholder="Telefone"
+                      required="required"
+                      name="tel"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="E-mail"
+                      required="required"
+                      name="email"
+                    />
                   </div>
                 </div>
-                <div>
-                  <button type="submit" class="submit-b2b">Enviar</button>
+                <div class="field-group">
+                  <div class="field">
+                    <select class="browser-default">
+                      <option value="" disabled selected nome="sistema">
+                        Produto de maior interesse
+                      </option>
+                      <option value="1">Cardápio Digital</option>
+                      <option value="2">Fluxos de Pagamento</option>
+                      <option value="3">Delivery</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <textarea
+                      placeholder="Observações"
+                      id="observation"
+                      type="text"
+                      class="validate"
+                    ></textarea>
+                    <label for="observation" class="active"></label>
+                  </div>
                 </div>
               </fieldset>
             </form>
+            <button type="submit">Enviar</button>
           </div>
         </div>
 

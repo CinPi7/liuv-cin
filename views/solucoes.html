@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soluções LIUV</title>
+
+    <link
+      rel="shortcut icon"
+      href="../src/assets/logos/faviconliuv.png"
+      type="image/x-icon"
+    />
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../src/styles/global.css" />
+    <link rel="stylesheet" href="../src/styles/common/header.css" />
+    <link rel="stylesheet" href="../src/styles/solution/about.css" />
+    <link rel="stylesheet" href="../src/styles/solution/solutions.css" />
+    <link rel="stylesheet" href="../src/styles/common/form.css" />
+    <link rel="stylesheet" href="../src/styles/solution/modal.css" />
+    <link rel="stylesheet" href="../src/styles/common/footer.css" />
+
+    <!-- Materialize -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+  </head>
+  <body id="solucoes">
+    <!-- Header Navegation -->
+    <header class="liuv-header">
+      <a href="/"
+        ><img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV"
+      /></a>
+      <nav class="nav" role="navigation">
+        <a href="./liuv.html" class="left">A Liuv</a>
+        <a href="./restaurant.html" class="left">Para seu Restaurante</a>
+        <a href="./client.html" class="left">Para você</a>
+        <a href="./ajuda.html" class="left">Ajuda</a>
+        <a href="./contato.html" class="left">Fale com a gente</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">
+          Blog</a
+        >
+      </nav>
+      <button type="button" class="login">Login</button>
+
+      <!-- For Hamburguer Menu -->
+      <div id="liuvSideNav" class="sidenav">
+        <img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" />
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;</a
+        >
+        <a href="/" class="left">A Liuv</a>
+        <a href="./client.html" class="left">Usuários</a>
+        <a href="/" class="left">Como funciona</a>
+        <a href="./ajuda.html" class="left">Ajuda</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”"
+          >Blog</a
+        >
+        <a href="./contato.html" class="left">Contato</a>
+        <a href="/" class="left">Sair</a>
+        <button>Eu quero</button>
+      </div>
+      <span class="hamburguer" onclick="openNav()">
+        <img src="../src/assets/icons/menu.png" alt="Menu" />
+      </span>
+    </header>
+
+    <main>
+      <div class="main">
+        <!-- Intro Title about Solutions -->
+        <div class="intro">
+          <div class="title-intro">
+            <h1>Conheça nossos fluxos de pagamentos</h1>
+          </div>
+        </div>
+
+        <!-- Solutions -->
+        <div class="solution-section">
+          <!-- Cardápio -->
+          <div class="cardapio" id="cardapio">
+            <div>
+              <h2>Cardápio Digital</h2>
+              <p>
+                A nova solução da LIUV torna o fluxo de pedido do seu
+                restaurante mais prático e mais seguro. Através do Cardápio
+                Digital da LIUV, seu cliente faz o pedido de forma simples, sem
+                baixar o app e fazer cadastros. Basta abrir a câmera do
+                smartphone, escanear o QR Code da mesa e fazer o pedido para a
+                atendente.
+              </p>
+              <p>Experimente agora a solução gratuita da LIUV.</p>
+              <div class="mobile-center"><a href="#">Cardápio Digital</a></div> 
+            </div>
+            <div class="solution-image">
+              <img
+                src="../src/assets/images/cardápio.png"
+                alt="Cardápio Digital"
+              />
+            </div>
+          </div>
+          <!-- Comanda -->
+          <div class="comanda">
+            <div>
+              <h2>Comanda</h2>
+              <p>
+                Atendemos estabelecimentos que trabalham com o fluxo de comanda
+                eletrônica. Possibilitamos que os clientes façam o pagamento
+                direto com o celular sem precisar ir até o caixa, ou que levem
+                uma maquininha de cartão até ele. Após o pagamento o cliente
+                entrega a comanda para um atendente ou no local sinalizado.
+              </p>
+            </div>
+            <div class="solution-image">
+              <img src="../src/assets/images/comanda.png" alt="Comanda" />
+            </div>
+          </div>
+
+          <div class="prepedido">
+            <div>
+              <h2>Pré Pedido</h2>
+              <p>
+                O fluxo pré pedido da LIUV torna mais ágil o ato de fazer o
+                pedido e a retirada porque possui integração com o sistema,
+                assim a equipe da interna do restaurante recebe o pedido e assim
+                que estiver pronto, é enviado um push notification para o
+                cliente retirar no local indicado. Evitando filas no caixa e
+                manuseio de fichas.
+              </p>
+            </div>
+            <div class="solution-image">
+              <img
+                src="../src/assets/images/prepedidosolucao.png"
+                alt="Pre Pedido"
+              />
+            </div>
+          </div>
+
+          <div class="mesa">
+            <div>
+              <h2>Mesa</h2>
+              <p>
+                Com o fluxo Mesa da Liuv, seu cliente consegue pagar o consumo
+                total ou parcial da mesa. Por meio da integração da Liuv com
+                sistema de PDV do estabelecimento, as informações de pagamento
+                são sincronizadas, evitando a conferência da conta a todo
+                momento.
+              </p>
+            </div>
+            <div class="solution-image">
+              <img src="../src/assets/images/mesa.png" alt="Solução Mesa" />
+            </div>
+          </div>
+
+          <div class="qrcode">
+            <div>
+              <h2>QR Code</h2>
+              <p>
+                Alguns estabelecimentos possuem uso de fichas para retirada do
+                pedido. Com o fluxo QR Code da Liuv, o cliente pode fazer o
+                pedido sem ficar na fila do caixa e elimina o uso da ficha. O
+                aplicativo gera um qr codea após a compra e no momento da
+                retirada o cliente apresenta para a atendente que faz a leitura
+                do qr code e a entrega do pedido. Dessa forma, o atendimento e a
+                espera para retirada são rápidos.
+              </p>
+            </div>
+            <div class="solution-image">
+              <img src="../src/assets/images/solucoes.png" alt="QR Code" />
+            </div>
+          </div>
+
+          <div class="delivery">
+            <div>
+              <h2>Delivery</h2>
+              <p>
+                Aumente sua renda, fidelize e ganhe clientes cadastrando seu
+                restaurante na sessão de Delivery da LIUV. Tenha um novo canal
+                de vendas para seu restaurante, com sua frota própria de
+                motoboys, sem taxas abusivas.
+              </p>
+            </div>
+            <div class="solution-image">
+              <img src="../src/assets/images/delivery.png" alt="Delivery" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Form B2B e Solutions - same base -->
+        <div class="solution-page">
+          <h2>Pronto para inovar?</h2>
+          <p>
+            Veja como a LIUV permite que restaurantes, padarias, bares e baladas
+            aumentam o faturamento, fidelizando o cliente e com ações exclusivas
+            para seus clientes.
+          </p>
+          <br/>
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Entrar em contato</a>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal form-b2b">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >&#10005;
+          </a>
+          <div class="modal-content">
+
+            <div class="modal-introduction">
+              <h3>Quer saber mais?</h3>
+              <p>Envie seus dados e entramos em contato com você.</p>
+            </div>
+
+            <form action="#" method="">
+              <fieldset>
+                <!-- first line -->
+                <div class="field-group">
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Nome do Restaurante"
+                      required="required"
+                      name="restaurante"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Endereço"
+                      required="required"
+                      name="address"
+                    />
+                  </div>
+                </div>
+                <!-- second line -->
+                <div class="field-group">
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Nome do Responsável"
+                      required="required"
+                      name="nome"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Sistema Emissor de Notas"
+                      required="required"
+                      name="note"
+                    />
+                  </div>
+                </div>
+                <!-- third line -->
+                <div class="field-group">
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Telefone"
+                      required="required"
+                      name="tel"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="E-mail"
+                      required="required"
+                      name="email"
+                    />
+                  </div>
+                </div>
+                <div class="field-group">
+                  <div class="field">
+                    <select class="browser-default">
+                      <option value="" disabled selected nome="sistema">
+                        Produto de maior interesse
+                      </option>
+                      <option value="1">Cardápio Digital</option>
+                      <option value="2">Fluxos de Pagamento</option>
+                      <option value="3">Delivery</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <textarea
+                      placeholder="Observações"
+                      id="observation"
+                      type="text"
+                      class="validate"
+                    ></textarea>
+                    <label for="observation" class="active"></label>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <button type="submit">Enviar</button>
+          </div>
+        </div>
+
+        
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="liuv-footer">
+      <div class="downloads">
+        <a href="/"
+          ><img
+            src="../src/assets/logos/logo-grad.png"
+            class="logofooter"
+            alt="LIUV Logo"
+        /></a>
+        <a href="/"
+          ><img
+            src="../src/assets/icons/appe.png"
+            class="apple-store"
+            alt="Apple Store"
+        /></a>
+        <a href="/"
+          ><img
+            src="../src/assets/icons/pay.png"
+            class="play-store"
+            alt="Play Store"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <div class="first-row">
+          <div class="column">
+            <h4>Produtos</h4>
+            <p>
+              Usuários <br />
+              Restaurantes <br />
+              Intergrações PDV <br />
+              Como funciona? <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Recursos</h4>
+            <p>
+              Blog <br />
+              Apoio suporte <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Empresa</h4>
+            <p>
+              Sobre <br />
+              Carreiras <br />
+              Termos de Uso <br />
+              Política de Privacidade <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Outros</h4>
+            <p>
+              Login de restaurantes <br />
+              Login de usuários <br />
+              Contato <br />
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="second-row">
+          <div class="column">
+            <h4>Brasil</h4>
+            <p>
+              Rua Jesuíno Arruda 797, CJ 72, Itaim Bibi <br />
+              São Paulo <br />
+              +55 (11) 3854-1774 <br />
+              +55 (11) 3230-9223 <br />
+            </p>
+          </div>
+          <div class="column">
+            <div class="media-icons">
+              <a href="#"
+                ><img src="../src/assets/icons/facebook.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="../src/assets/icons/instagram.png" alt="Instgram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="../src/scripts/hamburguer.js"></script>
+    <script src="../src/scripts/form.js"></script>
+    <script src="../src/scripts/modal.js"></script>
+  </body>
+</html>

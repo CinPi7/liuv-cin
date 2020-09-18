@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cliente LIUV</title>
 
+    <link
+      rel="shortcut icon"
+      href="../src/assets/logos/faviconliuv.png"
+      type="image/x-icon"
+    />
+
     <!-- Style Sheets -->
     <link rel="stylesheet" href="../src/styles/global.css" />
     <link rel="stylesheet" href="../src/styles/common/header.css" />
@@ -25,9 +31,9 @@
   <body id="client-body">
     <!-- Header Navegation -->
     <header class="liuv-header">
-      <img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" />
+      <a href="/"><img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" /></a>
       <nav class="nav" role="navigation">
-        <a href="/" class="left">A Liuv</a>
+        <a href="./liuv.html" class="left">A Liuv</a>
         <a href="./restaurant.html" class="left">Para seu Restaurante</a>
         <a href="./client.html" class="left">Para você</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
@@ -58,19 +64,47 @@
 
     <main>
       <div class="main">
-        <!-- First Section, ABOUT Liuv Client -->
-        <div class="intro">
-          <div class="title-intro">
-            <h1>Ganhe tempo e receba promoções exclusivas!</h1>
-            <a href="/">Assista ao vídeo 
-              <img src="../src/assets/icons/play.svg" alt="Play"/></a>
-          </div>
+
+        <!-- First Section, ABOUT Liuv Restaurate -->
+        <div class="about">
+          <div class="carousel carousel-slider center">
+
+            <div class="carousel-item b2c-1" href="#one!">
+              <div class="about-content">
+                <span>Seu novo jeito de pedir e pagar em bares e restaurantes.</span>
+              </div>
+            </div>
+    
+            <div class="carousel-item b2c-2" href="#two!">
+              <div class="about-content">
+                <h1>Benefícios da LIUV</h1>
+                <span>Esqueça as filas intermináveis do caixa, pague com o app da Liuv sua conta de bares e restaurantes.</span>
+                <a href="./client.html#restaurantes" class="btn-solution">Restaurantes</a>
+              </div>
+            </div>
+
+            <div class="carousel-item b2c-3" href="#three!">
+              <div class="about-content">
+                <h1>Benefícios da LIUV</h1>
+                <span>Use o app da LIUV para fazer pedido, mais rápido e sem enfrentar filas! </span>
+              </div>
+            </div>
+
+            <div class="carousel-item b2c-4" href="#four!">
+              <div class="about-content"> 
+                <h1>Pagamentos com VR e Cartão de Crédito</h1>
+                <span>Pague pelo app com seu cartão de crédito ou vale refeição!</span>
+              </div>
+            </div>
+
+          </div>  
         </div>
+
 
         <!-- Entenda porque LIUV é a melhor no seu dia a dia -->
         <div class="liuv-melhor">
           <div>
-            <h2>Porque a LIUV é a melhor no seu dia a dia?</h2>
+            <h2>Pague com o APP</h2>
           </div>
           <div class="cards-box">
             <div class="cards programa-fidelidade">
@@ -82,21 +116,6 @@
                 <p>
                   Não espere a conta chegar na mesa nem pegue filas
                   intermináveis nos caixas.
-                </p>
-              </div>
-            </div>
-            <div class="cards promos-melhor">
-              <div class="module-second">
-                <img
-                  src="../src/assets/icons/fidelity.png"
-                  alt="Promoções Exclusivas"
-                />
-              </div>
-              <div class="melhor-content">
-                <h3>Promoções Exclusivas</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. nec
-                  eu metus.
                 </p>
               </div>
             </div>
@@ -119,15 +138,14 @@
               <div class="melhor-content">
                 <h3>Pague com o App</h3>
                 <p>
-                  Use o smartphone para fazer pagamentos de forma prática e
-                  segura.
+                  Use seu smartphone para fazer pedidos e pagamentos de forma prática e segura nos estabelecimentos que frequenta.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="search-liuv">
+        <div class="search-liuv" id="restaurantes">
           <h1>Onde encontrar a LIUV?</h1>
           <!-- Map Google -->
           <div class="search-container">
@@ -145,59 +163,6 @@
               <div id="foundLocationsCard"></div>
             </div>
             <div id="map"></div>
-          </div>
-        </div>
-
-        <!-- Section Pagamentos Aceitos -->
-        <div class="pagamentos-aceitos">
-          <div><h2>Pagamentos Aceitos</h2></div>
-          <div class="meios-pagamentos">
-            <div class="credito">
-              <h3>Crédito</h3>
-              <p>
-                Para utilizar a LIUV ao máximo, é ideal cadastrar seu cartão de
-                crédito. Com ele, você faz pagamentos, que virão na sua conta.
-              </p>
-              <div class="cartoes">
-                <img class="visa" src="../src/assets/icons/visa.svg" alt="Visa" />
-                <img
-                  class="master"
-                  src="../src/assets/icons/master.svg"
-                  alt="Master Card"
-                />
-                <img class="elo" src="../src/assets/icons/elo.svg" alt="Elo" />
-              </div>
-            </div>
-            <div class="vl"></div>
-            <div class="voucher">
-              <h3>Voucher</h3>
-              <p>
-                Mas se você não tem cartão de crédito, tudo bem. Também é
-                possível inserir seu vale-refeição na LIUV.
-              </p>
-              <div class="vales">
-                <img
-                  class="alelo"
-                  src="../src/assets/icons/alelo.svg"
-                  alt="Alelo"
-                />
-                <img
-                  class="ticket"
-                  src="../src/assets/icons/ticket-restaurante.png"
-                  alt="Ticket Restaurante"
-                />
-                <img
-                  class="sodexo"
-                  src="../src/assets/icons/sodexo.png"
-                  alt="Sodexo"
-                />
-                <img
-                  class="vr"
-                  src="../src/assets/icons/vr.png"
-                  alt="VR Refeição"
-                />
-              </div>
-            </div>
           </div>
         </div>
 
@@ -255,9 +220,62 @@
             </div>
           </div>
         </div>
+
+        <!-- Section Pagamentos Aceitos -->
+        <div class="pagamentos-aceitos">
+          <div><h2>Pagamentos Aceitos</h2></div>
+          <div class="meios-pagamentos">
+            <div class="credito">
+              <h3>Crédito</h3>
+              <p>
+                Para utilizar a LIUV ao máximo, é ideal cadastrar seu cartão de
+                crédito. Com ele, você faz pagamentos, que virão na sua conta.
+              </p>
+              <div class="cartoes">
+                <img class="visa" src="../src/assets/icons/visa.svg" alt="Visa" />
+                <img
+                  class="master"
+                  src="../src/assets/icons/master.svg"
+                  alt="Master Card"
+                />
+                <img class="elo" src="../src/assets/icons/elo.svg" alt="Elo" />
+              </div>
+            </div>
+            <div class="vl"></div>
+            <div class="voucher">
+              <h3>Voucher</h3>
+              <p>
+                Mas se você não tem cartão de crédito, tudo bem. Também é
+                possível inserir seu vale-refeição na LIUV.
+              </p>
+              <div class="vales">
+                <img
+                  class="alelo"
+                  src="../src/assets/icons/alelo.svg"
+                  alt="Alelo"
+                />
+                <img
+                  class="ticket"
+                  src="../src/assets/icons/ticket-restaurante.png"
+                  alt="Ticket Restaurante"
+                />
+                <img
+                  class="sodexo"
+                  src="../src/assets/icons/sodexo.png"
+                  alt="Sodexo"
+                />
+                <img
+                  class="vr"
+                  src="../src/assets/icons/vr.png"
+                  alt="VR Refeição"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </main>
-    <hr />
     <br />
     <!-- Footer -->
     <footer class="liuv-footer">
