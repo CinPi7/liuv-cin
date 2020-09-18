@@ -30,7 +30,7 @@ main div.about div.about-content a{
   font-size: 1.6rem;
 }
 
-main div.about div.carousel-item div.about-content a.btn-solution{
+main div.about div.carousel-item div.about-content button.btn-solution{
   font-size: 1rem;
 
   color: white;
