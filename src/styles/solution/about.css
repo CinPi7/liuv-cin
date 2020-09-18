@@ -1,0 +1,65 @@
+#solucoes main div.intro {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 107, 43, 0.6) 0%,
+      rgba(242, 44, 80, 0.6) 100%
+    ),
+    url("../../assets/images/Header_paginasoluções.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 42rem;
+  padding: 0.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--white);
+}
+
+main div.intro div.title-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main div.intro div.title-intro > h1 {
+  margin-top: 2.6rem;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+/* Responsive */
+@media (min-width: 378px) {
+  main div.intro div.title-intro > h1 {
+    margin-top: -9rem;
+  }
+}
+
+@media (min-width: 500px) {
+  main div.intro div.title-intro > h1 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 890px) {
+  main div.intro > div.title-intro {
+    width: 40rem;
+    margin-top: 3.6rem;
+    margin-left: -2.6rem;
+  }
+  main div.intro div.title-intro > h1 {
+    font-size: 2.6rem;
+    width: 70%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1570px) {
+  main div.intro > div.title-intro {
+    margin-left: 9%;
+  }
+}

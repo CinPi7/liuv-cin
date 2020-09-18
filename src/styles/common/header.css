@@ -16,7 +16,7 @@ header.liuv-header {
   height: auto;
 }
 
-header.liuv-header > img {
+header.liuv-header a > img {
   height: 2.4rem;
   width: 6.8rem;
 
@@ -45,7 +45,7 @@ header.liuv-header span.hamburguer {
 .hamburguer > img {
   height: 3rem;
   width: 4rem;
-  margin-right: 1rem;
+  margin-right: 0.2rem;
   margin-top: 0.6rem;
 }
 
