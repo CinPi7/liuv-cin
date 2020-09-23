@@ -16,7 +16,6 @@ main div.about div.about-content {
   );
   height: auto;
   margin-top: 3rem;
-  margin-left: 8rem;
   padding: 2rem;
 }
 
@@ -168,7 +167,8 @@ main div.about .b2b-2 .btn-solution {
     text-align: left;
     width: 40rem;
 
-    margin-left: 7%;
+    
+    margin-left: 10rem;
   }
   main div.about div.about-content  > h1 {
     font-size: 2.6rem;
@@ -180,6 +180,6 @@ main div.about .b2b-2 .btn-solution {
 
 @media (min-width: 1570px) {
   main div.about div.about-content {
-    margin-left: 15%;
+    margin-left: 20%;
   }
 }
