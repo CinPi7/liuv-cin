@@ -9,14 +9,18 @@ main div.about div.about-content {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 1) 0%,
+    rgba(242, 44, 80, 1) 100%
+  );
+  height: auto;
   margin-top: 3rem;
   padding: 1rem;
 }
 
 main div.about div.about-content h1{
   font-size: 2.6rem;
-  font-weight: lighter;
   font-weight: bolder;
 }
 
@@ -24,7 +28,7 @@ main div.about div.about-content span{
   font-size: 1.8rem;
   line-height: 2.5rem;
   font-weight: lighter;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.5px;
 }
 
 main div.about div.about-content a {
@@ -32,7 +36,7 @@ main div.about div.about-content a {
 }
 
 main div.about div.about-content a{
-  color: var(--primary-color-pink);
+  color: white;
   font-size: 2rem;
 }
 
@@ -66,8 +70,8 @@ main div.about .b2b-2 .btn-solution {
 #restaurant-body main .cardapio{
   background-image: linear-gradient(
       90deg,
-      rgba(255, 107, 43, 0.5) 0%,
-      rgba(242, 44, 80, 0.5) 100%
+      rgba(255, 107, 43, 0.1) 0%,
+      rgba(242, 44, 80, 0.1) 100%
     ),
     url("../../assets/images/B2B/B2B_carrosel_1.jpg");
   background-repeat: no-repeat;
@@ -75,11 +79,15 @@ main div.about .b2b-2 .btn-solution {
   background-position: center;
 }
 
+#restaurant-body main .cardapio .about-content h1{
+  margin-top: 0;
+}
+
 #restaurant-body main .b2b-2{
   background-image:  linear-gradient(
     90deg,
-    rgba(255, 107, 43, 0.6) 0%,
-    rgba(242, 44, 80, 0.6) 100%
+    rgba(255, 107, 43, 0.1) 0%,
+    rgba(242, 44, 80, 0.1) 100%
   ),
     url("../../assets/images/B2B/B2B_carrosel_2.jpg");
   background-repeat: no-repeat;
@@ -95,8 +103,8 @@ main div.about .b2b-2 .btn-solution {
 #restaurant-body main .b2b-3{
   background-image:  linear-gradient(
     90deg,
-    rgba(255, 107, 43, 0.6) 0%,
-    rgba(242, 44, 80, 0.6) 100%
+    rgba(255, 107, 43, 0.1) 0%,
+    rgba(242, 44, 80, 0.1) 100%
   ),
     url("../../assets/images/B2B/B2B_carrossel_3.jpg");
   background-repeat: no-repeat;
@@ -104,11 +112,15 @@ main div.about .b2b-2 .btn-solution {
   background-position: center;
 }
 
+#restaurant-body main .b2b-3 .about-content h1{
+  margin-top: 0;
+}
+
 #restaurant-body main .b2b-4{
   background-image:  linear-gradient(
     90deg,
-    rgba(255, 107, 43, 0.6) 0%,
-    rgba(242, 44, 80, 0.6) 100%
+    rgba(255, 107, 43, 0.1) 0%,
+    rgba(242, 44, 80, 0.1) 100%
   ),
     url("../../assets/images/B2B/B2B_carrossel_4.jpg");
   background-repeat: no-repeat;
@@ -119,8 +131,8 @@ main div.about .b2b-2 .btn-solution {
 #client-body main .b2c-1{
   background-image:  linear-gradient(
     90deg,
-    rgba(255, 107, 43, 0.6) 0%,
-    rgba(242, 44, 80, 0.6) 100%
+    rgba(255, 107, 43, 0.1) 0%,
+    rgba(242, 44, 80, 0.1) 100%
   ),
     url("../../assets/images/B2C/B2C_carrossel_1.jpg");
   background-repeat: no-repeat;
@@ -131,8 +143,8 @@ main div.about .b2b-2 .btn-solution {
 #client-body main .b2c-2{
   background-image: linear-gradient(
       90deg,
-      rgba(255, 107, 43, 0.5) 0%,
-      rgba(242, 44, 80, 0.5) 100%
+      rgba(255, 107, 43, 0.1) 0%,
+      rgba(242, 44, 80, 0.1) 100%
     ),
     url("../../assets/images/B2C/B2C_carrossel_2.jpg");
   background-repeat: no-repeat;
@@ -140,11 +152,17 @@ main div.about .b2b-2 .btn-solution {
   background-position: center;
 }
 
+#client-body main .b2c-2 .about-content h1,
+.b2c-3 .about-content h1,
+.b2c-4 .about-content h1{
+  margin-top: 0;
+}
+
 #client-body main .b2c-3{
   background-image:  linear-gradient(
     90deg,
-    rgba(255, 107, 43, 0.6) 0%,
-    rgba(242, 44, 80, 0.6) 100%
+    rgba(255, 107, 43, 0.1) 0%,
+    rgba(242, 44, 80, 0.1) 100%
   ),
     url("../../assets/images/B2C/B2C_carrossel_3.jpg");
   background-repeat: no-repeat;
@@ -155,8 +173,8 @@ main div.about .b2b-2 .btn-solution {
 #client-body main .b2c-4{
   background-image:  linear-gradient(
     90deg,
-    rgba(255, 107, 43, 0.6) 0%,
-    rgba(242, 44, 80, 0.6) 100%
+    rgba(255, 107, 43, 0.1) 0%,
+    rgba(242, 44, 80, 0.1) 100%
   ),
     url("../../assets/images/B2C/B2C_carrossel_4.jpg");
   background-repeat: no-repeat;

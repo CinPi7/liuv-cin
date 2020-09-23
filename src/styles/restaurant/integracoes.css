@@ -91,20 +91,15 @@ div.integracoes div.organizer p {
     padding-left: 4.5%;
     padding-right: 5%;
     max-width: 1440px;
+    margin: 0 auto;
     margin-top: -1rem;
   }
   main div.integracoes > div {
     max-width: 1440px;
+    margin: 0 auto;
     padding-left: 4.5%;
   }
   main div.integracoes div > h2 {
     padding-bottom: 0;
-  }
-}
-
-
-@media (min-width: 1510px) {
-  main div.integracoes > div > h2 {
-    margin-left: 6.5%;
   }
 }
