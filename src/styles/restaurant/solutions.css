@@ -25,7 +25,7 @@
 
 #restaurant-body main div.solutions div.solution-types h1 {
   font-size: 2.4rem;
-  color: var(--black);
+  color: var(--titles);
   margin-top: 0.3rem;
 }
 
@@ -65,6 +65,13 @@ div#solutionQRCode {
   margin-top: 2rem;
   color: var(--black);
   font-size: 1.2rem;
+}
+
+#restaurant-body main div.solutions div.solution-types #solutionCardapio img{
+  width: 80%;
+  height: 70%;
+  margin-left: -2.6rem;
+  max-width: 30rem;
 }
 
 #restaurant-body
@@ -141,6 +148,13 @@ div#solutionQRCode {
   margin-left: -5rem;
 }
 
+#solutionPagamentoNaMesa img,
+#solutionPre img,
+#solutionQRCode img{
+  padding-left: 2.4rem;
+}
+
+
 #restaurant-body
   main
   div.solutions
@@ -176,6 +190,12 @@ div#solutionQRCode {
     height: 30rem;
     max-width: none;
     padding-right: 2rem;
+  }
+  #restaurant-body main div.solutions div.solution-types #solutionCardapio img{
+    width: 42rem;
+    max-width: none;
+    height: 35rem;
+    max-height: none;
   }
   #restaurant-body main div.solutions div.solution-types p {
     width: 95%;

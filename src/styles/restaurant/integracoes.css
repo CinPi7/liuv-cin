@@ -15,8 +15,9 @@ main div.integracoes > div {
 }
 
 main div.integracoes div > h2 {
-  font-size: 2rem;
-  color: var(--black);
+  font-size: 2.4rem;
+  color: var(--titles);
+  margin-bottom: 2rem;
 }
 
 main div.integracoes div.integra-container {
@@ -68,7 +69,6 @@ div.integracoes div.organizer {
   justify-content: center;
   text-align: center;
   height: 15rem;
-  margin-right: 7%;
 }
 
 div.integracoes div.organizer > .carousel > .carousel-item {
@@ -83,23 +83,25 @@ div.integracoes div.organizer p {
 
 /* Responsive */
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   main div.integracoes div.integra-container {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
-    margin: 0 auto;
+    padding-left: 4.5%;
+    padding-right: 5%;
     max-width: 1440px;
+    margin-top: -1rem;
   }
-  main div.integracoes > div > h2 {
+  main div.integracoes > div {
     max-width: 1440px;
-    margin-left: 5%;
+    padding-left: 4.5%;
   }
-  div.integracoes div.box-integracoes {
-    padding-left: 7%;
+  main div.integracoes div > h2 {
+    padding-bottom: 0;
   }
 }
+
 
 @media (min-width: 1510px) {
   main div.integracoes > div > h2 {

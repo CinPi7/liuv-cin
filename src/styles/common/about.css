@@ -1,5 +1,5 @@
 main div.about > .carousel {
-  height: 42rem !important;
+  height: 30rem !important;
 
   color: var(--white);
 }
@@ -10,24 +10,30 @@ main div.about div.about-content {
   justify-content: center;
   flex-direction: column;
 
-  margin-top: 13rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-top: 3rem;
+  padding: 1rem;
 }
 
 main div.about div.about-content h1{
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: lighter;
+  font-weight: bolder;
 }
 
-main div.about div.about-content span, div.about a{
-  font-size: 1.4rem;
-  padding-left: 0.2rem;
+main div.about div.about-content span{
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: lighter;
+  letter-spacing: 0.9px;
+}
+
+main div.about div.about-content a {
+  font-weight: 700;
 }
 
 main div.about div.about-content a{
   color: var(--primary-color-pink);
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 main div.about div.carousel-item div.about-content button.btn-solution{
@@ -50,6 +56,11 @@ main div.about div.carousel-item div.about-content button.btn-solution a{
   color: white;
   font-size: 1rem;
   padding-top: 1px;
+  font-weight: lighter;
+}
+
+main div.about .b2b-2 .btn-solution {
+  margin-left: 1rem;
 }
 
 #restaurant-body main .cardapio{
@@ -74,6 +85,11 @@ main div.about div.carousel-item div.about-content button.btn-solution a{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+#restaurant-body main .b2b-2 span{
+  padding: 0.8rem;
+  font-size: 1.6rem;
 }
 
 #restaurant-body main .b2b-3{

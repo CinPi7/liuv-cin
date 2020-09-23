@@ -138,14 +138,14 @@ select {
 }
 
 @media (min-width: 700px) {
-  .form-b2b .field-group {
-    display: flex;
-    flex-direction: row;
+  .form-b2b .fieldset{
+    margin: 0;
   }
   .form-b2b form .field {
     padding-right: 1rem;
     padding-left: 1.6rem;
     margin: 0;
+    width: 100%;
   }
   .form-b2b form select,
   .form-b2b form textarea{

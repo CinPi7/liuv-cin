@@ -152,6 +152,7 @@ div.cardapio div div.mobile-center {
   }
   div.cardapio img{
     margin-right: 1rem;
+    width: 50%;
   }
   div.comanda div.solution-image img {
     margin-right: 2rem;
