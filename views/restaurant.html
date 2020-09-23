@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIUV | Restaurante</title>
-
     <link
       rel="shortcut icon"
       href="../src/assets/logos/faviconliuv.png"
@@ -17,15 +16,20 @@
     <link rel="stylesheet" href="../src/styles/restaurant/solutions.css" />
     <link rel="stylesheet" href="../src/styles/common/melhor.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/integracoes.css" />
-    <link rel="stylesheet" href="../src/styles/common/form.css">
-    <link rel="stylesheet" href="../src/styles/solution/modal.css"> 
+    <link rel="stylesheet" href="../src/styles/common/form.css" />
+    <link rel="stylesheet" href="../src/styles/solution/modal.css" />
     <link rel="stylesheet" href="../src/styles/common/pagamentos.css" />
     <link rel="stylesheet" href="../src/styles/common/parceiros.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/simplifica.css" />
     <link rel="stylesheet" href="../src/styles/common/form.css" />
-    <link rel="stylesheet" href="../src/styles/restaurant/carousel.css">
+    <link rel="stylesheet" href="../src/styles/restaurant/carousel.css" />
     <link rel="stylesheet" href="../src/styles/common/footer.css" />
     <!-- Materialize -->
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -33,12 +37,14 @@
     />
   </head>
   <body id="restaurant-body">
-    
+
     <!-- Header Navegation -->
     <header class="liuv-header">
-      <a href="/"><img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" /></a> 
+      <a href="/">
+        <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv"/>
+      </a>
       <nav class="nav" role="navigation">
-        <a href="./" class="left">A Liuv</a>
+        <a href="./liuv.html" class="left">A Liuv</a>
         <a href="./restaurant.html" class="left">Para seu Restaurante</a>
         <a href="./client.html" class="left">Para você</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
@@ -49,10 +55,14 @@
       <!-- For Hamburguer Menu -->
       <div id="liuvSideNav" class="sidenav">
         <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" />
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/" class="left">A Liuv</a>
-        <a href="/" class="left">Usuários</a>
-        <a href="/" class="left">Como funciona</a>
+        <a 
+          href="javascript:void(0)" 
+          class="closebtn" 
+          onclick="closeNav()">
+          &times;</a>
+        <a href="./liuv.html" class="left">A Liuv</a>
+        <a href="./client.html" class="left">Usuários</a>
+        <a href="./restaurant.html" class="left">Como funciona</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
         <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">Blog</a>
         <a href="./contato.html" class="left">Contato</a>
@@ -60,7 +70,7 @@
         <button>Eu quero</button>
       </div>
       <span class="hamburguer" onclick="openNav()">
-        <img src="../src/assets/icons/menu.png" alt="Menu"/>
+        <img src="../src/assets/icons/menu.png" alt="Menu" />
       </span>
     </header>
 
@@ -68,21 +78,27 @@
       <div id="main">
 
         <!-- First Section, ABOUT Liuv Restaurate -->
-        <div class="about">
+        <div class="about carousel-fixed-item">
           <div class="carousel carousel-slider center">
-
             <div class="carousel-item cardapio" href="#one!">
               <div class="about-content">
                 <h1>Cardápio Digital</h1>
-                <span>A nova solução gratuita da <a href="./solucoes.html">LIUV.</a> </span>
+                <span>A nova solução gratuita da
+                  <a href="./solucoes.html">LIUV.</a>
+                </span>
               </div>
             </div>
-    
+
             <div class="carousel-item b2b-2" href="#two!">
               <div class="about-content">
-                <span>Cada restaurante tem um jeito de receber seus pagamentos, a LIUV tem todos. 
-                  Saiba mais sobre as opções de pagamento da LIUV.</span>
-                <button class="btn-solution"><a href="./solucoes.html">Saiba mais</a></button>
+                <span>
+                  Cada restaurante tem um jeito de receber seus pagamentos, a
+                  LIUV tem todos. Saiba mais sobre as opções de pagamento da
+                  LIUV.
+                </span>
+                <button class="btn-solution">
+                  <a href="./solucoes.html">Saiba mais</a>
+                </button>
               </div>
             </div>
 
@@ -96,11 +112,12 @@
             <div class="carousel-item b2b-4" href="#four!">
               <div class="about-content">
                 <span>Integração com os principais sistemas de PDV.</span>
-                <button class="btn-solution"><a href="./solucoes.html">Saiba mais</a></button>
+                <button class="btn-solution">
+                  <a href="./solucoes.html">Saiba mais</a>
+                </button>
               </div>
             </div>
-
-          </div>  
+          </div>
         </div>
 
         <!-- Solutions -->
@@ -108,6 +125,7 @@
           <div class="solution-types">
             <p>Entenda nossos fluxos</p>
             <h1>Soluções</h1>
+
             <div class="buttonsContainer">
               <button
                 onclick="showCardapio()"
@@ -135,16 +153,16 @@
               <div class="side-position">
                 <div class="content">
                   <p>
-                    A nova solução totalmente gratuita para deixar o
-                    seu restaurante ainda mais seguro. Com o cardápio digital Liuv, 
-                    seu cliente visualiza o cardápio de forma simples após escanear o 
-                    QR Code da mesa, sem baixar o app e sem cadastros. O pedido é 
-                    feito direto para o atendente.
+                    A nova solução totalmente gratuita para deixar o seu
+                    restaurante ainda mais seguro. Com o cardápio digital Liuv,
+                    seu cliente visualiza o cardápio de forma simples após
+                    escanear o QR Code da mesa, sem baixar o app e sem
+                    cadastros. O pedido é feito direto para o atendente.
                   </p>
-                  <a href="/">Quero saber mais</a>
+                  <a href="./solucoes.html#cardapio">Quero saber mais</a>
                 </div>
                 <div class="draw">
-                  <img src="../src/assets/images/cardápio.png" alt="Cardapio" />
+                  <img src="../src/assets/images/cardapio.png" alt="Cardapio" />
                 </div>
               </div>
             </div>
@@ -156,8 +174,9 @@
                     Atendemos estabelecimentos que trabalham com fluxo de
                     comanda eletrônica. Possibilitamos que os clientes façam o
                     pagamento direto com o celular sem precisar ir até o caixa,
-                    ou que levem uma maquininha de cartão até ele. Após o pagamento o
-                    cliente entrega a comanda paga para um atendente.
+                    ou que levem uma maquininha de cartão até ele. Após o
+                    pagamento o cliente entrega a comanda paga para um
+                    atendente.
                   </p>
                   <a href="/">Quero saber mais</a>
                 </div>
@@ -179,7 +198,10 @@
                   <a href="/">Quero saber mais</a>
                 </div>
                 <div class="draw">
-                  <img src="../public/assets/images/comanda.png" alt="Delivery" />
+                  <img
+                    src="../src/assets/images/"
+                    alt="Delivery"
+                  />
                 </div>
               </div>
             </div>
@@ -197,7 +219,10 @@
                   <a href="/">Quero saber mais</a>
                 </div>
                 <div class="draw">
-                  <img src="../src/assets/images/comanda.png" alt="Pagamento Mesa" />
+                  <img
+                    src="../src/assets/images/mesa.png"
+                    alt="Pagamento Mesa"
+                  />
                 </div>
               </div>
             </div>
@@ -215,7 +240,7 @@
                   <a href="/">Quero saber mais</a>
                 </div>
                 <div class="draw">
-                  <img src="../src/assets/images/cardápio.png" alt="Comanda" />
+                  <img src="../src/assets/images/prepedidosolucao.png" alt="Pre Pedido" />
                 </div>
               </div>
             </div>
@@ -234,10 +259,11 @@
                   <a href="/">Quero saber mais</a>
                 </div>
                 <div class="draw">
-                  <img src="../src/assets/images/QR code.png" alt="QR Code" />
+                  <img src="../src/assets/images/solucoes.png" alt="QR Code" />
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
 
@@ -247,60 +273,135 @@
             <h2>Entenda porque LIUV é a melhor</h2>
           </div>
           <div class="cards-box">
-            <div class="cards programa-fidelidade">
-              <div class="module">
-                <img
-                  src="../src/assets/icons/icon1.png"
-                  alt="Programa Fidelidade"
-                />
-              </div>
-              <div class="melhor-content">
-                <h3>Programa Fidelidade</h3>
-                <p>
-                  Tenha um programa em que seus clientes ganham créditos
-                  exclusivos para gastar somente na sua loja.
-                </p>
-              </div>
-            </div>
-            <div class="cards promos-melhor">
-              <div class="module-second">
-                <img
-                  src="../src/assets/icons/icon2.png"
-                  alt="Promoções Exclusivas"
-                />
-              </div>
-              <div class="melhor-content">
-                <h3>Promoções Exclusivas</h3>
-                <p>
-                  Envie promoções personalizadas e exclusivas para os clientes
-                  que frequentam seu estabelecimento.
-                </p>
-              </div>
-            </div>
-            <div class="cards faturamento-melhor">
-              <div class="module-third">
-                <img src="../src/assets/icons/icon3.png" alt="Maior Faturamento" />
-              </div>
-              <div class="melhor-content">
-                <h3>Maior Faturamento</h3>
-                <p>
-                  Aumente a rotatividade de pessoas, otimize a mão de obra e
-                  envie promoções exclusivas para os usuários LIUV.
-                </p>
-              </div>
-            </div>
-            <div class="cards conheca-melhor">
-              <div class="module-fourth">
-                <img src="../src/assets/icons/icon4.png" alt="Maior Faturamento" />
-              </div>
-              <div class="melhor-content">
-                <h3>Conheça seu Cliente</h3>
-                <p>
-                  Saiba a frequência, consumo e a data de aniversário dos seus clientes do seu restaurante.
-                  Envie promoções e aumente o engajamento.
-                </p>
-              </div>
-            </div>
+            <ul
+              class="collapsible cards programa-fidelidade"
+              data-collapsible="accordion"
+            >
+              <li>
+                <div class="collapsible-header">
+                  <div class="module">
+                    <img
+                      src="../src/assets/icons/icon1.png"
+                      alt="Programa Fidelidade"
+                    />
+                  </div>
+                  <div class="melhor-content collapsible-header">
+                    <h3>Programa Fidelidade</h3>
+                    <p>
+                      Tenha um programa em que seus clientes ganham créditos
+                      exclusivos para gastar somente na sua loja.
+                    </p>
+                  </div>
+                  <div class="icon"><i class="material-icons">add</i></div>
+                </div>
+                <div class="collapsible-body">
+                  <span>
+                    Customize seus programas de fidelidade de acordo com a sua
+                    necessidade, esqueça aqueles cartõezinhos de papel. O
+                    programa fidelidade da Liuv fica dentro do aplicativo e é
+                    pontuado automaticamente após o pagamento.
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Promoções Exclusivas -->
+            <ul
+              class="collapsible cards promos-melhor"
+              data-collapsible="accordion"
+            >
+              <li>
+                <div class="collapsible-header">
+                  <div class="module-second">
+                    <img
+                      src="../src/assets/icons/icon2.png"
+                      alt="Promoções Exclusivas"
+                    />
+                  </div>
+                  <div class="melhor-content collapsible-header">
+                    <h3>Promoções Exclusivas</h3>
+                    <p>
+                      Envie promoções personalizadas e exclusivas para os
+                      clientes que frequentam seu estabelecimento.
+                    </p>
+                  </div>
+                  <div class="icon"><i class="material-icons">add</i></div>
+                </div>
+                <div class="collapsible-body">
+                  <span>
+                    Por meio da plataforma exclusiva de Gestão, você poderá
+                    acompanhar o consumo de seus clientes e criar promoções
+                    exclusivas de acordo com a sua necessidade.
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Maior Faturamento -->
+            <ul
+              class="collapsible cards faturamento-melhor"
+              data-collapsible="accordion"
+            >
+              <li>
+                <div class="collapsible-header">
+                  <div class="module-third">
+                    <img
+                      src="../src/assets/icons/icon3.png"
+                      alt="Maior Faturamento"
+                    />
+                  </div>
+                  <div class="melhor-content collapsible-header">
+                    <h3>Maior Faturamento</h3>
+                    <p>
+                      Aumente a rotatividade de pessoas, otimize a mão de obra e
+                      envie promoções exclusivas para os usuários LIUV.
+                    </p>
+                  </div>
+                  <div class="icon"><i class="material-icons">add</i></div>
+                </div>
+                <div class="collapsible-body">
+                  <span>
+                    Com a Liuv em seu estabelecimento você reduz o tempo de fila
+                    para o pagamento do consumo e o tempo de espera para fazer o
+                    pedido.
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Conheça seu Cliente -->
+            <ul
+              class="collapsible cards conheca-melhor"
+              data-collapsible="accordion"
+            >
+              <li>
+                <div class="collapsible-header">
+                  <div class="module-fourth">
+                    <img
+                      src="../src/assets/icons/icon4.png"
+                      alt="Maior Faturamento"
+                    />
+                  </div>
+                  <div class="melhor-content collapsible-header">
+                    <h3>Conheça seu Cliente</h3>
+                    <p>
+                      Saiba a frequência, consumo e a data de aniversário dos
+                      seus clientes do seu restaurante. Envie promoções e
+                      aumente o engajamento.
+                    </p>
+                  </div>
+                  <div class="icon"><i class="material-icons">add</i></div>
+                </div>
+                <div class="collapsible-body">
+                  <span>
+                    A Liuv possui uma plataforma exclusiva de Gestão, onde
+                    poderá acompanhar os relatórios de vendas, fazer gestão dos
+                    produtos, entendendo o perfil de vendas e o comportamento de
+                    consumo do seu cliente.
+                  </span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -316,7 +417,9 @@
               </p>
               <a
                 class="waves-effect waves-light btn modal-trigger"
-                href="#modal1">Quero integrar</a>
+                href="#modal1"
+                >Quero integrar</a
+              >
             </div>
 
             <div class="organizer">
@@ -324,51 +427,63 @@
                 <a class="carousel-item" href="#Teknisa!">
                   <img
                     alt="Teknisa"
-                    src="../src/assets/logos/integracoes/logo__teknisa.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/logo__teknisa.png"
+                  />
+                </a>
                 <a class="carousel-item" href="#Aloha!">
                   <img
                     alt="Aloha"
-                    src="../src/assets/logos/integracoes/logo_aloha.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/logo_aloha.png"
+                  />
+                </a>
                 <a class="carousel-item" href="#Altec!">
-                  <img alt="Altec" src="../src/assets/logos/integracoes/logo_altec.png">
+                  <img
+                    alt="Altec"
+                    src="../src/assets/logos/integracoes/logo_altec.png"
+                  />
                 </a>
                 <a class="carousel-item" href="#Colibri!">
                   <img
                     alt="Colibri"
-                    src="../src/assets/logos/integracoes/logo_colibri.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/logo_colibri.png"
+                  />
+                </a>
                 <a class="carousel-item" href="#Datamais!">
                   <img
                     alt="Datamais"
-                    src="../src/assets/logos/integracoes/logo_datamais.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/logo_datamais.png"
+                  />
+                </a>
                 <a class="carousel-item" href="#Linx!">
                   <img
                     alt="Linx"
-                    src="../src/assets/logos/integracoes/logo_linx.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/logo_linx.png"
+                  />
+                </a>
                 <a class="carousel-item" href="#NCR!">
                   <img
                     alt="NCR"
-                    src="../src/assets/logos/integracoes/logo_ncr.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/logo_ncr.png"
+                  />
+                </a>
                 <a class="carousel-item" href="#Pacnet!">
                   <img
                     alt="Pacnet"
-                    src="../src/assets/logos/integracoes/logo_pacnet.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/logo_pacnet.png"
+                  />
+                </a>
                 <a class="carousel-item" href="#EPOC!">
                   <img
                     alt="EPOC"
-                    src="../src/assets/logos/integracoes/logoepoc.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/logoepoc.png"
+                  />
+                </a>
                 <a class="carousel-item" href="#TOTVS!">
                   <img
                     alt="TOTVS"
-                    src="../src/assets/logos/integracoes/totvs-logo.png"/>
-                  </a>
+                    src="../src/assets/logos/integracoes/totvs-logo.png"
+                  />
+                </a>
               </div>
               <p>
                 Os principais fornecedores de PDV estão aproveitando a LIUV para
@@ -377,7 +492,6 @@
             </div>
           </div>
         </div>
-
 
         <!-- Section Pagamentos Aceitos -->
         <div class="pagamentos-aceitos">
@@ -390,11 +504,16 @@
                 crédito. Com ele, você faz pagamentos, que virão na sua conta.
               </p>
               <div class="cartoes">
-                <img class="visa" src="../src/assets/icons/visa.svg" alt="Visa" />
+                <img
+                  class="visa"
+                  src="../src/assets/icons/visa.svg"
+                  alt="Visa"
+                />
                 <img
                   class="master"
                   src="../src/assets/icons/master.svg"
-                  alt="Master Card"/>
+                  alt="Master Card"
+                />
                 <img class="elo" src="../src/assets/icons/elo.svg" alt="Elo" />
               </div>
             </div>
@@ -498,8 +617,8 @@
               <source
                 src="../src/assets/video/Liuv_Villa-Gusto.mp4"
                 type="video/mp4"
-              /> 
-            </video> 
+              />
+            </video>
           </div>
         </div>
 
@@ -511,19 +630,20 @@
             aumentam o faturamento, fidelizando o cliente e com ações exclusivas
             para seus clientes.
           </p>
-          <br/>
+          <br />
           <!-- Modal Trigger -->
-          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Entrar em contato</a>
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1"
+            >Entrar em contato</a
+          >
         </div>
-         <!-- Modal Structure -->
-         <div id="modal1" class="modal form-b2b">
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal form-b2b">
           <a
             href="#!"
             class="modal-action modal-close waves-effect waves-green btn-flat"
             >&#10005;
           </a>
           <div class="modal-content">
-
             <div class="modal-introduction">
               <h3>Quer saber mais?</h3>
               <p>Envie seus dados e entramos em contato com você.</p>
@@ -615,54 +735,59 @@
           </div>
         </div>
 
-        <!-- Sugestão de novo local para o carousel -->
+        <!-- Carousel -->
         <div class="carousel carousel-footer">
           <h2>Nossos Clientes</h2>
           <a class="carousel-item" href="http://barakah.net.br/">
-            <img alt="Barakah" src="../src/assets/logos/barakah1.png"/>
+            <img alt="Barakah" src="../src/assets/logos/barakah1.png" />
           </a>
           <a class="carousel-item" href="https://www.debetti.com.br/">
-            <img alt="DeBetti" src="../src/assets/logos/debetti.png"/>
+            <img alt="DeBetti" src="../src/assets/logos/debetti.png" />
           </a>
           <a class="carousel-item" href="#three!">
-            <img alt="Juli" src="../src/assets/logos/juli.png"/>
+            <img alt="Juli" src="../src/assets/logos/juli.png" />
           </a>
           <a class="carousel-item" href="#four!">
-            <img alt="Santo Gusto" src="../src/assets/logos/santogusto.png"/>
+            <img alt="Santo Gusto" src="../src/assets/logos/santogusto.png" />
           </a>
           <a class="carousel-item" href="#five!">
-            <img alt="Pasta Grill" src="../src/assets/logos/pastagrill.png"/>
+            <img alt="Pasta Grill" src="../src/assets/logos/pastagrill.png" />
           </a>
           <a class="carousel-item" href="https://www.sapore.com.br/">
-            <img alt="Sapore" src="../src/assets/logos/sapore.png"/>
+            <img alt="Sapore" src="../src/assets/logos/sapore.png" />
           </a>
           <a class="carousel-item" href="http://terracopaulistano.com.br/">
-            <img alt="Terraco Paulistano" src="../src/assets/logos/terracopaulistano.png"/>
+            <img
+              alt="Terraco Paulistano"
+              src="../src/assets/logos/terracopaulistano.png"
+            />
           </a>
           <a class="carousel-item" href="https://www.villagusto.com.br/">
-            <img alt="Villa Gusto" src="../src/assets/logos/villagusto.png"/>
+            <img alt="Villa Gusto" src="../src/assets/logos/villagusto.png" />
           </a>
         </div>
-
       </div>
     </main>
 
-    <hr/>
-    <br/>
+    <hr />
+    <br />
     <!-- Footer -->
     <footer class="liuv-footer">
       <div class="downloads">
-        <a href="/"><img
+        <a href="/"
+          ><img
             src="../src/assets/logos/logo-grad.png"
             class="logofooter"
-            alt="LIUV Logo"/>
+            alt="LIUV Logo"
+          />
         </a>
         <a href="/">
           <img
             src="../src/assets/icons/appe.png"
             class="apple-store"
-            alt="Apple Store"/>
-          </a>
+            alt="Apple Store"
+          />
+        </a>
         <a href="/"
           ><img
             src="../src/assets/icons/pay.png"
@@ -720,10 +845,10 @@
           <div class="column">
             <div class="media-icons">
               <a href="#">
-                <img src="../src/assets/icons/facebook.png" alt="Facebook"/>
+                <img src="../src/assets/icons/facebook.png" alt="Facebook" />
               </a>
               <a href="#">
-                <img src="../src/assets/icons/instagram.png" alt="Instgram"/>
+                <img src="../src/assets/icons/instagram.png" alt="Instgram" />
               </a>
             </div>
           </div>
@@ -741,6 +866,7 @@
     <script src="../src/scripts/hamburguer.js"></script>
     <script src="../src/scripts/carousel-restaurant.js"></script>
     <script src="../src/scripts/solutions.js"></script>
+    <script src="../src/scripts/collapse.js"></script>
     <script src="../src/scripts/modal.js"></script>
     <script src="../src/scripts/form.js"></script>
   </body>

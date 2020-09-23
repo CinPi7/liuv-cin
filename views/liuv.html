@@ -12,8 +12,10 @@
 
     <link rel="stylesheet" href="../src/styles/global.css">
     <link rel="stylesheet" href="../src/styles/common/header.css">
+    <link rel="stylesheet" href="../src/styles/liuv.css">
+    <link rel="stylesheet" href="../src/styles/common/footer.css">
 </head>
-<body>
+<body >
 <!-- Header Navegation -->
 <header class="liuv-header">
     <a href="/"><img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" /></a>
@@ -33,7 +35,7 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
-      <a href="/" class="left">A Liuv</a>
+      <a href="./liuv.html" class="left">A Liuv</a>
       <a href="./client.html" class="left">Usuários</a>
       <a href="/" class="left">Como funciona</a>
       <a href="./ajuda.html" class="left">Ajuda</a>
@@ -46,16 +48,111 @@
       <img src="../src/assets/icons/menu.png" alt="Menu" />
     </span>
   </header>
-  <hr />
-    <main>
+    <main id="about-body">
       <div class="main">
         <div class="about-liuv">
-            
+            <p>
+              A LIUV é uma startup criada para simplificar a maneira de fazer pedidos e de pagar a conta em
+              bares e restaurantes, além de descomplicar os programas de fidelidade do dia-a-dia, utilizando
+              o aplicativo, para construir uma relação mais próxima entre os estabelecimentos e seus
+              clientes, transformando a experiência dos clientes mais prática e vantajosa. Tendo como
+              objetivo de gerar informações valiosas para as empresas sobre o perfil dos seus clientes.
+
+              Formada por quatro sócios, a LIUV tem como diferencial o foco na excelência,
+              comprometimento com o sucesso dos nossos clientes e valorizando as relações pessoais.
+            </p>
 
         </div>
 
       </div>
     </main>
-    
+    <!-- Footer -->
+    <footer class="liuv-footer">
+      <div class="downloads">
+        <a href="/"
+          ><img
+            src="../src/assets/logos/logo-grad.png"
+            class="logofooter"
+            alt="LIUV Logo"
+        /></a>
+        <a href="/"
+          ><img
+            src="../src/assets/icons/appe.png"
+            class="apple-store"
+            alt="Apple Store"
+        /></a>
+        <a href="/"
+          ><img
+            src="../src/assets/icons/pay.png"
+            class="play-store"
+            alt="Play Store"
+        /></a>
+      </div>
+      <div class="footer-container">
+        <div class="first-row">
+          <div class="column">
+            <h4>Produtos</h4>
+            <p>
+              Usuários <br />
+              Restaurantes <br />
+              Intergrações PDV <br />
+              Como funciona? <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Recursos</h4>
+            <p>
+              Blog <br />
+              Apoio suporte <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Empresa</h4>
+            <p>
+              Sobre <br />
+              Carreiras <br />
+              Termos de Uso <br />
+              Política de Privacidade <br />
+            </p>
+          </div>
+          <div class="column">
+            <h4>Outros</h4>
+            <p>
+              Login de restaurantes <br />
+              Login de usuários <br />
+              Contato <br />
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="second-row">
+          <div class="column">
+            <h4>Brasil</h4>
+            <p>
+              Rua Jesuíno Arruda 797, CJ 72, Itaim Bibi <br />
+              São Paulo <br />
+              +55 (11) 3854-1774 <br />
+              +55 (11) 3230-9223 <br />
+            </p>
+          </div>
+          <div class="column">
+            <div class="media-icons">
+              <a href="#"
+                ><img src="../src/assets/icons/facebook.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="../src/assets/icons/instagram.png" alt="Instgram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="../src/scripts/hamburguer.js"></script>
 </body>
 </html>
