@@ -14,3 +14,11 @@ main div.carousel-footer img {
 
   height: 15rem;
 }
+
+main div.carousel-footer h2{
+  font-size: 2rem;
+  color: var(--titles);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
