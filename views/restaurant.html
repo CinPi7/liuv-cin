@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="../src/styles/common/melhor.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/integracoes.css" />
     <link rel="stylesheet" href="../src/styles/common/form.css" />
-    <link rel="stylesheet" href="../src/styles/solution/modal.css" />
+    <link rel="stylesheet" href="../src/styles/restaurant/modal-integra.css" />
+    <link rel="stylesheet" href="../src/styles/solution/modal.css">
     <link rel="stylesheet" href="../src/styles/common/pagamentos.css" />
     <link rel="stylesheet" href="../src/styles/common/parceiros.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/simplifica.css" />
@@ -88,7 +89,6 @@
                 </span>
               </div>
             </div>
-
             <div class="carousel-item b2b-2" href="#two!">
               <div class="about-content">
                 <span>
@@ -101,14 +101,12 @@
                 </button>
               </div>
             </div>
-
             <div class="carousel-item b2b-3" href="#three!">
               <div class="about-content">
                 <h1>Benefícios da LIUV</h1>
                 <span>Sem fila, segurança com pedido e pagamento.</span>
               </div>
             </div>
-
             <div class="carousel-item b2b-4" href="#four!">
               <div class="about-content">
                 <span>Integração com os principais sistemas de PDV.</span>
@@ -149,7 +147,7 @@
               </button>
             </div>
 
-            <div id="solutionCardapio" style="display: flex">
+            <div id="solutionCardapio" class="solutions-content" style="display: flex">
               <div class="side-position">
                 <div class="content">
                   <p>
@@ -167,7 +165,7 @@
               </div>
             </div>
 
-            <div id="solutionComanda">
+            <div id="solutionComanda" class="solutions-content">
               <div class="side-position">
                 <div class="content">
                   <p>
@@ -178,7 +176,7 @@
                     pagamento o cliente entrega a comanda paga para um
                     atendente.
                   </p>
-                  <a href="/">Quero saber mais</a>
+                  <a href="./solucoes.html#comanda">Quero saber mais</a>
                 </div>
                 <div class="draw">
                   <img src="../src/assets/images/comanda.png" alt="Comanda" />
@@ -186,7 +184,7 @@
               </div>
             </div>
 
-            <div id="solutionDelivery">
+            <div id="solutionDelivery" class="solutions-content">
               <div class="side-position">
                 <div class="content">
                   <p>
@@ -195,18 +193,18 @@
                     canal de vendas para seu restaurante sem taxas abusivas. ​É
                     simples, rápido e seguro.
                   </p>
-                  <a href="/">Quero saber mais</a>
+                  <a href="./solucoes.html#delivery">Quero saber mais</a>
                 </div>
                 <div class="draw">
                   <img
-                    src="../src/assets/images/"
+                    src="../src/assets/images/delivery.png"
                     alt="Delivery"
                   />
                 </div>
               </div>
             </div>
 
-            <div id="solutionPagamentoNaMesa">
+            <div id="solutionPagamentoNaMesa" class="solutions-content">
               <div class="side-position">
                 <div class="content">
                   <p>
@@ -216,7 +214,7 @@
                     arcu ante, ac molestie urna posuere id. Proin tempor ut
                     ipsum in rhoncus.
                   </p>
-                  <a href="/">Quero saber mais</a>
+                  <a href="./solucoes.html#mesa">Quero saber mais</a>
                 </div>
                 <div class="draw">
                   <img
@@ -227,7 +225,7 @@
               </div>
             </div>
 
-            <div id="solutionPre">
+            <div id="solutionPre" class="solutions-content">
               <div class="side-position">
                 <div class="content">
                   <p>
@@ -237,7 +235,7 @@
                     Etiam varius arcu non tortor lacinia, sit amet vulputate
                     augue bibendum.
                   </p>
-                  <a href="/">Quero saber mais</a>
+                  <a href="./solucoes.html#prepedido">Quero saber mais</a>
                 </div>
                 <div class="draw">
                   <img src="../src/assets/images/prepedidosolucao.png" alt="Pre Pedido" />
@@ -245,7 +243,7 @@
               </div>
             </div>
 
-            <div id="solutionQRCode">
+            <div id="solutionQRCode" class="solutions-content">
               <div class="side-position">
                 <div class="content">
                   <p>
@@ -256,7 +254,7 @@
                     ligula leo sit amet sem. Etiam varius arcu non tortor
                     lacinia, sit amet vulputate augue bibendum.
                   </p>
-                  <a href="/">Quero saber mais</a>
+                  <a href="./solucoes.html#qrcode">Quero saber mais</a>
                 </div>
                 <div class="draw">
                   <img src="../src/assets/images/solucoes.png" alt="QR Code" />
@@ -275,8 +273,7 @@
           <div class="cards-box">
             <ul
               class="collapsible cards programa-fidelidade"
-              data-collapsible="accordion"
-            >
+              data-collapsible="accordion">
               <li>
                 <div class="collapsible-header">
                   <div class="module">
@@ -407,95 +404,188 @@
 
         <!-- Section Integracoes -->
         <div class="integracoes">
-          <div><h2>Integrações</h2></div>
           <div class="integra-container">
-            <div class="box-integracoes">
-              <p>
-                Temos fácil integração com qualquer frente de caixa, fazemos
-                isso sem mudar o fluxo atual do restaurante. <br /><br />
-                Se você for uma empresa de PDV e tem interesse na LIUV.
-              </p>
-              <a
-                class="waves-effect waves-light btn modal-trigger"
-                href="#modal1"
-                >Quero integrar</a
-              >
-            </div>
-
-            <div class="organizer">
-              <div class="carousel">
-                <a class="carousel-item" href="#Teknisa!">
-                  <img
-                    alt="Teknisa"
-                    src="../src/assets/logos/integracoes/logo__teknisa.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#Aloha!">
-                  <img
-                    alt="Aloha"
-                    src="../src/assets/logos/integracoes/logo_aloha.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#Altec!">
-                  <img
-                    alt="Altec"
-                    src="../src/assets/logos/integracoes/logo_altec.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#Colibri!">
-                  <img
-                    alt="Colibri"
-                    src="../src/assets/logos/integracoes/logo_colibri.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#Datamais!">
-                  <img
-                    alt="Datamais"
-                    src="../src/assets/logos/integracoes/logo_datamais.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#Linx!">
-                  <img
-                    alt="Linx"
-                    src="../src/assets/logos/integracoes/logo_linx.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#NCR!">
-                  <img
-                    alt="NCR"
-                    src="../src/assets/logos/integracoes/logo_ncr.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#Pacnet!">
-                  <img
-                    alt="Pacnet"
-                    src="../src/assets/logos/integracoes/logo_pacnet.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#EPOC!">
-                  <img
-                    alt="EPOC"
-                    src="../src/assets/logos/integracoes/logoepoc.png"
-                  />
-                </a>
-                <a class="carousel-item" href="#TOTVS!">
-                  <img
-                    alt="TOTVS"
-                    src="../src/assets/logos/integracoes/totvs-logo.png"
-                  />
-                </a>
+            <h2>Integrações</h2>
+            <div class="sidepositionintegra">
+              <div class="box-integracoes">
+                <p>
+                  Temos fácil integração com qualquer frente de caixa, fazemos
+                  isso sem mudar o fluxo atual do restaurante. </p><p>
+                  Se você for uma empresa de PDV e tem interesse na LIUV.
+                </p>
+                <a
+                  class="waves-effect waves-light btn modal-trigger"
+                  href="#modal2">Quero integrar</a>
               </div>
-              <p>
-                Os principais fornecedores de PDV estão aproveitando a LIUV para
-                expandir suas ofertas.
-              </p>
+
+              <div class="organizer">
+                <div class="carousel">
+                  <a class="carousel-item" href="#Teknisa!">
+                    <img
+                      alt="Teknisa"
+                      src="../src/assets/logos/integracoes/logo__teknisa.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#Aloha!">
+                    <img
+                      alt="Aloha"
+                      src="../src/assets/logos/integracoes/logo_aloha.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#Altec!">
+                    <img
+                      alt="Altec"
+                      src="../src/assets/logos/integracoes/logo_altec.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#Colibri!">
+                    <img
+                      alt="Colibri"
+                      src="../src/assets/logos/integracoes/logo_colibri.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#Datamais!">
+                    <img
+                      alt="Datamais"
+                      src="../src/assets/logos/integracoes/logo_datamais.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#Linx!">
+                    <img
+                      alt="Linx"
+                      src="../src/assets/logos/integracoes/logo_linx.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#NCR!">
+                    <img
+                      alt="NCR"
+                      src="../src/assets/logos/integracoes/logo_ncr.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#Pacnet!">
+                    <img
+                      alt="Pacnet"
+                      src="../src/assets/logos/integracoes/logo_pacnet.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#EPOC!">
+                    <img
+                      alt="EPOC"
+                      src="../src/assets/logos/integracoes/logoepoc.png"
+                    />
+                  </a>
+                  <a class="carousel-item" href="#TOTVS!">
+                    <img
+                      alt="TOTVS"
+                      src="../src/assets/logos/integracoes/totvs-logo.png"
+                    />
+                  </a>
+                </div>
+                <p>
+                  Os principais fornecedores de PDV estão aproveitando a LIUV para
+                  expandir suas ofertas.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- Modal Form Integração -->
+        <div class="modal-integra">
+          <div id="modal2" class="modal">
+            <a
+              href="#!"
+              class="modal-action modal-close waves-effect waves-green btn-flat"
+              >&#10005;
+            </a>
+            <div class="modal-content">
+              <div class="modal-introduction">
+                <h3>Quer saber mais?</h3>
+                <p>Envie seus dados e entramos em contato com você.</p>
+              </div>
+            <form action="#" method="">
+              <fieldset>
+                <!-- first line -->
+                <div class="field-group">
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Nome do responsável"
+                      required="required"
+                      name="name"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Telefone do responsável"
+                      required="required"
+                      name="tel"
+                    />
+                  </div>
+                </div>
+                <!-- second line -->
+                <div class="field-group">
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="E-mail do responsável"
+                      required="required"
+                      name="email"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Sistema"
+                      required="required"
+                      name="system"
+                    />
+                  </div>
+                </div>
+                <!-- third line -->
+                <div class="field-group">
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="A API é pública?"
+                      required="required"
+                      name="API"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      placeholder="Tipo de Integração (API REST, API SOAP)"
+                      required="required"
+                      name="integrate"
+                    />
+                  </div>
+                </div>
+                <!-- Attach -->
+                <div class="field-group">
+                  <div class="field">
+                    <div class="file-field">
+                      <div class="btn">
+                        <span>Anexar</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Documentação Pública ou PDF">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <div class="send-btn-modal"><button type="submit">Enviar</button></div>
+          </div>
+        </div>
+        </div>
+
         <!-- Section Pagamentos Aceitos -->
         <div class="pagamentos-aceitos">
-          <div><h2>Pagamentos Aceitos</h2></div>
+          <h2>Pagamentos Aceitos</h2>
           <div class="meios-pagamentos">
             <div class="credito">
               <h3>Crédito</h3>
@@ -637,101 +727,103 @@
           >
         </div>
         <!-- Modal Structure -->
-        <div id="modal1" class="modal form-b2b">
-          <a
-            href="#!"
-            class="modal-action modal-close waves-effect waves-green btn-flat"
-            >&#10005;
-          </a>
-          <div class="modal-content">
-            <div class="modal-introduction">
-              <h3>Quer saber mais?</h3>
-              <p>Envie seus dados e entramos em contato com você.</p>
-            </div>
+        <div class="form-b2b">  
+          <div id="modal1" class="modal">
+            <a
+              href="#!"
+              class="modal-action modal-close waves-effect waves-green btn-flat"
+              >&#10005;
+            </a>
+            <div class="modal-content">
+              <div class="modal-introduction">
+                <h3>Quer saber mais?</h3>
+                <p>Envie seus dados e entramos em contato com você.</p>
+              </div>
 
-            <form action="#" method="">
-              <fieldset>
-                <!-- first line -->
-                <div class="field-group">
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Nome do Restaurante"
-                      required="required"
-                      name="restaurante"
-                    />
+              <form action="#" method="">
+                <fieldset>
+                  <!-- first line -->
+                  <div class="field-group">
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Nome do Restaurante"
+                        required="required"
+                        name="restaurante"
+                      />
+                    </div>
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Endereço"
+                        required="required"
+                        name="address"
+                      />
+                    </div>
                   </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Endereço"
-                      required="required"
-                      name="address"
-                    />
+                  <!-- second line -->
+                  <div class="field-group">
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Nome do Responsável"
+                        required="required"
+                        name="nome"
+                      />
+                    </div>
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Sistema Emissor de Notas"
+                        required="required"
+                        name="note"
+                      />
+                    </div>
                   </div>
-                </div>
-                <!-- second line -->
-                <div class="field-group">
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Nome do Responsável"
-                      required="required"
-                      name="nome"
-                    />
+                  <!-- third line -->
+                  <div class="field-group">
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Telefone"
+                        required="required"
+                        name="tel"
+                      />
+                    </div>
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="E-mail"
+                        required="required"
+                        name="email"
+                      />
+                    </div>
                   </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Sistema Emissor de Notas"
-                      required="required"
-                      name="note"
-                    />
+                  <div class="field-group">
+                    <div class="field">
+                      <select class="browser-default">
+                        <option value="" disabled selected nome="sistema">
+                          Produto de maior interesse
+                        </option>
+                        <option value="1">Cardápio Digital</option>
+                        <option value="2">Fluxos de Pagamento</option>
+                        <option value="3">Delivery</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <textarea
+                        placeholder="Observações"
+                        id="observation"
+                        type="text"
+                        class="validate"
+                      ></textarea>
+                      <label for="observation" class="active"></label>
+                    </div>
                   </div>
-                </div>
-                <!-- third line -->
-                <div class="field-group">
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Telefone"
-                      required="required"
-                      name="tel"
-                    />
-                  </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="E-mail"
-                      required="required"
-                      name="email"
-                    />
-                  </div>
-                </div>
-                <div class="field-group">
-                  <div class="field">
-                    <select class="browser-default">
-                      <option value="" disabled selected nome="sistema">
-                        Produto de maior interesse
-                      </option>
-                      <option value="1">Cardápio Digital</option>
-                      <option value="2">Fluxos de Pagamento</option>
-                      <option value="3">Delivery</option>
-                    </select>
-                  </div>
-                  <div class="field">
-                    <textarea
-                      placeholder="Observações"
-                      id="observation"
-                      type="text"
-                      class="validate"
-                    ></textarea>
-                    <label for="observation" class="active"></label>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-            <button type="submit">Enviar</button>
+                </fieldset>
+              </form>
+              <button type="submit">Enviar</button>
+            </div>
           </div>
         </div>
 
