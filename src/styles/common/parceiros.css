@@ -14,7 +14,7 @@ main div.parceiros {
 main div.parceiros > h2 {
   font-size: 2.4rem;
   color: var(--titles);
-  margin: 0 !important;
+  margin: 2rem 0 !important;
 }
 
 main div.parceiros div.testemunials {

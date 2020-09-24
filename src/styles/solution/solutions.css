@@ -9,16 +9,16 @@ div.solution-section {
 }
 
 div.solution-section h2 {
-  color: var(--black);
+  color: var(--titles);
   font-size: 2.6rem;
 
-  margin-top: 0;
+  margin-top: 2rem;
   padding-bottom: 0.6rem;
   text-align: center;
 }
 
-div.solution-section div.cardapio h2 {
-  margin-top: 3rem;
+div.solution-section .comanda {
+  margin-top: 0rem;
 }
 
 div.solution-section p {
@@ -83,10 +83,15 @@ div.cardapio div div.mobile-center {
   justify-content: center;
 }
 
+div.solution-section .cardapio img {
+  width: 90%;
+  height: 70%;
+}
+
 @media (min-width: 400px) {
   div.solution-section {
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
   div.solution-section p, div.solution-section h2 {
     text-align: left;
@@ -100,6 +105,9 @@ div.cardapio div div.mobile-center {
   div.solution-section {
     margin: 1rem auto;
     max-width: 1440px;
+  }
+  div.solution-section .comanda {
+    margin-top: 2rem;
   }
   div.cardapio,
   div.prepedido,
@@ -150,13 +158,14 @@ div.cardapio div div.mobile-center {
   div.cardapio p{
     margin-right: 1rem;
   }
-  div.cardapio img{
-    margin-right: 1rem;
-    width: 50%;
+  div.solution-section .cardapio img {
+    width: 35rem;
+    height: 35rem;
+    max-width: none;
   }
   div.comanda div.solution-image img {
     margin-right: 2rem;
-    height: 25rem;
+    height: 23rem;
 
     margin-left: -3rem;
   }
@@ -174,13 +183,6 @@ div.cardapio div div.mobile-center {
     margin-top: -2rem;
     margin-left: -1rem;
     margin-right: 1.6rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  div.solution-section img {
-    width: 37rem;
-    height: 26rem;
   }
 }
 

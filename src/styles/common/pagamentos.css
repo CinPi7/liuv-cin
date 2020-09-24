@@ -4,8 +4,11 @@ main .pagamentos-aceitos {
   max-width: 1400px;
 }
 
-#client-body main .pagamentos-aceitos {
+#client-body main .background-pagamentos {
   background-color: var(--white-darker);
+}
+#client-body main .background-pagamentos h2{
+  padding-left: 0.1rem;
 }
 
 main .pagamentos-aceitos h2 {

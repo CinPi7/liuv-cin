@@ -1,107 +1,97 @@
-.solution-modal {
+.form-b2b .modal {
   background: linear-gradient(
     90deg,
     rgba(255, 107, 43, 0.9) 0%,
     rgba(238, 47, 83, 0.9) 100%
   );
   height: auto;
-  width: auto;
 }
 
-.solution-modal .modal-content {
+.form-b2b .modal-content {
   height: auto;
+}
 
-  padding: 0 !important;
-  width: 100%;
-
+.form-b2b .modal-introduction {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.solution-modal .modal-introduction{
-  margin-left: 1rem;
-  margin-right: 1rem;
-
+  flex-direction: column;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-@media(min-width: 300px){
-  .solution-modal .modal-introduction{
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
+.form-b2b .modal-content > h3 {
+  font-size: 2.6rem;
 }
 
-.solution-modal .modal-content > h3{
-  font-size: 2rem;
+.form-b2b .modal-content p {
+  font-size: 1.4rem;
 }
 
-.solution-modal .modal-content p {
-  font-size: 1rem;
-  margin-top: 1.6rem;
-}
-
-.solution-modal .modal .modal-footer {
+.form-b2b .modal .modal-footer {
   background: transparent;
   bottom: 0;
 }
 
-.solution-modal > a {
+.form-b2b a {
   color: white;
-
-  float: right;
-  margin-top: 0.6rem;
-  margin-right: 0.6rem;
-
   background-color: rgba(231, 103, 130, 0.8267507686668417);
   border-radius: 50%;
   border: 1px solid rgba(235, 156, 123, 0.468207351299895);
-  line-height: 2.3rem;
-  padding: 2px 11px 0px 13px;
+  line-height: 2.5rem;
+  padding-right: 13px;
+  padding-left: 13px;
+
+  float: right;
+  margin-top: 0.5rem;
+  margin-right: 0.2rem;
 }
 
-.solution-modal form fieldset {
-  padding: 0;
-  margin: 2rem;
+/* Modal Form */
+.form-b2b form fieldset {
+  margin: 0;
   border: 0;
+  margin-left: -0.9rem;
 }
-
-.solution-modal form .field {
+.form-b2b form .field {
   flex: 1;
   display: flex;
   flex-direction: column;
   height: 4.2rem;
 }
 
-.solution-modal .field-group {
-  display: flex;
-  flex-direction: column;
-}
+/*
+  .form-b2b .modal .field-group {
+    display: flex;
+    flex-direction: column;
+  }
+  */
 
-.solution-modal form select, form textarea {
+.form-b2b form select,
+form textarea {
   font-family: "Bariol Regular";
   font-size: 1rem !important;
-  width: 105%;
+  border-radius: 5px;
+  border-bottom: none;
   background: linear-gradient(
     90deg,
     rgba(235, 156, 123, 0.468207351299895) 0%,
     rgba(231, 103, 130, 0.8267507686668417) 100%
   );
-  border: none;
-  border-radius: 9px;
+  padding-left: 10px;
+  margin: 0;
+  color: white;
 }
 
-.solution-modal form textarea{
-  margin-top: 1.4rem;
+.form-b2b form textarea {
   padding-top: 0.8rem;
+  width: 103%;
 }
 
-.solution-modal form::placeholder {
+.form-b2b form::placeholder {
   color: white !important;
 }
 
-.solution-modal form input[type="text"],
+.form-b2b form input[type="text"],
 textarea,
 select {
   border: none;
@@ -115,16 +105,16 @@ select {
   padding-left: 10px;
 }
 
-.solution-modal form input[type="text"]:focus {
+.form-b2b form input[type="text"]:focus {
   border-bottom: none !important;
   box-shadow: none !important;
 }
 
-.solution-modal button {
+.form-b2b button {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   font-size: 1rem;
   color: white;
   border: none;
@@ -137,21 +127,89 @@ select {
   float: bottom;
 }
 
+.form-b2b .broweser-default,
+form select {
+  font-family: "Bariol Regular";
+  font-size: 1rem !important;
+  width: 103%;
+  background-color: rgba(231, 103, 130, 0.8267507686668417);
+  border: none;
+  border-radius: 3px;
+}
+
+.form-b2b .form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 700px) {
-  .solution-modal .fieldset{
-    margin: 0;
+  /* #restaurant-body .modal-integra  .field-group {
+      display: flex;
+      flex-direction: row;
+    } */
+  .form-b2b button {
+    width: 20rem;
   }
-  .solution-modal form .field {
-    padding-right: 1rem;
-    padding-left: 1.6rem;
-    margin: 0;
-    width: 100%;
+  .form-b2b a {
+    margin-right: 0.4rem;
   }
-  .solution-modal form select,
-  .solution-modal form textarea{
-    width: 105%;
+  .form-b2b form .field {
+    margin-left: 20%;
+    margin-right: 20%;
   }
-  .solution-modal form textarea{
-    margin-top: 0;
+}
+
+/* Sessões Formulário Solutions */
+div.gestao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+div.gestao  ul.atendimentos li:nth-child(1){
+  margin-top: 2rem;
+}
+div.gestao h2{
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  color: var(--titles);
+}
+div.gestao p {
+  color: var(--gray);
+  font-size: 1.4rem;
+  margin: 2rem;
+}
+div.gestao .gestao-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+div.gestao .gestao-box img {
+  height: 100%;
+  width: 100%;
+  max-width: 40rem;
+}
+div.gestao ul.gestao-list {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+div.gestao ul.gestao-list li{
+  font-size: 1.2rem;
+  list-style-type: disc;
+  color: var(--shadow);
+}
+
+@media (min-width: 900px){
+  div.gestao .gestao-box {
+    flex-direction: row;
+  }
+  div.gestao ul.gestao-list {
+    margin-top: 10%;
   }
 }

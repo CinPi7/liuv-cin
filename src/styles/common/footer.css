@@ -10,6 +10,12 @@ footer.liuv-footer {
   max-width: 1440px;
 }
 
+footer.liuv-footer a{
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
 footer.liuv-footer .downloads {
   margin-top: 2rem;
   margin-right: 7rem;
@@ -69,6 +75,8 @@ footer.liuv-footer div.media-icons img {
 
 footer.liuv-footer h4 {
   font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 0.4rem;
 }
 
 footer.liuv-footer p {
