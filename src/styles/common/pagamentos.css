@@ -1,23 +1,19 @@
 main .pagamentos-aceitos {
   height: auto;
-  padding: 1rem 2rem 1.6rem 2rem;
+  padding: 0.4rem 2rem 1rem 2rem;
+  max-width: 1400px;
 }
 
 #client-body main .pagamentos-aceitos {
   background-color: var(--white-darker);
 }
 
-main.pagamentos-aceitos > div {
-  margin-bottom: 1rem;
-
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 5%;
-}
 main .pagamentos-aceitos h2 {
-  font-size: 2rem;
-  color: var(--black);
+  font-size: 2.4rem;
+  color: var(--titles);
+  margin-bottom: 0.4rem !important;
 }
+
 main .pagamentos-aceitos .meios-pagamentos {
   display: flex;
   flex-direction: column;
@@ -28,7 +24,7 @@ main .pagamentos-aceitos .meios-pagamentos {
   text-align: left;
 }
 main .pagamentos-aceitos .meios-pagamentos h3 {
-  color: var(--black);
+  color: var(--titles);
   font-size: 1.6rem;
   letter-spacing: 0.5px;
 }
@@ -85,41 +81,35 @@ main .pagamentos-aceitos .meios-pagamentos .vl {
   display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
+  main .pagamentos-aceitos{
+    padding-left: 5%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   main .pagamentos-aceitos .meios-pagamentos {
     flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  main .pagamentos-aceitos .credito{
+    padding-right: 2rem;
+  }
+  main .pagamentos-aceitos .voucher{
+    padding-left: 2rem;
   }
   main .pagamentos-aceitos .meios-pagamentos .vl {
     display: flex;
     border-left: 0.5px solid var(--white-darker);
     height: 180px;
   }
-  main .pagamentos-aceitos .meios-pagamentos div.credito {
-    margin-right: 1rem;
-  }
-  main .pagamentos-aceitos .meios-pagamentos div.voucher {
-    margin-left: 2rem;
-  }
-  main .meios-pagamentos {
-    padding-left: 8%;
-    padding-right: 10%;
-  }
-  main .pagamentos-aceitos > div h2 {
-    padding-left: 6%;
-  }
 }
-@media (min-width: 910px) {
-  main .meios-pagamentos {
-    margin: 0 auto;
-    max-width: 1440px;
-  }
-  main .pagamentos-aceitos > div {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1500px) {
-  main .pagamentos-aceitos > div h2 {
-    margin-left: 1rem;
+
+@media (min-width: 1400px){
+  .pagamentos-aceitos h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
   }
 }

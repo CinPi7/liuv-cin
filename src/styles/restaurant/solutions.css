@@ -30,7 +30,6 @@
 }
 
 /* Show Text from Buttons */
-
 #restaurant-body main div.solutions div.solution-types button.buttonSolution {
   display: flex;
   background-color: transparent;
@@ -48,18 +47,13 @@
   div.solution-types
   div.buttonsContainer
   .buttonSolution.active,
-.buttonSolution:hover {
+  .buttonSolution:hover {
   border-left: 2px solid var(--primary-color-pink);
   background-color: none;
   color: var(--primary-color-pink);
 }
 
-#restaurant-body main div.solutions div.solution-types div#solutionCardapio,
-div#solutionComanda,
-div#solutionDelivery,
-div#solutionPagamentoNaMesa,
-div#solutionPre,
-div#solutionQRCode {
+#restaurant-body main div.solutions div.solution-types div.solutions-content{
   display: none;
   flex-direction: column;
   margin-top: 2rem;
@@ -154,7 +148,6 @@ div#solutionQRCode {
   padding-left: 2.4rem;
 }
 
-
 #restaurant-body
   main
   div.solutions
@@ -172,8 +165,8 @@ div#solutionQRCode {
     max-width: 1440px;
   }
   #restaurant-body main div.solutions > div.solution-types {
-    padding-left: 7%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 3%;
   }
   #restaurant-body main .side-position {
     display: flex;

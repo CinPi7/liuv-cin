@@ -1,0 +1,163 @@
+#restaurant-body .modal-integra .modal {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.9) 0%,
+    rgba(238, 47, 83, 0.9) 100%
+  );
+  height: auto;
+}
+
+#restaurant-body .modal-integra .modal-content {
+  height: auto;
+}
+
+#restaurant-body .modal-integra .modal-content > .modal-introduction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+}
+
+#restaurant-body .modal-integra h3 {
+  font-size: 2.6rem;
+}
+
+#restaurant-body .modal-integra p {
+  font-size: 1.4rem;
+}
+
+#restaurant-body .modal-integra .modal-footer {
+  background: transparent;
+  bottom: 0;
+}
+
+#restaurant-body .modal-integra a {
+  color: white;
+  background-color: rgba(231, 103, 130, 0.8267507686668417);
+  border-radius: 50%;
+  border: 1px solid rgba(235, 156, 123, 0.468207351299895);
+  line-height: 2.5rem;
+  padding-right: 13px;
+  padding-left: 13px;
+
+  float: right;
+  margin-top: 0.5rem;
+  margin-right: 0.2rem;
+}
+
+/* Modal Form */
+#restaurant-body .modal-integra form fieldset {
+  margin: 0;
+  border: 0;
+  margin-left: -0.9rem;
+}
+#restaurant-body .modal-integra form .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 4.2rem;
+}
+
+/*
+#restaurant-body .modal .field-group {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+#restaurant-body .modal-integra form input,
+select {
+  border-radius: 5px;
+  border-bottom: none;
+  background: linear-gradient(
+    90deg,
+    rgba(235, 156, 123, 0.468207351299895) 0%,
+    rgba(231, 103, 130, 0.8267507686668417) 100%
+  );
+  padding-left: 10px;
+  margin: 0;
+  color: white;
+}
+
+#restaurant-body .modal-integra form .file-field .btn {
+  margin-top: 0.4rem;
+  border-radius: 5px;
+  height: 2.8rem;
+}
+
+#restaurant-body .modal-integra .file-field {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#restaurant-body .modal-integra .send-btn-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#restaurant-body .modal-integra form .file-field {
+  margin-top: -0.3rem;
+}
+
+#restaurant-body .modal-integra form input[type="text"]:focus {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+#restaurant-body .modal-integra form input::placeholder {
+  color: white;
+}
+
+#restaurant-body .modal-integra .broweser-default,
+form select {
+  font-family: "Bariol Regular";
+  font-size: 1rem !important;
+  width: 105%;
+  background-color: rgba(231, 103, 130, 0.8267507686668417);
+  border: none;
+  border-radius: 3px;
+}
+
+#restaurant-body .modal-integra [type="checkbox"] + label {
+  color: white;
+}
+
+#restaurant-body .modal-integra .modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#restaurant-body .modal-integra button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--green);
+  height: 3rem;
+  width: 10rem;
+  float: bottom;
+}
+
+@media (min-width: 700px) {
+  /* #restaurant-body .modal-integra  .field-group {
+    display: flex;
+    flex-direction: row;
+  } */
+  #restaurant-body .modal-integra button {
+    width: 20rem;
+  }
+  #restaurant-body .modal-integra a {
+    margin-right: 0.4rem;
+  }
+  #restaurant-body .modal form .field {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}

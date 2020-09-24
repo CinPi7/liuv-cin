@@ -1,4 +1,4 @@
-.form-b2b {
+.solution-modal {
   background: linear-gradient(
     90deg,
     rgba(255, 107, 43, 0.9) 0%,
@@ -8,7 +8,7 @@
   width: auto;
 }
 
-.form-b2b .modal-content {
+.solution-modal .modal-content {
   height: auto;
 
   padding: 0 !important;
@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.form-b2b .modal-introduction{
+.solution-modal .modal-introduction{
   margin-left: 1rem;
   margin-right: 1rem;
 
@@ -27,27 +27,27 @@
 }
 
 @media(min-width: 300px){
-  .form-b2b .modal-introduction{
+  .solution-modal .modal-introduction{
     margin-left: 3rem;
     margin-right: 3rem;
   }
 }
 
-.form-b2b .modal-content > h3{
+.solution-modal .modal-content > h3{
   font-size: 2rem;
 }
 
-.form-b2b .modal-content p {
+.solution-modal .modal-content p {
   font-size: 1rem;
   margin-top: 1.6rem;
 }
 
-.form-b2b .modal .modal-footer {
+.solution-modal .modal .modal-footer {
   background: transparent;
   bottom: 0;
 }
 
-.form-b2b > a {
+.solution-modal > a {
   color: white;
 
   float: right;
@@ -61,25 +61,25 @@
   padding: 2px 11px 0px 13px;
 }
 
-.form-b2b form fieldset {
+.solution-modal form fieldset {
   padding: 0;
   margin: 2rem;
   border: 0;
 }
 
-.form-b2b form .field {
+.solution-modal form .field {
   flex: 1;
   display: flex;
   flex-direction: column;
   height: 4.2rem;
 }
 
-.form-b2b .field-group {
+.solution-modal .field-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-b2b form select, form textarea {
+.solution-modal form select, form textarea {
   font-family: "Bariol Regular";
   font-size: 1rem !important;
   width: 105%;
@@ -92,16 +92,16 @@
   border-radius: 9px;
 }
 
-.form-b2b form textarea{
+.solution-modal form textarea{
   margin-top: 1.4rem;
   padding-top: 0.8rem;
 }
 
-.form-b2b form::placeholder {
+.solution-modal form::placeholder {
   color: white !important;
 }
 
-.form-b2b form input[type="text"],
+.solution-modal form input[type="text"],
 textarea,
 select {
   border: none;
@@ -115,12 +115,12 @@ select {
   padding-left: 10px;
 }
 
-.form-b2b form input[type="text"]:focus {
+.solution-modal form input[type="text"]:focus {
   border-bottom: none !important;
   box-shadow: none !important;
 }
 
-.form-b2b button {
+.solution-modal button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,20 +138,20 @@ select {
 }
 
 @media (min-width: 700px) {
-  .form-b2b .fieldset{
+  .solution-modal .fieldset{
     margin: 0;
   }
-  .form-b2b form .field {
+  .solution-modal form .field {
     padding-right: 1rem;
     padding-left: 1.6rem;
     margin: 0;
     width: 100%;
   }
-  .form-b2b form select,
-  .form-b2b form textarea{
+  .solution-modal form select,
+  .solution-modal form textarea{
     width: 105%;
   }
-  .form-b2b form textarea{
+  .solution-modal form textarea{
     margin-top: 0;
   }
 }

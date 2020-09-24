@@ -86,7 +86,7 @@ main .collapsible-body span{
 }
 
 main div.icon{
-  margin-left: 1rem;
+  margin-left: 95%;
 }
 
 main div.icon i{
@@ -99,6 +99,7 @@ main div.liuv-melhor .cards div.module {
   width: 8rem;
   height: 7rem;
   padding: 5px;
+  padding-left: 14px;
   border: 1px solid rgba(219, 165, 151, 0.5);
   box-shadow: 0 0 0 8px var(--card-01), 0 0 0 9px rgba(219, 165, 151, 0.5);
   border-radius: 50%;
@@ -117,7 +118,7 @@ main div.liuv-melhor .cards div.module > img {
 main div.liuv-melhor .cards div.module-second {
   width: 8rem;
   height: 7rem;
-  padding: 5px;
+  padding: 5px 5px 5px 15px;
   border: 1px solid rgba(219, 165, 151, 0.5);
   box-shadow: 0 0 0 8px var(--card-02), 0 0 0 9px rgba(219, 165, 151, 0.5);
   border-radius: 50%;
@@ -142,7 +143,7 @@ main div.liuv-melhor .cards div.module-second > img {
 main div.liuv-melhor .cards div.module-third {
   width: 8rem;
   height: 7rem;
-  padding: 5px;
+  padding: 5px 5px 5px 15px;
   border: 1px solid rgba(219, 165, 151, 0.5);
   box-shadow: 0 0 0 8px var(--card-03), 0 0 0 9px rgba(219, 165, 151, 0.5);
   border-radius: 50%;

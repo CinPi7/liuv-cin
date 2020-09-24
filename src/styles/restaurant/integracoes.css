@@ -1,41 +1,30 @@
-/* # Restaurante - Integrações  */
-main div.integracoes {
+#restaurant-body main div.integracoes{
   background-color: var(--white-darker);
   height: auto;
   padding: 0 2rem 0.4rem 2rem;
 }
 
-main div.integracoes > div {
-  margin-bottom: 1rem;
-
+div.integracoes > div.integra-container{
   display: flex;
+  flex-direction: column;
+  align-content: center;
   justify-content: flex-start;
-  max-width: 1440px;
-  margin: 0 auto;
+
+  height: auto;
+  margin-top: 2rem;
+  max-width: 1400px;
 }
 
-main div.integracoes div > h2 {
+div.integracoes h2 {
   font-size: 2.4rem;
   color: var(--titles);
   margin-bottom: 2rem;
 }
 
-main div.integracoes div.integra-container {
-  display: flex;
-  flex-direction: column;
-}
-
-main div.integracoes div.box-integracoes {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  padding-right: 2rem;
-}
-
 div.integracoes div.box-integracoes > p {
   font-size: 1rem;
   color: var(--black);
+  margin-bottom: 1rem;
 }
 
 div.integracoes div.box-integracoes > a {
@@ -49,11 +38,11 @@ div.integracoes div.box-integracoes > a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1.4rem;
 
+  margin-top: 1.4rem;
   margin-bottom: 1rem;
 
-  font-size: 1rem;
+  font-size: 1.4rem;
   cursor: pointer;
   color: var(--white);
 }
@@ -61,6 +50,7 @@ div.integracoes div.box-integracoes > a {
 div.integracoes div.box-integracoes .btn {
   text-transform: none !important;
   line-height: 0.5rem;
+  font-size: 1rem;
 }
 
 div.integracoes div.organizer {
@@ -68,12 +58,13 @@ div.integracoes div.organizer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
   height: 15rem;
 }
 
 div.integracoes div.organizer > .carousel > .carousel-item {
-  margin-top: -2.5rem;
-  height: 5em !important;
+  height: 8em !important;
+  margin-top: 1rem;
 }
 
 div.integracoes div.organizer p {
@@ -81,25 +72,36 @@ div.integracoes div.organizer p {
   color: var(--black);
 }
 
-/* Responsive */
-
 @media (min-width: 900px) {
-  main div.integracoes div.integra-container {
+  div.integracoes > div.integra-container{
+    margin: 0 auto;
+    max-width: 1440px;
+    
+    padding-left: 3%;
+    padding-bottom: 1rem;
+    justify-content: center;
+  }
+  div.integracoes div.sidepositionintegra{
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 4.5%;
-    padding-right: 5%;
-    max-width: 1440px;
-    margin: 0 auto;
-    margin-top: -1rem;
+    margin-left: 2rem;
   }
-  main div.integracoes > div {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 4.5%;
+  div.integracoes div.organizer {
+    margin-top: -5rem;
+    padding-left: 2rem;
   }
-  main div.integracoes div > h2 {
-    padding-bottom: 0;
+  div.integracoes div.organizer > .carousel > .carousel-item {
+    margin-top: 0;
   }
 }
+
+@media (min-width: 1400px){
+  div.integracoes > div.integra-container h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Modal Integrações em Modal */ 

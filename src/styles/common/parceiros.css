@@ -1,5 +1,4 @@
 /* Quem já tem a LIUV como parceira */
-
 main div.parceiros {
   display: flex;
   flex-direction: column;
@@ -13,8 +12,9 @@ main div.parceiros {
 }
 
 main div.parceiros > h2 {
-  font-size: 2rem;
-  color: var(--black);
+  font-size: 2.4rem;
+  color: var(--titles);
+  margin: 0 !important;
 }
 
 main div.parceiros div.testemunials {
@@ -37,18 +37,24 @@ main div.parceiros div.testemunials img {
 }
 
 /* Responsive */
-
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   main div.parceiros div.testemunials {
     flex-direction: row;
-    padding-left: 5%;
+    padding-left: 5.5%;
     padding-right: 5%;
   }
   main div.parceiros > h2 {
-    padding-left: 5%;
+    padding-left: 3%;
     max-width: 1440px;
+    margin: 0 auto;
   }
   main div.parceiros div.testemunials div.parceiro {
     padding: 1.4rem;
+  }
+}
+
+@media (min-width: 1470px){
+  main div.parceiros > h2 {
+    padding-left: 4%;
   }
 }

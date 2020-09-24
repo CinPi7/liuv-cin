@@ -1,5 +1,4 @@
 /* Video LIUV Simplifica */
-
 main .simplifica {
   display: flex;
   flex-direction: column;
@@ -20,7 +19,7 @@ main .simplifica {
 
 main .simplifica > h2 {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--titles);
 }
 
 main .simplifica p {
