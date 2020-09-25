@@ -82,8 +82,10 @@ select {
 
 #restaurant-body .modal-integra form .file-field .btn {
   margin-top: 0.4rem;
-  border-radius: 5px;
+  border-radius: 25px;
   height: 2.8rem;
+  background-color: var(--green);
+  text-transform: inherit;
 }
 
 #restaurant-body .modal-integra .file-field {

@@ -17,33 +17,32 @@ main div.about div.about-content {
   padding: 2rem;
 }
 
-#client-body div.about div.about-content{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-image: linear-gradient(
+#client-body div.about div.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-image: linear-gradient(
     90deg,
     rgba(255, 107, 43, 1) 0%,
     rgba(242, 44, 80, 1) 100%
-    );
-    text-shadow: none;
-    filter: none !important;
-    color: white;
-    height: auto;
-    margin-top: 3rem;
-    padding: 2rem;
-  }
+  );
+  text-shadow: none;
+  filter: none !important;
+  color: white;
+  height: auto;
+  margin-top: 3rem;
+  padding: 2rem;
+}
 
-
-main div.about div.about-content h1{
+main div.about div.about-content h1 {
   font-size: 2.8rem;
   font-weight: bolder;
   filter: none !important;
   color: white;
 }
 
-main div.about div.about-content span{
+main div.about div.about-content span {
   font-size: 2.2rem;
   line-height: 2.5rem;
   font-weight: lighter;
@@ -56,13 +55,13 @@ main div.about div.about-content a {
   font-weight: 700;
 }
 
-main div.about div.about-content a{
+main div.about div.about-content a {
   filter: none !important;
   color: white;
   font-size: 2.6rem;
 }
 
-main div.about div.carousel-item div.about-content button.btn-solution{
+main div.about div.carousel-item div.about-content button.btn-solution {
   color: white;
   border: none;
   border-radius: 30px;
@@ -78,7 +77,7 @@ main div.about div.carousel-item div.about-content button.btn-solution{
   align-items: center;
 }
 
-main div.about div.carousel-item div.about-content button.btn-solution a{
+main div.about div.carousel-item div.about-content button.btn-solution a {
   color: white;
   font-size: 1.2rem;
   padding-top: 1px;
@@ -89,81 +88,81 @@ main div.about .b2b-2 .btn-solution {
   margin-left: 1rem;
 }
 
-
-#restaurant-body main .cardapio{
+#restaurant-body main .cardapio {
   background-image: linear-gradient(
-    90deg,
-    rgba(255, 107, 43, 0.3) 0%,
-    rgba(242, 44, 80, 0.3) 100%
-  ), url("../../assets/images/B2B/B2B_carrosel_1.jpg");
+      90deg,
+      rgba(255, 107, 43, 0.3) 0%,
+      rgba(242, 44, 80, 0.3) 100%
+    ),
+    url("../../assets/images/B2B/B2B_carrosel_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
 }
 
-#restaurant-body main .cardapio .about-content h1{
+#restaurant-body main .cardapio .about-content h1 {
   margin-top: 0;
 }
 
-#restaurant-body main .b2b-2{
+#restaurant-body main .b2b-2 {
   background-image: linear-gradient(
-    90deg,
-    rgba(255, 107, 43, 0.3) 0%,
-    rgba(242, 44, 80, 0.3) 100%
-  ), url("../../assets/images/B2B/B2B_carrosel_2.jpg");
+      90deg,
+      rgba(255, 107, 43, 0.3) 0%,
+      rgba(242, 44, 80, 0.3) 100%
+    ),
+    url("../../assets/images/B2B/B2B_carrosel_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#restaurant-body main .b2b-2 span{
+#restaurant-body main .b2b-2 span {
   padding: 0.8rem;
   font-size: 2.2rem;
 }
 
-main div.about .b2b-2  span.subject{
+main div.about .b2b-2 span.subject {
   font-size: 1.4rem !important;
 }
 
-#restaurant-body main .b2b-3{
+#restaurant-body main .b2b-3 {
   background-image: linear-gradient(
-    90deg,
-    rgba(255, 107, 43, 0.3) 0%,
-    rgba(242, 44, 80, 0.3) 100%
-  ), url("../../assets/images/B2B/B2B_carrossel_3.jpg");
+      90deg,
+      rgba(255, 107, 43, 0.3) 0%,
+      rgba(242, 44, 80, 0.3) 100%
+    ),
+    url("../../assets/images/B2B/B2B_carrossel_3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#restaurant-body main .b2b-3 .about-content h1{
+#restaurant-body main .b2b-3 .about-content h1 {
   margin-top: 0;
 }
 
-#restaurant-body main .b2b-4{
+#restaurant-body main .b2b-4 {
   background-image: linear-gradient(
-    90deg,
-    rgba(255, 107, 43, 0.3) 0%,
-    rgba(242, 44, 80, 0.3) 100%
-  ), url("../../assets/images/B2B/B2B_carrossel_4.jpg");
+      90deg,
+      rgba(255, 107, 43, 0.3) 0%,
+      rgba(242, 44, 80, 0.3) 100%
+    ),
+    url("../../assets/images/B2B/B2B_carrossel_4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#client-body main .b2c-1{
-  background-image: 
-    url("../../assets/images/B2C/B2C_carrossel_1.jpg");
+#client-body main .b2c-1 {
+  background-image: url("../../assets/images/B2C/B2C_carrossel_1.jpg");
   filter: brightness(93%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#client-body main .b2c-2{
-  background-image:  
-    url("../../assets/images/B2C/B2C_carrossel_2.jpg");
+#client-body main .b2c-2 {
+  background-image: url("../../assets/images/B2C/B2C_carrossel_2.jpg");
   filter: brightness(93%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,22 +171,20 @@ main div.about .b2b-2  span.subject{
 
 #client-body main .b2c-2 .about-content h1,
 .b2c-3 .about-content h1,
-.b2c-4 .about-content h1{
+.b2c-4 .about-content h1 {
   margin-top: 0;
 }
 
-#client-body main .b2c-3{
-  background-image: 
-    url("../../assets/images/B2C/B2C_carrossel_3.jpg");
+#client-body main .b2c-3 {
+  background-image: url("../../assets/images/B2C/B2C_carrossel_3.jpg");
   filter: brightness(93%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#client-body main .b2c-4{
-  background-image:  
-    url("../../assets/images/B2C/B2C_carrossel_4.jpg");
+#client-body main .b2c-4 {
+  background-image: url("../../assets/images/B2C/B2C_carrossel_4.jpg");
   filter: brightness(93%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,7 +193,7 @@ main div.about .b2b-2  span.subject{
 
 /* Responsive */
 @media (min-width: 890px) {
-  main div.about div.about-content  {
+  main div.about div.about-content {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -204,10 +201,10 @@ main div.about .b2b-2  span.subject{
     width: 40rem;
     margin-left: 10rem;
   }
-  main div.about div.about-content  > h1 {
+  main div.about div.about-content > h1 {
     font-size: 3rem;
   }
-  main div.about div.carousel-item div.about-content a.btn-solution{
+  main div.about div.carousel-item div.about-content a.btn-solution {
     font-size: 1.2rem;
   }
 }
