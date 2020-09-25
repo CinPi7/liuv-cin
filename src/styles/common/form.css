@@ -32,16 +32,15 @@ main div.solution-page {
   }
   
   main div.solution-page .btn  {
-    font-size: 1rem;
-  
+    font-size: 1.2rem;
+    background-color: var(--green);
     border: none;
     border-radius: 30px;
     width: 15rem;
     height: 2.6rem;
   
-    padding-top: 0.1rem;
     margin-top: 1rem;
-  
+    text-transform: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
