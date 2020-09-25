@@ -17,11 +17,11 @@ $('#textarea1').trigger('autoresize');
       
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
+    //var instances = M.FormSelect.init(elems, options);
   });
 
   $(document).ready(function(){
-    $('select').formSelect();
+    //$('select').formSelect();
 });
 
 $('#textarea1').val('Mensagem');
