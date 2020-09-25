@@ -28,7 +28,7 @@ main div.intro div.title-intro {
 
 main div.intro div.title-intro > h1 {
   margin-top: 2.6rem;
-  font-size: 2rem;
+  font-size: 3.6rem;
   font-weight: lighter;
 }
 
@@ -52,14 +52,15 @@ main div.intro div.title-intro > h1 {
     margin-left: -2.6rem;
   }
   main div.intro div.title-intro > h1 {
-    font-size: 2.6rem;
-    width: 70%;
+    font-size: 3.6rem;
+    width: 90%;
     text-align: left;
+    margin-left: 6rem;
   }
 }
 
-@media (min-width: 1570px) {
+@media (min-width: 1400px) {
   main div.intro > div.title-intro {
-    margin-left: 9%;
+    margin-left: 16%;
   }
 }

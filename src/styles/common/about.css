@@ -9,11 +9,7 @@ main div.about div.about-content {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 107, 43, 1) 0%,
-    rgba(242, 44, 80, 1) 100%
-  );
+  text-shadow: 0 1px var(--shadow);
   filter: none !important;
   color: white;
   height: auto;
@@ -21,15 +17,34 @@ main div.about div.about-content {
   padding: 2rem;
 }
 
+#client-body div.about div.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 1) 0%,
+    rgba(242, 44, 80, 1) 100%
+    );
+    text-shadow: none;
+    filter: none !important;
+    color: white;
+    height: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+
+
 main div.about div.about-content h1{
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   font-weight: bolder;
   filter: none !important;
   color: white;
 }
 
 main div.about div.about-content span{
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   line-height: 2.5rem;
   font-weight: lighter;
   letter-spacing: 0.5px;
@@ -44,7 +59,7 @@ main div.about div.about-content a {
 main div.about div.about-content a{
   filter: none !important;
   color: white;
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 
 main div.about div.carousel-item div.about-content button.btn-solution{
@@ -74,13 +89,17 @@ main div.about .b2b-2 .btn-solution {
   margin-left: 1rem;
 }
 
+
 #restaurant-body main .cardapio{
-  background-image: 
-    url("../../assets/images/B2B/B2B_carrosel_1.jpg");
-  filter: brightness(93%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.3) 0%,
+    rgba(242, 44, 80, 0.3) 100%
+  ), url("../../assets/images/B2B/B2B_carrosel_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
 
 #restaurant-body main .cardapio .about-content h1{
@@ -88,9 +107,11 @@ main div.about .b2b-2 .btn-solution {
 }
 
 #restaurant-body main .b2b-2{
-  background-image: 
-    url("../../assets/images/B2B/B2B_carrosel_2.jpg");
-  filter: brightness(93%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.3) 0%,
+    rgba(242, 44, 80, 0.3) 100%
+  ), url("../../assets/images/B2B/B2B_carrosel_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -98,13 +119,19 @@ main div.about .b2b-2 .btn-solution {
 
 #restaurant-body main .b2b-2 span{
   padding: 0.8rem;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+}
+
+main div.about .b2b-2  span.subject{
+  font-size: 1.4rem !important;
 }
 
 #restaurant-body main .b2b-3{
-  background-image: 
-    url("../../assets/images/B2B/B2B_carrossel_3.jpg");
-  filter: brightness(93%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.3) 0%,
+    rgba(242, 44, 80, 0.3) 100%
+  ), url("../../assets/images/B2B/B2B_carrossel_3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -115,9 +142,11 @@ main div.about .b2b-2 .btn-solution {
 }
 
 #restaurant-body main .b2b-4{
-  background-image:  
-    url("../../assets/images/B2B/B2B_carrossel_4.jpg");
-  filter: brightness(93%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.3) 0%,
+    rgba(242, 44, 80, 0.3) 100%
+  ), url("../../assets/images/B2B/B2B_carrossel_4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -176,10 +205,10 @@ main div.about .b2b-2 .btn-solution {
     margin-left: 10rem;
   }
   main div.about div.about-content  > h1 {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
   main div.about div.carousel-item div.about-content a.btn-solution{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 

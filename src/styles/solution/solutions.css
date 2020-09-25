@@ -23,7 +23,7 @@ div.solution-section .comanda {
 
 div.solution-section p {
   color: var(--gray);
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
   text-align: center;
 }
@@ -57,7 +57,7 @@ div.delivery img {
 }
 
 div.solution-section a {
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   border: none;
   border-radius: 30px;
@@ -67,8 +67,8 @@ div.solution-section a {
     rgba(255, 107, 43, 1) 0%,
     rgba(238, 47, 83, 1) 100%
   );
-  width: 10rem;
-  height: 2.6rem;
+  width: 12rem;
+  height: 2.8rem;
 
   padding-left: 0.2rem;
   margin-top: 1rem;
@@ -124,7 +124,7 @@ div.solution-section .cardapio img {
     margin-top: 2rem;
   }
   div.solution-section h2 {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
   div.comanda h2{
     margin-top: 2rem;

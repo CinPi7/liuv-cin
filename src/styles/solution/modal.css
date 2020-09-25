@@ -174,7 +174,7 @@ div.gestao  ul.atendimentos li:nth-child(1){
   margin-top: 2rem;
 }
 div.gestao h2{
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   margin-bottom: 0;
   color: var(--titles);
 }
@@ -212,4 +212,11 @@ div.gestao ul.gestao-list li{
   div.gestao ul.gestao-list {
     margin-top: 10%;
   }
+
+div.gestao ul.gestao-list {
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex-direction: column;
+}
 }
