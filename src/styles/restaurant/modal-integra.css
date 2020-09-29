@@ -147,6 +147,11 @@ form select {
   float: bottom;
 }
 
+#restaurant-body .modal-integra button:hover{
+  background-color: var(--green-darker);
+  transition: ease-in-out 300ms;
+}
+
 @media (min-width: 700px) {
   /* #restaurant-body .modal-integra  .field-group {
     display: flex;

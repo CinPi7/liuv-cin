@@ -129,7 +129,12 @@
   justify-content: center;
 
   margin-right: 1.6rem;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
+}
+
+#restaurant-body main div.solutions div.solution-types a:hover{
+  background-color: var(--pink-hover);
+  transition: ease-in-out 300ms;
 }
 
 #restaurant-body main div.solutions div.solution-types img {

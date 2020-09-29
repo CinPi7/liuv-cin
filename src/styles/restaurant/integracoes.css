@@ -1,6 +1,5 @@
 #restaurant-body main div.integracoes{
   background-color: var(--white-darker);
-  height: auto;
   padding: 0 2rem 0.4rem 2rem;
 }
 
@@ -45,6 +44,11 @@ div.integracoes div.box-integracoes > a {
   font-size: 1.4rem;
   cursor: pointer;
   color: var(--white);
+}
+
+div.integracoes div.box-integracoes > a:hover {
+  background-color: var(--pink-hover);
+  transition: ease-in-out 300ms;
 }
 
 div.integracoes div.box-integracoes .btn {
