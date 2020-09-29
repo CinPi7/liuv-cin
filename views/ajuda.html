@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQs</title>
-
     <link
       rel="shortcut icon"
       href="../src/assets/logos/faviconliuv.png"
       type="image/x-icon"
     />
-
     <!-- Styles Sheets -->
     <link rel="stylesheet" href="../src/styles/global.css" />
+    <link rel="stylesheet" href="../src/styles/liuv.css">
     <link rel="stylesheet" href="../src/styles/common/header.css" />
     <link rel="stylesheet" href="../src/styles/FAQs/ajuda.css" />
     <link rel="stylesheet" href="../src/styles/common/footer.css">
-
     <!-- Materialize -->
     <!-- Compiled and minified CSS -->
     <link
@@ -29,11 +27,12 @@
     />
   </head>
   <body id="help-body">
+    
     <!-- Header Navegation -->
     <header class="liuv-header">
       <a href="/"><img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" /></a>
       <nav class="nav" role="navigation">
-        <a href="./liuv.html" class="left">A Liuv</a>
+        <a class="waves-effect waves-light btn modal-trigger left" href="#modalHeader">A Liuv</a>
         <a href="./restaurant.html" class="left">Para seu Restaurante</a>
         <a href="./client.html" class="left">Para você</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
@@ -43,7 +42,15 @@
         </a>
       </nav>
       <button type="button" class="login">Login</button>
-
+      <!-- Modal Structure -->
+      <div id="modalHeader" class="modal">
+        <div class="modal-content about-liuv-modal">
+          <p>A LIUV é uma startup criada para simplificar a maneira de fazer pedidos e de pagar a conta em bares e restaurantes, além de descomplicar os programas de fidelidade do dia-a-dia, utilizando o aplicativo, para construir uma relação mais próxima entre os estabelecimentos e seus clientes, transformando a experiência dos clientes mais prática e vantajosa. Tendo como objetivo de gerar informações valiosas para as empresas sobre o perfil dos seus clientes. Formada por quatro sócios, a LIUV tem como diferencial o foco na excelência, comprometimento com o sucesso dos nossos clientes e valorizando as relações pessoais.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">x</a>
+        </div>
+      </div>
       <!-- For Hamburguer Menu -->
       <div id="liuvSideNav" class="sidenav">
         <img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" />
@@ -64,11 +71,10 @@
         <img src="../src/assets/icons/menu.png" alt="Menu"/>
       </span>
     </header>
-    <hr />
+    <hr class="header-line"/>
     <main>
       <div id="main">
         <div><h1>Ajuda</h1></div>
-
         <div class="choose-buttons">
           <button class="choose-restaurant" onclick="FAQsRestaurant()">
             <img src="../src/assets/icons/ajuda-restaurante.png" alt="Restaurant FAQs" />
@@ -79,7 +85,6 @@
             <span>Sou Cliente</span>
           </button>
         </div>
-
         <!-- FAQs Restaurante -->
         <div id="restaurant-faqs" class="faqs" style="display: none">
           <ul class="collapsible" data-collapsible="accordion">
@@ -179,7 +184,6 @@
             <span class="contact"> contato@liuv.it. </span>
           </p>
         </div>
-
         <!-- FAQs Clientes -->
         <div id="client-faqs" class="faqs">
           <ul class="collapsible" data-collapsible="accordion">
@@ -391,10 +395,8 @@
             <span class="contact"> contato@liuv.it. </span>
           </p>
         </div>
-
       </div>
     </main>
-
     <hr />
     <!-- Footer -->
     <footer class="liuv-footer">
@@ -465,10 +467,9 @@
             <h4>© 2020 LIUV SERVIÇOS TECNOLÓGICOS</h4>
             <p>
               CNPJ: 23.432.890/0001-06 <br/>
-              Rua Jesuíno Arruda 797, CJ 72, Itaim Bibi <br />
-              São Paulo <br />
-              +55 (11) 3854-1771 <br />
-              +55 (11) 3230-9223 <br />
+              Rua Jesuíno Arruda 797, CJ 72<br />
+              Itaim Bibi, São Paulo - SP <br />
+              Brasil <br />
             </p>
           </div>
           <div class="column">
@@ -482,8 +483,16 @@
             </div>
           </div>
         </div>
+        <hr />
+        <div class="third-row">
+          <div class="column">
+            <a href="./termos.html"><span>Termos de Uso</span></a> 
+            <a href="./politicas.html"><span>Política de Privacidade</span></a>
+          </div> 
+        </div>
       </div>
     </footer>
+    <!--Scripts-->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.2.1.min.js">
@@ -491,5 +500,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="../src/scripts/hamburguer.js"></script>
     <script src="../src/scripts/FAQs.js"></script>
+    <script src="../src/scripts/modal.js"></script>
   </body>
 </html>
