@@ -11,10 +11,10 @@
     />
     <!-- Styles Sheets -->
     <link rel="stylesheet" href="../src/styles/global.css" />
-    <link rel="stylesheet" href="../src/styles/liuv.css">
+    <link rel="stylesheet" href="../src/styles/liuv.css" />
     <link rel="stylesheet" href="../src/styles/common/header.css" />
     <link rel="stylesheet" href="../src/styles/FAQs/ajuda.css" />
-    <link rel="stylesheet" href="../src/styles/common/footer.css">
+    <link rel="stylesheet" href="../src/styles/common/footer.css" />
     <!-- Materialize -->
     <!-- Compiled and minified CSS -->
     <link
@@ -27,12 +27,17 @@
     />
   </head>
   <body id="help-body">
-    
     <!-- Header Navegation -->
     <header class="liuv-header">
-      <a href="/"><img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" /></a>
+      <a href="/"
+        ><img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV"
+      /></a>
       <nav class="nav" role="navigation">
-        <a class="waves-effect waves-light btn modal-trigger left" href="#modalHeader">A Liuv</a>
+        <a
+          class="waves-effect waves-light btn modal-trigger left"
+          href="#modalHeader"
+          >A Liuv</a
+        >
         <a href="./restaurant.html" class="left">Para seu Restaurante</a>
         <a href="./client.html" class="left">Para você</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
@@ -44,44 +49,68 @@
       <button type="button" class="login">Login</button>
       <!-- Modal Structure -->
       <div id="modalHeader" class="modal">
+        <a
+          href="#!"
+          class="modal-action modal-close waves-effect waves-green btn-flat"
+          >&#10005;
+        </a>
         <div class="modal-content about-liuv-modal">
-          <p>A LIUV é uma startup criada para simplificar a maneira de fazer pedidos e de pagar a conta em bares e restaurantes, além de descomplicar os programas de fidelidade do dia-a-dia, utilizando o aplicativo, para construir uma relação mais próxima entre os estabelecimentos e seus clientes, transformando a experiência dos clientes mais prática e vantajosa. Tendo como objetivo de gerar informações valiosas para as empresas sobre o perfil dos seus clientes. Formada por quatro sócios, a LIUV tem como diferencial o foco na excelência, comprometimento com o sucesso dos nossos clientes e valorizando as relações pessoais.</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">x</a>
+          <p>
+            A LIUV é uma startup criada para simplificar a maneira de fazer
+            pedidos e de pagar a conta em bares e restaurantes, além de
+            descomplicar os programas de fidelidade do dia-a-dia, utilizando o
+            aplicativo, para construir uma relação mais próxima entre os
+            estabelecimentos e seus clientes, transformando a experiência dos
+            clientes mais prática e vantajosa. Tendo como objetivo de gerar
+            informações valiosas para as empresas sobre o perfil dos seus
+            clientes. Formada por quatro sócios, a LIUV tem como diferencial o
+            foco na excelência, comprometimento com o sucesso dos nossos
+            clientes e valorizando as relações pessoais.
+          </p>
         </div>
       </div>
       <!-- For Hamburguer Menu -->
       <div id="liuvSideNav" class="sidenav">
-        <img src="../src/assets/logos/logo-grad.png" alt="Logo LIUV" />
+        
+        <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" />
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-          &times;</a>
-        <a href="/" class="left">A Liuv</a>
-        <a href="./client.html" class="left">Usuários</a>
-        <a href="/" class="left">Como funciona</a>
+          &times;</a
+        >
+        <a
+          class="modal-trigger"
+          href="#modalHeader"
+          >A Liuv</a
+        >
+        <a href="./restaurant.html" class="left">Para Restaurante</a>
+        <a href="./client.html" class="left">Para você</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
-        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">
-          Blog
-        </a>
-        <a href="./contato.html" class="left">Contato</a>
-        <a href="/" class="left">Sair</a>
-        <button>Eu quero</button>
+        <a href="./contato.html" class="left">Fale com a gente</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”"
+          >Blog</a
+        >
+        <button>Contato</button>
       </div>
       <span class="hamburguer" onclick="openNav()">
-        <img src="../src/assets/icons/menu.png" alt="Menu"/>
+        <img src="../src/assets/icons/menu.png" alt="Menu" />
       </span>
     </header>
-    <hr class="header-line"/>
+    <hr class="header-line" />
     <main>
       <div id="main">
         <div><h1>Ajuda</h1></div>
         <div class="choose-buttons">
           <button class="choose-restaurant" onclick="FAQsRestaurant()">
-            <img src="../src/assets/icons/ajuda-restaurante.png" alt="Restaurant FAQs" />
+            <img
+              src="../src/assets/icons/ajuda-restaurante.png"
+              alt="Restaurant FAQs"
+            />
             <span>Sou Restaurante</span>
           </button>
           <button class="choose-client" onclick="FAQsClient()">
-            <img src="../src/assets/icons/ajuda-cliente.png" alt="Client FAQs" />
+            <img
+              src="../src/assets/icons/ajuda-cliente.png"
+              alt="Client FAQs"
+            />
             <span>Sou Cliente</span>
           </button>
         </div>
@@ -108,9 +137,9 @@
               </div>
               <div class="collapsible-body">
                 <span>
-                  A Liuv integra com o seu sistema de Gestão, por isso, ao
-                  pagar a conta via app automaticamente é efetuado a baixa no
-                  seu sistema, e a saída do cliente é liberada.
+                  A Liuv integra com o seu sistema de Gestão, por isso, ao pagar
+                  a conta via app automaticamente é efetuado a baixa no seu
+                  sistema, e a saída do cliente é liberada.
                 </span>
               </div>
             </li>
@@ -425,7 +454,7 @@
       <div class="footer-container">
         <div class="first-row">
           <div class="column">
-            <a href="./restaurant.html"><h4>Sou Restaurante</h4></a> 
+            <a href="./restaurant.html"><h4>Sou Restaurante</h4></a>
             <p>
               <a href="./solucoes.html"> Soluções </a><br />
               <a href="./solucoes.html#integracoes">Integrações PDV </a><br />
@@ -433,24 +462,30 @@
             </p>
           </div>
           <div class="column">
-            <a href="./client.html"><h4>Sou Cliente</h4></a> 
+            <a href="./client.html"><h4>Sou Cliente</h4></a>
             <p>
-             <a href="./client.html#restaurantes"> Onde encontrar a Liuv </a><br />
-             <a href="./client.html#ondeEncontrar">Benefícios</a><br />
-             <a href="./client.html#pagamentosAceitos">Pagamentos Aceitos</a> <br />
+              <a href="./client.html#restaurantes"> Onde encontrar a Liuv </a
+              ><br />
+              <a href="./client.html#ondeEncontrar">Benefícios</a><br />
+              <a href="./client.html#pagamentosAceitos">Pagamentos Aceitos</a>
+              <br />
             </p>
           </div>
           <div class="column">
-            <a href="../index.html"><h4>A Liuv</h4></a> 
+            <a href="../index.html"><h4>A Liuv</h4></a>
             <p>
-              <a class="waves-effect waves-light btn modal-trigger left" href="#modalHeader">Sobre</a><br />
+              <a
+                class="waves-effect waves-light btn modal-trigger left"
+                href="#modalHeader"
+                >Sobre</a
+              ><br />
             </p>
           </div>
           <div class="column">
             <h4>Login</h4>
           </div>
           <div class="column">
-            <a href="./ajuda.html"><h4>Ajuda</h4></a> 
+            <a href="./ajuda.html"><h4>Ajuda</h4></a>
           </div>
         </div>
         <hr />
@@ -458,7 +493,7 @@
           <div class="column">
             <h4>© 2020 LIUV SERVIÇOS TECNOLÓGICOS</h4>
             <p>
-              CNPJ: 23.432.890/0001-06 <br/>
+              CNPJ: 23.432.890/0001-06 <br />
               Rua Jesuíno Arruda 797, CJ 72<br />
               Itaim Bibi, São Paulo - SP <br />
               Brasil <br />
@@ -478,17 +513,17 @@
         <hr />
         <div class="third-row">
           <div class="column">
-            <a href="./termos.html"><span>Termos de Uso</span></a> 
+            <a href="./termos.html"><span>Termos de Uso</span></a>
             <a href="./politicas.html"><span>Política de Privacidade</span></a>
-          </div> 
+          </div>
         </div>
       </div>
     </footer>
     <!--Scripts-->
     <script
       type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js">
-    </script>
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="../src/scripts/hamburguer.js"></script>
     <script src="../src/scripts/FAQs.js"></script>

@@ -12,14 +12,14 @@
     <!-- Sytles Sheets -->
     <link rel="stylesheet" href="../src/styles/global.css" />
     <link rel="stylesheet" href="../src/styles/common/header.css" />
-    <link rel="stylesheet" href="../src/styles/liuv.css">
+    <link rel="stylesheet" href="../src/styles/liuv.css" />
     <link rel="stylesheet" href="../src/styles/common/about.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/solutions.css" />
     <link rel="stylesheet" href="../src/styles/common/melhor.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/integracoes.css" />
     <link rel="stylesheet" href="../src/styles/common/form.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/modal-integra.css" />
-    <link rel="stylesheet" href="../src/styles/solution/modal.css">
+    <link rel="stylesheet" href="../src/styles/solution/modal.css" />
     <link rel="stylesheet" href="../src/styles/common/pagamentos.css" />
     <link rel="stylesheet" href="../src/styles/common/parceiros.css" />
     <link rel="stylesheet" href="../src/styles/restaurant/simplifica.css" />
@@ -39,46 +39,67 @@
     />
   </head>
   <body id="restaurant-body">
-
     <!-- Header Navegation -->
     <header class="liuv-header">
       <a href="/">
-        <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv"/>
+        <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" />
       </a>
       <nav class="nav" role="navigation">
-        <a class="waves-effect waves-light btn modal-trigger left" href="#modalHeader">A Liuv</a>
+        <a
+          class="waves-effect waves-light btn modal-trigger left"
+          href="#modalHeader"
+          >A Liuv</a
+        >
         <a href="./restaurant.html" class="left">Para seu Restaurante</a>
         <a href="./client.html" class="left">Para você</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
         <a href="./contato.html" class="left">Fale com a gente</a>
-        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">Blog</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”"
+          >Blog</a
+        >
       </nav>
       <button type="button" class="login">Login</button>
       <!-- Modal Structure -->
       <div id="modalHeader" class="modal">
+        <a
+          href="#!"
+          class="modal-action modal-close waves-effect waves-green btn-flat"
+          >&#10005;
+        </a>
         <div class="modal-content about-liuv-modal">
-          <p>A LIUV é uma startup criada para simplificar a maneira de fazer pedidos e de pagar a conta em bares e restaurantes, além de descomplicar os programas de fidelidade do dia-a-dia, utilizando o aplicativo, para construir uma relação mais próxima entre os estabelecimentos e seus clientes, transformando a experiência dos clientes mais prática e vantajosa. Tendo como objetivo de gerar informações valiosas para as empresas sobre o perfil dos seus clientes. Formada por quatro sócios, a LIUV tem como diferencial o foco na excelência, comprometimento com o sucesso dos nossos clientes e valorizando as relações pessoais.</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">x</a>
+          <p>
+            A LIUV é uma startup criada para simplificar a maneira de fazer
+            pedidos e de pagar a conta em bares e restaurantes, além de
+            descomplicar os programas de fidelidade do dia-a-dia, utilizando o
+            aplicativo, para construir uma relação mais próxima entre os
+            estabelecimentos e seus clientes, transformando a experiência dos
+            clientes mais prática e vantajosa. Tendo como objetivo de gerar
+            informações valiosas para as empresas sobre o perfil dos seus
+            clientes. Formada por quatro sócios, a LIUV tem como diferencial o
+            foco na excelência, comprometimento com o sucesso dos nossos
+            clientes e valorizando as relações pessoais.
+          </p>
         </div>
       </div>
       <!-- For Hamburguer Menu -->
       <div id="liuvSideNav" class="sidenav">
         <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" />
-        <a 
-          href="javascript:void(0)" 
-          class="closebtn" 
-          onclick="closeNav()">
-          &times;</a>
-        <a href="./liuv.html" class="left">A Liuv</a>
-        <a href="./client.html" class="left">Usuários</a>
-        <a href="./restaurant.html" class="left">Como funciona</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;</a
+        >
+        <a
+          class="modal-trigger"
+          href="#modalHeader"
+          >A Liuv</a
+        >
+        <a href="./restaurant.html" class="left">Para Restaurante</a>
+        <a href="./client.html" class="left">Para você</a>
         <a href="./ajuda.html" class="left">Ajuda</a>
-        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">Blog</a>
-        <a href="./contato.html" class="left">Contato</a>
-        <a href="/" class="left">Sair</a>
-        <button>Eu quero</button>
+        <a href="./contato.html" class="left">Fale com a gente</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”"
+          >Blog</a
+        >
+        <button>Contato</button>
       </div>
       <span class="hamburguer" onclick="openNav()">
         <img src="../src/assets/icons/menu.png" alt="Menu" />
@@ -87,14 +108,14 @@
 
     <main>
       <div id="main">
-
         <!-- First Section, ABOUT Liuv Restaurate -->
         <div class="about carousel-fixed-item">
           <div class="carousel carousel-slider center">
-            <div class="carousel-item cardapio" href="#one!">
+            <div class="carousel-item cardapio fade" href="#one!">
               <div class="about-content">
                 <h1>Cardápio Digital</h1>
-                <span>A nova solução gratuita da
+                <span
+                  >A nova solução gratuita da
                   <a href="./solucoes.html">LIUV</a>
                 </span>
                 <button class="btn-solution">
@@ -102,28 +123,27 @@
                 </button>
               </div>
             </div>
-            <div class="carousel-item b2b-2" href="#two!">
+            <div class="carousel-item b2b-2 fade" href="#two!">
               <div class="about-content">
                 <span>
                   Cada restaurante tem um jeito de receber seus pagamentos, a
                   LIUV tem todos
                 </span>
                 <span class="subject">
-                  Saiba mais sobre as opções de pagamento da
-                  LIUV
-                </span> 
+                  Saiba mais sobre as opções de pagamento da LIUV
+                </span>
                 <button class="btn-solution">
                   <a href="./solucoes.html">Saiba mais</a>
                 </button>
               </div>
             </div>
-            <div class="carousel-item b2b-3" href="#three!">
+            <div class="carousel-item b2b-3 fade" href="#three!">
               <div class="about-content">
                 <h1>Benefícios da LIUV</h1>
                 <span>Sem fila, segurança com pedido e pagamento</span>
               </div>
             </div>
-            <div class="carousel-item b2b-4" href="#four!">
+            <div class="carousel-item b2b-4 fade" href="#four!">
               <div class="about-content">
                 <span>Integração com os principais sistemas de PDV</span>
                 <button class="btn-solution">
@@ -143,7 +163,8 @@
             <div class="buttonsContainer">
               <button
                 onclick="showCardapio()"
-                class="buttonSolution active sheen">
+                class="buttonSolution active sheen"
+              >
                 Cardápio Digital
               </button>
               <button onclick="showComanda()" class="buttonSolution">
@@ -163,15 +184,20 @@
               </button>
             </div>
 
-            <div id="solutionCardapio" class="solutions-content" style="display: flex">
+            <div
+              id="solutionCardapio"
+              class="solutions-content"
+              style="display: flex"
+            >
               <div class="side-position">
                 <div class="content">
                   <p>
-                    A nova solução da Liuv torna o fluxo de pedido do seu restaurante 
-                    mais prático e mais seguro. Através do cardápio digital da Liuv, 
-                    seu cliente faz o pedido de forma simples, sem baixar o app e fazer 
-                    cadastros. Basta abrir a câmera do smartphone, escanear o QR Code 
-                    da mesa e fazer o pedido para a atendente. 
+                    A nova solução da Liuv torna o fluxo de pedido do seu
+                    restaurante mais prático e mais seguro. Através do cardápio
+                    digital da Liuv, seu cliente faz o pedido de forma simples,
+                    sem baixar o app e fazer cadastros. Basta abrir a câmera do
+                    smartphone, escanear o QR Code da mesa e fazer o pedido para
+                    a atendente.
                   </p>
                   <a href="./solucoes.html#cardapio">Quero saber mais</a>
                 </div>
@@ -185,11 +211,12 @@
               <div class="side-position">
                 <div class="content">
                   <p>
-                    Atendemos estabelecimentos que trabalham com o fluxo de comanda eletrônica. 
-                    Possibilitamos que os clientes façam o pagamento direto com o celular	sem 
-                    precisar ir até o caixa, ou que levem uma maquininha de cartão até ele. 
-                    Após o pagamento o cliente entrega a comanda para um atendente ou no local 
-                    sinalizado. 
+                    Atendemos estabelecimentos que trabalham com o fluxo de
+                    comanda eletrônica. Possibilitamos que os clientes façam o
+                    pagamento direto com o celular sem precisar ir até o caixa,
+                    ou que levem uma maquininha de cartão até ele. Após o
+                    pagamento o cliente entrega a comanda para um atendente ou
+                    no local sinalizado.
                   </p>
                   <a href="./solucoes.html#comanda">Quero saber mais</a>
                 </div>
@@ -204,17 +231,14 @@
                 <div class="content">
                   <p>
                     Aumente sua renda, fidelize e ganhe clientes cadastrando seu
-                     restaurante na sessão de Delivery da Liuv. Tenha um novo canal de 
-                     vendas para seu restaurante, com sua frota própria de motoboys, 
-                     sem taxas abusivas. 
+                    restaurante na sessão de Delivery da Liuv. Tenha um novo
+                    canal de vendas para seu restaurante, com sua frota própria
+                    de motoboys, sem taxas abusivas.
                   </p>
                   <a href="./solucoes.html#delivery">Quero saber mais</a>
                 </div>
                 <div class="draw">
-                  <img
-                    src="../src/assets/images/delivery.png"
-                    alt="Delivery"
-                  />
+                  <img src="../src/assets/images/delivery.png" alt="Delivery" />
                 </div>
               </div>
             </div>
@@ -223,10 +247,11 @@
               <div class="side-position">
                 <div class="content">
                   <p>
-                    Com o fluxo Mesa da Liuv, seu cliente consegue pagar o consumo 
-                    total ou parcial da mesa. Por meio da integração da Liuv com sistema de 
-                    PDV do estabelecimento, as informações de pagamento são sincronizadas, evitando 
-                    a conferência da conta a todo momento. 
+                    Com o fluxo Mesa da Liuv, seu cliente consegue pagar o
+                    consumo total ou parcial da mesa. Por meio da integração da
+                    Liuv com sistema de PDV do estabelecimento, as informações
+                    de pagamento são sincronizadas, evitando a conferência da
+                    conta a todo momento.
                   </p>
                   <a href="./solucoes.html#mesa">Quero saber mais</a>
                 </div>
@@ -243,15 +268,20 @@
               <div class="side-position">
                 <div class="content">
                   <p>
-                    O fluxo pré pedido da Liuv torna mais ágil o ato de fazer o pedido e a retirada 
-                    porque possui integração com o sistema, assim a equipe da interna do restaurante 
-                    recebe o pedido e assim que estiver pronto, é enviado um push notification para o 
-                    cliente retirar no local indicado. Evitando filas no caixa e manuseio de fichas.  
+                    O fluxo pré pedido da Liuv torna mais ágil o ato de fazer o
+                    pedido e a retirada porque possui integração com o sistema,
+                    assim a equipe da interna do restaurante recebe o pedido e
+                    assim que estiver pronto, é enviado um push notification
+                    para o cliente retirar no local indicado. Evitando filas no
+                    caixa e manuseio de fichas.
                   </p>
                   <a href="./solucoes.html#prepedido">Quero saber mais</a>
                 </div>
                 <div class="draw">
-                  <img src="../src/assets/images/prepedidosolucao.png" alt="Pre Pedido" />
+                  <img
+                    src="../src/assets/images/prepedidosolucao.png"
+                    alt="Pre Pedido"
+                  />
                 </div>
               </div>
             </div>
@@ -260,12 +290,13 @@
               <div class="side-position">
                 <div class="content">
                   <p>
-                    Alguns estabelecimentos possuem uso de fichas para retirada do pedido. 
-                    Com o fluxo QR Code da Liuv, o cliente pode fazer o pedido sem ficar 
-                    na fila do caixa e elimina o uso da ficha. O aplicativo gera um qr codea 
-                    após a compra e no momento da retirada o cliente apresenta para a atendente 
-                    que faz a leitura do qr code e a 
-                    entrega do pedido. Dessa forma, o atendimento e a espera para retirada são rápidos.
+                    Alguns estabelecimentos possuem uso de fichas para retirada
+                    do pedido. Com o fluxo QR Code da Liuv, o cliente pode fazer
+                    o pedido sem ficar na fila do caixa e elimina o uso da
+                    ficha. O aplicativo gera um qr codea após a compra e no
+                    momento da retirada o cliente apresenta para a atendente que
+                    faz a leitura do qr code e a entrega do pedido. Dessa forma,
+                    o atendimento e a espera para retirada são rápidos.
                   </p>
                   <a href="./solucoes.html#qrcode">Quero saber mais</a>
                 </div>
@@ -274,7 +305,6 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
 
@@ -286,7 +316,8 @@
           <div class="cards-box">
             <ul
               class="collapsible cards programa-fidelidade"
-              data-collapsible="accordion">
+              data-collapsible="accordion"
+            >
               <li>
                 <div class="collapsible-header">
                   <div class="module">
@@ -423,12 +454,14 @@
               <div class="box-integracoes">
                 <p>
                   Temos fácil integração com qualquer frente de caixa, fazemos
-                  isso sem mudar o fluxo atual do restaurante. </p><p>
-                  Se você for uma empresa de PDV e tem interesse na LIUV.
+                  isso sem mudar o fluxo atual do restaurante.
                 </p>
+                <p>Se você for uma empresa de PDV e tem interesse na LIUV.</p>
                 <a
                   class="waves-effect waves-light btn modal-trigger"
-                  href="#modal2">Quero integrar</a>
+                  href="#modal2"
+                  >Quero integrar</a
+                >
               </div>
               <div class="organizer box-integracoes">
                 <div class="carousel">
@@ -494,8 +527,8 @@
                   </a>
                 </div>
                 <p>
-                  Os principais fornecedores de PDV estão aproveitando a LIUV para
-                  expandir suas ofertas.
+                  Os principais fornecedores de PDV estão aproveitando a LIUV
+                  para expandir suas ofertas.
                 </p>
               </div>
             </div>
@@ -515,84 +548,90 @@
                 <h3>Quer saber mais?</h3>
                 <p>Envie seus dados e entramos em contato com você.</p>
               </div>
-            <form action="#" method="">
-              <fieldset>
-                <!-- first line -->
-                <div class="field-group">
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Nome do responsável"
-                      required="required"
-                      name="name"
-                    />
+              <form action="#" method="">
+                <fieldset>
+                  <!-- first line -->
+                  <div class="field-group">
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Nome do responsável"
+                        required="required"
+                        name="name"
+                      />
+                    </div>
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Telefone do responsável"
+                        required="required"
+                        name="tel"
+                      />
+                    </div>
                   </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Telefone do responsável"
-                      required="required"
-                      name="tel"
-                    />
+                  <!-- second line -->
+                  <div class="field-group">
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="E-mail do responsável"
+                        required="required"
+                        name="email"
+                      />
+                    </div>
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Sistema"
+                        required="required"
+                        name="system"
+                      />
+                    </div>
                   </div>
-                </div>
-                <!-- second line -->
-                <div class="field-group">
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="E-mail do responsável"
-                      required="required"
-                      name="email"
-                    />
+                  <!-- third line -->
+                  <div class="field-group">
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="A API é pública?"
+                        required="required"
+                        name="API"
+                      />
+                    </div>
+                    <div class="field">
+                      <input
+                        type="text"
+                        placeholder="Tipo de Integração (API REST, API SOAP)"
+                        required="required"
+                        name="integrate"
+                      />
+                    </div>
                   </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Sistema"
-                      required="required"
-                      name="system"
-                    />
-                  </div>
-                </div>
-                <!-- third line -->
-                <div class="field-group">
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="A API é pública?"
-                      required="required"
-                      name="API"
-                    />
-                  </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      placeholder="Tipo de Integração (API REST, API SOAP)"
-                      required="required"
-                      name="integrate"
-                    />
-                  </div>
-                </div>
-                <!-- Attach -->
-                <div class="field-group">
-                  <div class="field">
-                    <div class="file-field">
-                      <div class="btn">
-                        <span>Anexar</span>
-                        <input type="file">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Documentação Pública ou PDF">
+                  <!-- Attach -->
+                  <div class="field-group">
+                    <div class="field">
+                      <div class="file-field">
+                        <div class="btn">
+                          <span>Anexar</span>
+                          <input type="file" />
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input
+                            class="file-path validate"
+                            type="text"
+                            placeholder="Documentação Pública ou PDF"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </fieldset>
-            </form>
-            <div class="send-btn-modal"><button type="submit">Enviar</button></div>
+                </fieldset>
+              </form>
+              <div class="send-btn-modal">
+                <button type="submit">Enviar</button>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
 
         <!-- Section Pagamentos Aceitos -->
@@ -734,11 +773,13 @@
           </p>
           <br />
           <!-- Modal Trigger -->
-          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Entrar em contato</a>
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1"
+            >Entrar em contato</a
+          >
         </div>
 
         <!-- Modal Structure -->
-        <div class="form-b2b">  
+        <div class="form-b2b">
           <div id="modal1" class="modal">
             <a
               href="#!"
@@ -833,7 +874,9 @@
                   </div>
                 </fieldset>
               </form>
-              <div class="form-button"><button type="submit">Enviar</button></div>
+              <div class="form-button">
+                <button type="submit">Enviar</button>
+              </div>
             </div>
           </div>
         </div>
@@ -869,7 +912,6 @@
             <img alt="Villa Gusto" src="../src/assets/logos/villagusto.png" />
           </a>
         </div>
-
       </div>
     </main>
     <hr />
@@ -901,7 +943,7 @@
       <div class="footer-container">
         <div class="first-row">
           <div class="column">
-            <a href="./restaurant.html"><h4>Sou Restaurante</h4></a> 
+            <a href="./restaurant.html"><h4>Sou Restaurante</h4></a>
             <p>
               <a href="./solucoes.html"> Soluções </a><br />
               <a href="./solucoes.html#integracoes">Integrações PDV </a><br />
@@ -909,24 +951,30 @@
             </p>
           </div>
           <div class="column">
-            <a href="./client.html"><h4>Sou Cliente</h4></a> 
+            <a href="./client.html"><h4>Sou Cliente</h4></a>
             <p>
-             <a href="./client.html#restaurantes"> Onde encontrar a Liuv </a><br />
-             <a href="./client.html#ondeEncontrar">Benefícios</a><br />
-             <a href="./client.html#pagamentosAceitos">Pagamentos Aceitos</a> <br />
+              <a href="./client.html#restaurantes"> Onde encontrar a Liuv </a
+              ><br />
+              <a href="./client.html#ondeEncontrar">Benefícios</a><br />
+              <a href="./client.html#pagamentosAceitos">Pagamentos Aceitos</a>
+              <br />
             </p>
           </div>
           <div class="column">
-            <a href="../index.html"><h4>A Liuv</h4></a> 
+            <a href="../index.html"><h4>A Liuv</h4></a>
             <p>
-              <a class="waves-effect waves-light btn modal-trigger left" href="#modalHeader">Sobre</a><br />
+              <a
+                class="waves-effect waves-light btn modal-trigger left"
+                href="#modalHeader"
+                >Sobre</a
+              ><br />
             </p>
           </div>
           <div class="column">
             <h4>Login</h4>
           </div>
           <div class="column">
-            <a href="./ajuda.html"><h4>Ajuda</h4></a> 
+            <a href="./ajuda.html"><h4>Ajuda</h4></a>
           </div>
         </div>
         <hr />
@@ -934,7 +982,7 @@
           <div class="column">
             <h4>© 2020 LIUV SERVIÇOS TECNOLÓGICOS</h4>
             <p>
-              CNPJ: 23.432.890/0001-06 <br/>
+              CNPJ: 23.432.890/0001-06 <br />
               Rua Jesuíno Arruda 797, CJ 72<br />
               Itaim Bibi, São Paulo - SP <br />
               Brasil <br />
@@ -954,9 +1002,9 @@
         <hr />
         <div class="third-row">
           <div class="column">
-            <a href="./termos.html"><span>Termos de Uso</span></a> 
+            <a href="./termos.html"><span>Termos de Uso</span></a>
             <a href="./politicas.html"><span>Política de Privacidade</span></a>
-          </div> 
+          </div>
         </div>
       </div>
     </footer>

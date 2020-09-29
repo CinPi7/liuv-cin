@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Termos de Uso</title>
 
-    <link rel="stylesheet" href="../src/styles/global.css">
-    <link rel="stylesheet" href="../src/styles/common/header.css">
-    <link rel="stylesheet" href="../src/styles/liuv.css">
-    <link rel="stylesheet" href="../src/styles/termos-e-politicas/termos.css">
-    <link rel="stylesheet" href="../src/styles/common/footer.css">
+    <link rel="stylesheet" href="../src/styles/global.css" />
+    <link rel="stylesheet" href="../src/styles/common/header.css" />
+    <link rel="stylesheet" href="../src/styles/liuv.css" />
+    <link rel="stylesheet" href="../src/styles/termos-e-politicas/termos.css" />
+    <link rel="stylesheet" href="../src/styles/common/footer.css" />
     <!-- Materialize -->
     <!--Import Google Icon Font-->
     <link
@@ -21,192 +21,283 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
     />
-</head>
-<body class="termos-liuv">
-
+  </head>
+  <body class="termos-liuv">
     <!-- Header Navegation -->
     <header class="liuv-header">
-        <a href="/">
-          <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv"/>
+      <a href="/">
+        <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" />
+      </a>
+      <nav class="nav" role="navigation">
+        <a
+          class="waves-effect waves-light btn modal-trigger left"
+          href="#modalHeader"
+          >A Liuv</a
+        >
+        <a href="./restaurant.html" class="left">Para seu Restaurante</a>
+        <a href="./client.html" class="left">Para você</a>
+        <a href="./ajuda.html" class="left">Ajuda</a>
+        <a href="./contato.html" class="left">Fale com a gente</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”"
+          >Blog</a
+        >
+      </nav>
+      <button type="button" class="login">Login</button>
+      <!-- Modal Structure -->
+      <div id="modalHeader" class="modal">
+        <a
+          href="#!"
+          class="modal-action modal-close waves-effect waves-green btn-flat"
+          >&#10005;
         </a>
-        <nav class="nav" role="navigation">
-          <a class="waves-effect waves-light btn modal-trigger left" href="#modalHeader">A Liuv</a>
-          <a href="./restaurant.html" class="left">Para seu Restaurante</a>
-          <a href="./client.html" class="left">Para você</a>
-          <a href="./ajuda.html" class="left">Ajuda</a>
-          <a href="./contato.html" class="left">Fale com a gente</a>
-          <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">Blog</a>
-        </nav>
-        <button type="button" class="login">Login</button>
-        <!-- Modal Structure -->
-        <div id="modalHeader" class="modal">
-          <div class="modal-content about-liuv-modal">
-            <p>A LIUV é uma startup criada para simplificar a maneira de fazer pedidos e de pagar a conta em bares e restaurantes, além de descomplicar os programas de fidelidade do dia-a-dia, utilizando o aplicativo, para construir uma relação mais próxima entre os estabelecimentos e seus clientes, transformando a experiência dos clientes mais prática e vantajosa. Tendo como objetivo de gerar informações valiosas para as empresas sobre o perfil dos seus clientes. Formada por quatro sócios, a LIUV tem como diferencial o foco na excelência, comprometimento com o sucesso dos nossos clientes e valorizando as relações pessoais.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">x</a>
-          </div>
+        <div class="modal-content about-liuv-modal">
+          <p>
+            A LIUV é uma startup criada para simplificar a maneira de fazer
+            pedidos e de pagar a conta em bares e restaurantes, além de
+            descomplicar os programas de fidelidade do dia-a-dia, utilizando o
+            aplicativo, para construir uma relação mais próxima entre os
+            estabelecimentos e seus clientes, transformando a experiência dos
+            clientes mais prática e vantajosa. Tendo como objetivo de gerar
+            informações valiosas para as empresas sobre o perfil dos seus
+            clientes. Formada por quatro sócios, a LIUV tem como diferencial o
+            foco na excelência, comprometimento com o sucesso dos nossos
+            clientes e valorizando as relações pessoais.
+          </p>
         </div>
-        <!-- For Hamburguer Menu -->
-        <div id="liuvSideNav" class="sidenav">
-          <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" />
-          <a 
-            href="javascript:void(0)" 
-            class="closebtn" 
-            onclick="closeNav()">
-            &times;</a>
-          <a href="./liuv.html" class="left">A Liuv</a>
-          <a href="./client.html" class="left">Usuários</a>
-          <a href="./restaurant.html" class="left">Como funciona</a>
-          <a href="./ajuda.html" class="left">Ajuda</a>
-          <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”">Blog</a>
-          <a href="./contato.html" class="left">Contato</a>
-          <a href="/" class="left">Sair</a>
-          <button>Eu quero</button>
-        </div>
-        <span class="hamburguer" onclick="openNav()">
-          <img src="../src/assets/icons/menu.png" alt="Menu" />
-        </span>
+      </div>
+      <!-- For Hamburguer Menu -->
+      <div id="liuvSideNav" class="sidenav">
+        <img src="../src/assets/logos/logo-grad.png" alt="Logo Liuv" />
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;</a
+        >
+        <a
+          class="modal-trigger"
+          href="#modalHeader"
+          >A Liuv</a
+        >
+        <a href="./restaurant.html" class="left">Para Restaurante</a>
+        <a href="./client.html" class="left">Para você</a>
+        <a href="./ajuda.html" class="left">Ajuda</a>
+        <a href="./contato.html" class="left">Fale com a gente</a>
+        <a href="https://www.liuv.com.br/blog" class="left" target="”_blank”"
+          >Blog</a
+        >
+        <button>Contato</button>
+      </div>
+      <span class="hamburguer" onclick="openNav()">
+        <img src="../src/assets/icons/menu.png" alt="Menu" />
+      </span>
     </header>
-    <hr class="header-line"/>
+    <hr class="header-line" />
 
     <main>
       <div id="main">
         <div class="termos">
           <h1>Termos e Condições de Uso do Site e Aplicativo LIUV</h1>
           <p class="terms-content">
-              Estes Termos e Condições de Uso do Site 
-              e do Aplicativo LIUV ("Termos de Uso") 
-              definem as condições de utilização dos 
-              serviços da LIUV pelos Usuários. 
-          <br/><br/>
-            Mediante a instalação do aplicativo LIUV 
-            e / ou registro do Usuário no sistema LIUV, 
-            este reconhece ter lido e concordado 
-            integralmente com as condições previstas 
-            nestes Termos de Uso.
+            Estes Termos e Condições de Uso do Site e do Aplicativo LIUV
+            ("Termos de Uso") definem as condições de utilização dos serviços da
+            LIUV pelos Usuários.
+            <br /><br />
+            Mediante a instalação do aplicativo LIUV e / ou registro do Usuário
+            no sistema LIUV, este reconhece ter lido e concordado integralmente
+            com as condições previstas nestes Termos de Uso.
           </p>
           <ol>
-            <a href="./termos.html#sobrealiuv-termos"><li>Sobre a LIUV</li></a> 
-            <a href="./termos.html#responsability-termos"><li>Responsabilidade</li></a> 
-            <a href="./termos.html#propriedadeIntelectual"><li>Propriedade Intelectual</li></a> 
-            <a href="./termos.html#protecaoDeDadosPessoais"><li>Proteção de Dados Pessoais</li></a>
-            <a href="./termos.html#cancelamento"><li>Cancelamento, Rescisão e Término dos Serviços</li></a>
-            <a href="./termos.html#canalComunicacao"><li>Canal de Comunicação</li></a>
-            <a href="./termos.html#disposicoesFinais"><li>Disposições Finais</li></a>
+            <a href="./termos.html#sobrealiuv-termos"><li>Sobre a LIUV</li></a>
+            <a href="./termos.html#responsability-termos"
+              ><li>Responsabilidade</li></a
+            >
+            <a href="./termos.html#propriedadeIntelectual"
+              ><li>Propriedade Intelectual</li></a
+            >
+            <a href="./termos.html#protecaoDeDadosPessoais"
+              ><li>Proteção de Dados Pessoais</li></a
+            >
+            <a href="./termos.html#cancelamento"
+              ><li>Cancelamento, Rescisão e Término dos Serviços</li></a
+            >
+            <a href="./termos.html#canalComunicacao"
+              ><li>Canal de Comunicação</li></a
+            >
+            <a href="./termos.html#disposicoesFinais"
+              ><li>Disposições Finais</li></a
+            >
           </ol>
 
           <h2 id="sobrealiuv-termos">1. Sobre a LIUV</h2>
-            <p class="terms-content">
-              <b> 1.1 </b>A LIUV é uma plataforma mobile que permite 
-              aos Usuários realizarem, por meio do Aplicativo 
-              (Android e iOS) da LIUV, pedidos de comida, bebida
-              e/ou outros produtos alimentícios (“Pedidos”) 
-              comercializados pelos estabelecimentos (tais como 
-              bares, restaurantes, lanchonetes) 
-              (“Estabelecimentos”), pagá-los por meio do sistema 
-              LIUV e retirá-los ou consumi-los diretamente no 
-              Estabelecimento.. Ao utilizar os serviços da LIUV, 
-              os Usuários participarão também dos programas de Fidelidade 
-              dos Estabelecimentos, se aplicável, e conforme disponibilidade 
-              e especificação de cada Estabelecimento.
-              <br/><br/>
-              <b>1.2</b> Os Usuários poderão, ainda, avaliar os Estabelecimentos, 
-              sendo certo que a LIUV poderá, a seu exclusivo critério, 
-              remover comentários que:
-              <br/><br/>
-            </p>
-            <p class="terms-itens">
-                (i) sejam difamatórios, fraudulentos, agressivos, ofensivos, 
-                obscenos, preconceituosos, discriminatórios ou que contenham 
-                palavras de baixo calão;
-                <br/><br/>
-                (ii) violem qualquer direito de propriedade intelectual da 
-                LIUV ou de terceiros;
-                <br/><br/>
-                (iii) violem qualquer disposição legal;
-                <br/><br/>
-                (iv) contenham divulgação publicitária de 
-                qualquer natureza ou que citem marcas de terceiros.
-            </p>
-            <br/><br/>
-            <p class="terms-content"><b>1.3.</b> Nos casos descritos acima, a LIUV se 
-              reserva o direito de bloquear e/ou remover o 
-              comentário/conteúdo do ar imediatamente, bem como 
-              excluir o Usuário, sem necessidade de comunicação 
-              prévia, não fazendo o Usuário jus a qualquer 
-              indenização ou ressarcimento, de qualquer natureza. 
-            </p> 
+          <p class="terms-content">
+            <b> 1.1 </b>A LIUV é uma plataforma mobile que permite aos Usuários
+            realizarem, por meio do Aplicativo (Android e iOS) da LIUV, pedidos
+            de comida, bebida e/ou outros produtos alimentícios (“Pedidos”)
+            comercializados pelos estabelecimentos (tais como bares,
+            restaurantes, lanchonetes) (“Estabelecimentos”), pagá-los por meio
+            do sistema LIUV e retirá-los ou consumi-los diretamente no
+            Estabelecimento.. Ao utilizar os serviços da LIUV, os Usuários
+            participarão também dos programas de Fidelidade dos
+            Estabelecimentos, se aplicável, e conforme disponibilidade e
+            especificação de cada Estabelecimento. <br /><br />
+            <b>1.2</b> Os Usuários poderão, ainda, avaliar os Estabelecimentos,
+            sendo certo que a LIUV poderá, a seu exclusivo critério, remover
+            comentários que: <br /><br />
+          </p>
+          <p class="terms-itens">
+            (i) sejam difamatórios, fraudulentos, agressivos, ofensivos,
+            obscenos, preconceituosos, discriminatórios ou que contenham
+            palavras de baixo calão;
+            <br /><br />
+            (ii) violem qualquer direito de propriedade intelectual da LIUV ou
+            de terceiros;
+            <br /><br />
+            (iii) violem qualquer disposição legal;
+            <br /><br />
+            (iv) contenham divulgação publicitária de qualquer natureza ou que
+            citem marcas de terceiros.
+          </p>
+          <br /><br />
+          <p class="terms-content">
+            <b>1.3.</b> Nos casos descritos acima, a LIUV se reserva o direito
+            de bloquear e/ou remover o comentário/conteúdo do ar imediatamente,
+            bem como excluir o Usuário, sem necessidade de comunicação prévia,
+            não fazendo o Usuário jus a qualquer indenização ou ressarcimento,
+            de qualquer natureza.
+          </p>
 
-          <h2 id="responsability-termos" class="terms-titles">2. Responsabilidade</h2>
-            <p class="terms-content">
-              <b> 2.1 </b> Os Usuários compreendem que a LIUV disponibiliza plataforma que possibilita aos Usuários realizar Pedidos aos Estabelecimentos, e não tem qualquer tipo de controle ou vigilância sobre os Pedidos. 
-              <br/><br/>
-              <b> 2.2 </b> O Usuário, ao assinar tais T&C, declara estar ciente que a LIUV não se responsabiliza, de forma alguma, pelas atividades exercidas pelos Estabelecimentos, incluindo, mas não se limitando, ao tempo de preparo, qualidade e disponibilização dos Pedidos.
-              <br/><br/>
-              <b> 2.3 </b>Fica excluída a responsabilidade da LIUV por todo e qualquer dano causado ao Usuário decorrente dos Pedidos efetuados através da LIUV ou pela atuação dos Estabelecimentos. 
-              <br/><br/>
-              <b> 2.4 </b>Em nenhuma hipótese, a LIUV será responsável solidaria ou subsidiariamente, por:
-            </p>
-            <p class="terms-itens">
-              <br/>
-                (i) qualquer ato ou omissão realizado e/ou dano de qualquer natureza, causado pelo Usuário decorrente de conduta imprópria, ofensiva ou contrária à legislação vigente, do acesso ao Site e/ou Aplicativo, ou pelo uso indevido destes;
-                <br/><br/>
-                (ii) por qualquer conteúdo publicado pelos Usuários,
-                <br/><br/>
-                (iii)  por falhas, impossibilidades técnicas ou indisponibilidades do sistema, do Site ou do Aplicativo; e
-                <br/><br/>
-                (iv) pela instalação no equipamento do Usuário ou de terceiros, de vírus, trojans, malware, worm, bot, backdoor, spyware, rootkit, ou de quaisquer outros dispositivos que venham a ser criados, em decorrência da navegação na internet pelo Usuário.
-            </p>
-            <p class="terms-content">
-             <b> 2.5</b> O Usuário se responsabilizará e deverá indenizar a LIUV, empresas controladas ou controladoras, diretores, administradores, colaboradores, representantes e empregados por qualquer demanda promovida por terceiros decorrentes de suas atividades no Site ou no Aplicativo, por seu descumprimento dos Termos de Uso ou pela violação de qualquer lei ou direitos de terceiros. 
-            </p>
+          <h2 id="responsability-termos" class="terms-titles">
+            2. Responsabilidade
+          </h2>
+          <p class="terms-content">
+            <b> 2.1 </b> Os Usuários compreendem que a LIUV disponibiliza
+            plataforma que possibilita aos Usuários realizar Pedidos aos
+            Estabelecimentos, e não tem qualquer tipo de controle ou vigilância
+            sobre os Pedidos. <br /><br />
+            <b> 2.2 </b> O Usuário, ao assinar tais T&C, declara estar ciente
+            que a LIUV não se responsabiliza, de forma alguma, pelas atividades
+            exercidas pelos Estabelecimentos, incluindo, mas não se limitando,
+            ao tempo de preparo, qualidade e disponibilização dos Pedidos.
+            <br /><br />
+            <b> 2.3 </b>Fica excluída a responsabilidade da LIUV por todo e
+            qualquer dano causado ao Usuário decorrente dos Pedidos efetuados
+            através da LIUV ou pela atuação dos Estabelecimentos. <br /><br />
+            <b> 2.4 </b>Em nenhuma hipótese, a LIUV será responsável solidaria
+            ou subsidiariamente, por:
+          </p>
+          <p class="terms-itens">
+            <br />
+            (i) qualquer ato ou omissão realizado e/ou dano de qualquer
+            natureza, causado pelo Usuário decorrente de conduta imprópria,
+            ofensiva ou contrária à legislação vigente, do acesso ao Site e/ou
+            Aplicativo, ou pelo uso indevido destes;
+            <br /><br />
+            (ii) por qualquer conteúdo publicado pelos Usuários,
+            <br /><br />
+            (iii) por falhas, impossibilidades técnicas ou indisponibilidades do
+            sistema, do Site ou do Aplicativo; e
+            <br /><br />
+            (iv) pela instalação no equipamento do Usuário ou de terceiros, de
+            vírus, trojans, malware, worm, bot, backdoor, spyware, rootkit, ou
+            de quaisquer outros dispositivos que venham a ser criados, em
+            decorrência da navegação na internet pelo Usuário.
+          </p>
+          <p class="terms-content">
+            <b> 2.5</b> O Usuário se responsabilizará e deverá indenizar a LIUV,
+            empresas controladas ou controladoras, diretores, administradores,
+            colaboradores, representantes e empregados por qualquer demanda
+            promovida por terceiros decorrentes de suas atividades no Site ou no
+            Aplicativo, por seu descumprimento dos Termos de Uso ou pela
+            violação de qualquer lei ou direitos de terceiros.
+          </p>
 
-            <h2 id="propriedadeIntelectual" class="terms-titles">3. Propriedade Intelectual </h2>
-            <p class="terms-content">
-              <b> 3.1 </b> Pertencem exclusivamente à LIUV 
-            </p>
-            <p class="terms-itens">
-              <br/>
-                (i) todo e qualquer software, aplicativo ou funcionalidade referentes ao Site e/ou Aplicativo da LIUV; 
-                <br/><br/>
-                (ii) a identidade visual do Site e/ou Aplicativo da LIUV; 
-                <br/><br/>
-                (iii)  o nome empresarial, marca, nome de domínio, slogan ou qualquer sinal distintivo de titularidade da LIUV, constantes no Site ou no Aplicativo; e 
-                <br/><br/>
-                (iv) todo e qualquer conteúdo criado e produzido pela LIUV, por si ou por terceiros, os quais não poderão ser usados, sob qualquer forma, pelos Usuários.
-              </p>
-            <h2 id="protecaoDeDadosPessoais" class="terms-titles">4. Proteção de Dados Pessoais</h2>
-            <p class="terms-content">
-              <b> 4.1 </b> Os dados pessoais relacionados com o uso dos serviços da LIUV serão processados e utilizados pela LIUV conforme sua Política de Privacidade. 
-            </p>
+          <h2 id="propriedadeIntelectual" class="terms-titles">
+            3. Propriedade Intelectual
+          </h2>
+          <p class="terms-content">
+            <b> 3.1 </b> Pertencem exclusivamente à LIUV
+          </p>
+          <p class="terms-itens">
+            <br />
+            (i) todo e qualquer software, aplicativo ou funcionalidade
+            referentes ao Site e/ou Aplicativo da LIUV;
+            <br /><br />
+            (ii) a identidade visual do Site e/ou Aplicativo da LIUV;
+            <br /><br />
+            (iii) o nome empresarial, marca, nome de domínio, slogan ou qualquer
+            sinal distintivo de titularidade da LIUV, constantes no Site ou no
+            Aplicativo; e
+            <br /><br />
+            (iv) todo e qualquer conteúdo criado e produzido pela LIUV, por si
+            ou por terceiros, os quais não poderão ser usados, sob qualquer
+            forma, pelos Usuários.
+          </p>
+          <h2 id="protecaoDeDadosPessoais" class="terms-titles">
+            4. Proteção de Dados Pessoais
+          </h2>
+          <p class="terms-content">
+            <b> 4.1 </b> Os dados pessoais relacionados com o uso dos serviços
+            da LIUV serão processados e utilizados pela LIUV conforme sua
+            Política de Privacidade.
+          </p>
 
-            <h2 id="cancelamento" class="terms-titles">5. Cancelamento, Rescisão e Término dos Serviços</h2>
-            <p class="terms-content">
-              <b> 5.1 </b> O Usuário pode, a qualquer tempo, sem necessidade de notificação prévia ou justificativa, cancelar sua conta, através da desinstalação do aplicativo LIUV ou de e-mail enviado para contato@liuv.it.
-              <br/><br/>
-              <b> 5.2 </b> O Usuário reconhece e concorda que a LIUV poderá, a seu critério, desativar ou bloquear o acesso do Usuário ao sistema LIUV, sem notificação prévia, caso seja identificado qualquer uso irregular dos serviços, fraude, violação legal ou violação às disposições contidas nestes Termos de Uso. 
-            </p>
+          <h2 id="cancelamento" class="terms-titles">
+            5. Cancelamento, Rescisão e Término dos Serviços
+          </h2>
+          <p class="terms-content">
+            <b> 5.1 </b> O Usuário pode, a qualquer tempo, sem necessidade de
+            notificação prévia ou justificativa, cancelar sua conta, através da
+            desinstalação do aplicativo LIUV ou de e-mail enviado para
+            contato@liuv.it. <br /><br />
+            <b> 5.2 </b> O Usuário reconhece e concorda que a LIUV poderá, a seu
+            critério, desativar ou bloquear o acesso do Usuário ao sistema LIUV,
+            sem notificação prévia, caso seja identificado qualquer uso
+            irregular dos serviços, fraude, violação legal ou violação às
+            disposições contidas nestes Termos de Uso.
+          </p>
 
-            <h2 id="canalComunicacao" class="terms-titles">6. Canal de Comunicação</h2>
-            <p class="terms-content">
-              <b> 6.1 </b> Em caso de dúvidas, sugestões ou reclamações, o Usuário deve entrar em contato com a LIUV mediante envio de e-mail para contato@liuv.it ou por meio do telefone +55 11-38541771. 
-            </p>
+          <h2 id="canalComunicacao" class="terms-titles">
+            6. Canal de Comunicação
+          </h2>
+          <p class="terms-content">
+            <b> 6.1 </b> Em caso de dúvidas, sugestões ou reclamações, o Usuário
+            deve entrar em contato com a LIUV mediante envio de e-mail para
+            contato@liuv.it ou por meio do telefone +55 11-38541771.
+          </p>
 
-            <h2 id="disposicoesFinais" class="terms-titles">7. Disposições Finais</h2>
-            <p class="terms-content">
-              <b> 7.1 </b> Se qualquer tribunal de autoridade competente constatar que qualquer disposição destes Termos de Uso (ou parte de qualquer disposição) é inválida, ilegal ou inexequível, que a disposição ou parte da disposição deve, na medida exigida, ser considerada como excluída, a validade e exequibilidade das outras disposições destes Termos de Uso não serão afetadas.
-              <br/><br/>
-              <b> 7.2 </b> A tolerância quanto ao eventual descumprimento de quaisquer das disposições destes Termos de Uso por qualquer Usuário não constituirá renúncia ao direito de exigir o cumprimento da obrigação, nem perdão, nem alteração do aqui previsto.
-              <br/><br/>
-              <b> 7.3 </b> Estes Termos de Uso constituem o integral e completo acordo entre as Partes, substituindo quaisquer estipulações anteriores.
-              <br/><br/>
-              <b> 7.4 </b> A LIUV poderá, a seu exclusivo critério e a qualquer tempo, e sem necessidade de qualquer aviso prévio ou notificação aos Usuários ou terceiros, poderá: (i) suspender, cancelar ou interromper o acesso ao Site e/ou Aplicativo e (ii) remover, alterar e/ou atualizar no todo ou em parte o Site e/ou Aplicativo bem como seus respectivos conteúdos e/ou Termos de Uso e Política de Privacidade. Qualquer alteração e/ou atualização destes Termos de Uso e da Política de Privacidade passará a vigorar a partir da data de sua publicação no Site e/ou Aplicativo e deverá ser integralmente observada pelos Usuários.
-              <br/><br/>
-              <b> 7.5 </b> Estes Termos de Uso e a e Política de Privacidade são regidos de acordo com a legislação brasileira. Quaisquer disputas ou controvérsias oriundas de quaisquer atos praticados no âmbito da utilização dos Sites e/ou Aplicativo LIUV pelos Usuários, inclusive com relação ao descumprimento dos Termos de Uso e Política de Privacidade, serão processadas na Comarca da Capital do Estado de São Paulo. 
-              <br/><br/>
-            </p>
-
+          <h2 id="disposicoesFinais" class="terms-titles">
+            7. Disposições Finais
+          </h2>
+          <p class="terms-content">
+            <b> 7.1 </b> Se qualquer tribunal de autoridade competente constatar
+            que qualquer disposição destes Termos de Uso (ou parte de qualquer
+            disposição) é inválida, ilegal ou inexequível, que a disposição ou
+            parte da disposição deve, na medida exigida, ser considerada como
+            excluída, a validade e exequibilidade das outras disposições destes
+            Termos de Uso não serão afetadas. <br /><br />
+            <b> 7.2 </b> A tolerância quanto ao eventual descumprimento de
+            quaisquer das disposições destes Termos de Uso por qualquer Usuário
+            não constituirá renúncia ao direito de exigir o cumprimento da
+            obrigação, nem perdão, nem alteração do aqui previsto. <br /><br />
+            <b> 7.3 </b> Estes Termos de Uso constituem o integral e completo
+            acordo entre as Partes, substituindo quaisquer estipulações
+            anteriores. <br /><br />
+            <b> 7.4 </b> A LIUV poderá, a seu exclusivo critério e a qualquer
+            tempo, e sem necessidade de qualquer aviso prévio ou notificação aos
+            Usuários ou terceiros, poderá: (i) suspender, cancelar ou
+            interromper o acesso ao Site e/ou Aplicativo e (ii) remover, alterar
+            e/ou atualizar no todo ou em parte o Site e/ou Aplicativo bem como
+            seus respectivos conteúdos e/ou Termos de Uso e Política de
+            Privacidade. Qualquer alteração e/ou atualização destes Termos de
+            Uso e da Política de Privacidade passará a vigorar a partir da data
+            de sua publicação no Site e/ou Aplicativo e deverá ser integralmente
+            observada pelos Usuários. <br /><br />
+            <b> 7.5 </b> Estes Termos de Uso e a e Política de Privacidade são
+            regidos de acordo com a legislação brasileira. Quaisquer disputas ou
+            controvérsias oriundas de quaisquer atos praticados no âmbito da
+            utilização dos Sites e/ou Aplicativo LIUV pelos Usuários, inclusive
+            com relação ao descumprimento dos Termos de Uso e Política de
+            Privacidade, serão processadas na Comarca da Capital do Estado de
+            São Paulo. <br /><br />
+          </p>
         </div>
       </div>
     </main>
@@ -239,7 +330,7 @@
       <div class="footer-container">
         <div class="first-row">
           <div class="column">
-            <h4>Sou Restaurante</h4>
+            <a href="./restaurant.html"><h4>Sou Restaurante</h4></a>
             <p>
               <a href="./solucoes.html"> Soluções </a><br />
               <a href="./solucoes.html#integracoes">Integrações PDV </a><br />
@@ -247,32 +338,30 @@
             </p>
           </div>
           <div class="column">
-            <h4>Sou Cliente</h4>
+            <a href="./client.html"><h4>Sou Cliente</h4></a>
             <p>
-             <a href="./client.html#restaurantes"> Onde encontrar a Liuv </a><br />
-             <a href="./client.html#ondeEncontrar">Benefícios</a><br />
-             <a href="./client.html#pagamentosAceitos">Pagamentos Aceitos</a> <br />
+              <a href="./client.html#restaurantes"> Onde encontrar a Liuv </a
+              ><br />
+              <a href="./client.html#ondeEncontrar">Benefícios</a><br />
+              <a href="./client.html#pagamentosAceitos">Pagamentos Aceitos</a>
+              <br />
             </p>
           </div>
           <div class="column">
-            <h4>Sobre</h4>
+            <a href="../index.html"><h4>A Liuv</h4></a>
             <p>
-              <a href="./liuv.html"> Sobre </a><br />
+              <a
+                class="waves-effect waves-light btn modal-trigger left"
+                href="#modalHeader"
+                >Sobre</a
+              ><br />
             </p>
           </div>
           <div class="column">
             <h4>Login</h4>
-            <p>
-              <a href="/"> Login de restaurantes </a><br />
-              <a href="/"> Login de usuários </a><br />
-              <a href="/"> Contato </a><br />
-            </p>
           </div>
           <div class="column">
-            <h4>Ajuda</h4>
-            <p>
-              <a href="./ajuda.html"> Ajuda </a><br />
-            </p>
+            <a href="./ajuda.html"><h4>Ajuda</h4></a>
           </div>
         </div>
         <hr />
@@ -280,7 +369,7 @@
           <div class="column">
             <h4>© 2020 LIUV SERVIÇOS TECNOLÓGICOS</h4>
             <p>
-              CNPJ: 23.432.890/0001-06 <br/>
+              CNPJ: 23.432.890/0001-06 <br />
               Rua Jesuíno Arruda 797, CJ 72<br />
               Itaim Bibi, São Paulo - SP <br />
               Brasil <br />
@@ -300,21 +389,19 @@
         <hr />
         <div class="third-row">
           <div class="column">
-            <a href="./termos.html"><span>Termos de Uso</span></a> 
+            <a href="./termos.html"><span>Termos de Uso</span></a>
             <a href="./politicas.html"><span>Política de Privacidade</span></a>
-          </div> 
+          </div>
         </div>
       </div>
     </footer>
-    
-
     <!-- Scripts -->
     <script
-        type="text/javascript"
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="../src/scripts/hamburguer.js"></script>
     <script src="../src/scripts/modal.js"></script>
-</body>
+  </body>
 </html>
