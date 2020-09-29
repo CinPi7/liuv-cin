@@ -1,32 +1,33 @@
-#about-body {
+#modalHeader {
     margin: 1rem auto;
-    display: flex;
+    display: none;
     justify-content: center;
-}
-
-#about-body .about-liuv{
     background: linear-gradient(
         90deg,
         rgba(255, 107, 43, 0.9) 0%,
         rgba(238, 47, 83, 0.9) 100%
     );
-    width: 80%;
     border-radius: 30px;
-    padding: 2rem;
-    margin: 4rem auto;
+    max-width: 50rem;
 }
 
-#about-body .about-liuv p {
+#modalHeader .modal-footer, 
+#modalHeader .modal-close{
+    background: transparent;
+    color: white;
+}
+
+#modalHeader .about-liuv-modal{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+#modalHeader .about-liuv-modal p {
     font-size: 1.4rem;
     line-height: 1.8;
 }
 
-@media (min-width: 700px){
-    #about-body{
-        height: 100vh;
-    }
-    #about-body .about-liuv{
-        width: 50%;
-        max-width: 80rem;
-    }
+.liuv-header nav a.btn{
+    background-color: transparent;
+    box-shadow: none;
 }

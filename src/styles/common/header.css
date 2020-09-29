@@ -197,10 +197,9 @@ header.liuv-header span.hamburguer {
   }
 }
 
-#fale-com-liuv > hr,
-#help-body > hr {
-  margin-top: 0.6em;
+hr.header-line {
+  margin-top: 0.2em;
   margin-bottom: 1rem;
-  width: 100%;
+  width: 99%;
   border: 0.5px solid var(--white-darker);
 }

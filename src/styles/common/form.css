@@ -1,60 +1,63 @@
 main div.solution-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    height: auto;
-    margin: 0 auto;
-    padding: 0 2rem 2rem 2rem;
-  
-    background: linear-gradient(
-        90deg,
-        rgba(255, 107, 43, 1) 0%,
-        rgba(242, 44, 80, 1) 100%
-    );
-    color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 1) 0%,
+    rgba(242, 44, 80, 1) 100%
+  );
+  color: var(--white);
+}
+
+main div.solution-page {
+  padding: 2rem;
+}
+
+main div.solution-page > h2 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+main div.solution-page p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1.6rem;
+}
+
+main div.solution-page .btn {
+  font-size: 1.2rem;
+  background-color: var(--green);
+  border: none;
+  border-radius: 30px;
+  width: 15rem;
+  height: 2.6rem;
+
+  margin-top: 1rem;
+  text-transform: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main div.solution-page .btn:hover{
+  background-color: var(--green-darker);
+  transition: ease-in-out 300ms;
+}
+
+main div.solution-page > a {
+  color: white;
+}
+
+/* Responsive */
+@media (min-width: 700px) {
+  main div.formb2b p {
+    width: 50%;
   }
-  
-  main div.solution-page{
-    padding: 2rem;
-  }
-  
-  main div.solution-page > h2 {
-    font-size: 2.4rem;
-    margin: 0;
-  }
-  
-  main div.solution-page p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 1.6rem;
-  }
-  
-  main div.solution-page .btn  {
-    font-size: 1.2rem;
-    background-color: var(--green);
-    border: none;
-    border-radius: 30px;
-    width: 15rem;
-    height: 2.6rem;
-  
-    margin-top: 1rem;
-    text-transform: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  main div.solution-page > a {
-    color: white;
-  }
-  
-  /* Responsive */
-  @media (min-width: 700px) {
-    main div.formb2b p {
-      width: 50%;
-    }
-  }
-  
-  
+}

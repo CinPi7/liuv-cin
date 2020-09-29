@@ -1,5 +1,5 @@
 main div.about > .carousel {
-  height: 30rem !important;
+  height: 33rem !important;
 
   color: var(--white);
 }
@@ -13,25 +13,6 @@ main div.about div.about-content {
   filter: none !important;
   color: white;
   height: auto;
-  margin-top: 3rem;
-  padding: 2rem;
-}
-
-#client-body div.about div.about-content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 107, 43, 1) 0%,
-    rgba(242, 44, 80, 1) 100%
-  );
-  text-shadow: none;
-  filter: none !important;
-  color: white;
-  height: auto;
-  margin-top: 3rem;
   padding: 2rem;
 }
 
@@ -79,6 +60,7 @@ main div.about div.carousel-item div.about-content button.btn-solution {
 
 main div.about div.carousel-item div.about-content  button.btn-solution:hover{
   background-color: var(--green-darker);
+  transition: ease-in-out 300ms;
 }
 
 main div.about div.carousel-item div.about-content button.btn-solution a {
@@ -158,7 +140,12 @@ main div.about .b2b-2 span.subject {
 }
 
 #client-body main .b2c-1 {
-  background-image: url("../../assets/images/B2C/B2C_carrossel_1.jpg");
+  background-image: 
+  linear-gradient(
+      90deg,
+      rgba(255, 107, 43, 0.3) 0%,
+      rgba(242, 44, 80, 0.3) 100%
+    ), url("../../assets/images/B2C/B2C_carrossel_1.jpg");
   filter: brightness(93%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +153,11 @@ main div.about .b2b-2 span.subject {
 }
 
 #client-body main .b2c-2 {
-  background-image: url("../../assets/images/B2C/B2C_carrossel_2.jpg");
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.3) 0%,
+    rgba(242, 44, 80, 0.3) 100%
+  ), url("../../assets/images/B2C/B2C_carrossel_2.jpg");
   filter: brightness(93%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +171,11 @@ main div.about .b2b-2 span.subject {
 }
 
 #client-body main .b2c-3 {
-  background-image: url("../../assets/images/B2C/B2C_carrossel_3.jpg");
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.3) 0%,
+    rgba(242, 44, 80, 0.3) 100%
+  ), url("../../assets/images/B2C/B2C_carrossel_3.jpg");
   filter: brightness(93%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,7 +183,11 @@ main div.about .b2b-2 span.subject {
 }
 
 #client-body main .b2c-4 {
-  background-image: url("../../assets/images/B2C/B2C_carrossel_4.jpg");
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.3) 0%,
+    rgba(242, 44, 80, 0.3) 100%
+  ), url("../../assets/images/B2C/B2C_carrossel_4.jpg");
   filter: brightness(93%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,6 +209,9 @@ main div.about .b2b-2 span.subject {
   }
   main div.about div.carousel-item div.about-content a.btn-solution {
     font-size: 1.2rem;
+  }
+  main div.about div.about-content {
+    margin-top: 3rem;
   }
 }
 

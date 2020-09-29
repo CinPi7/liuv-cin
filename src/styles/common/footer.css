@@ -10,9 +10,9 @@ footer.liuv-footer {
   max-width: 1440px;
 }
 
-footer.liuv-footer a{
+footer.liuv-footer a, .third-row span{
   text-decoration: none;
-  color: var(--gray);
+  color: var(--gray) !important;
   font-size: 0.8rem;
 }
 
@@ -35,8 +35,8 @@ footer.liuv-footer .downloads {
 
 footer.liuv-footer .downloads > a > img.logofooter {
   height: 2.4rem;
-  width: 6.8rem;
-  margin-left: 0.2rem;
+  width: 7rem;
+  margin-left: 0.65rem;
 }
 
 footer.liuv-footer .downloads img.apple-store {
@@ -64,6 +64,10 @@ div.second-row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+footer.liuv-footer div.third-row a:nth-child(2){
+  margin-left: 1rem;
 }
 
 footer.liuv-footer div.media-icons img {
@@ -105,12 +109,15 @@ footer.liuv-footer p {
   footer.liuv-footer div.column {
     padding-left: 3rem;
   }
+  footer.liuv-footer div.third-row a:nth-child(2){
+    margin-left: 4rem;
+  }
 }
 
 hr {
   margin-top: 1em;
   margin-bottom: 1rem;
-  width: 100%;
+  width: 99%;
   border: 0.5px solid var(--white-darker);
 }
 

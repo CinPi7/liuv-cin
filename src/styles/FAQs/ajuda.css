@@ -24,6 +24,8 @@
   border-radius: 10px;
 }
 
+
+
 @media (min-width: 700px) {
   #help-body main div.choose-buttons {
     flex-direction: row;
@@ -79,6 +81,7 @@
 
 #help-body main div.choose-buttons button:hover {
   background-color: var(--green-darker);
+  transition: ease-in-out 300ms;
 }
 
 #help-body main div.choose-buttons img {
