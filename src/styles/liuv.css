@@ -1,33 +1,68 @@
 #modalHeader {
-    margin: 1rem auto;
-    display: none;
-    justify-content: center;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 107, 43, 0.9) 0%,
-        rgba(238, 47, 83, 0.9) 100%
-    );
-    border-radius: 30px;
-    max-width: 50rem;
+  margin: 1rem auto;
+  display: none;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 107, 43, 0.9) 0%,
+    rgba(238, 47, 83, 0.9) 100%
+  );
+  border-radius: 30px;
+  max-width: 50rem;
 }
 
-#modalHeader .modal-footer, 
-#modalHeader .modal-close{
-    background: transparent;
-    color: white;
+#modalHeader .modal-footer,
+#modalHeader .modal-close {
+  background: transparent;
+  color: white;
 }
 
-#modalHeader .about-liuv-modal{
-    width: 90%;
-    margin: 2rem auto;
+#modalHeader .about-liuv-modal {
+  width: 90%;
+  margin: 2rem auto;
 }
 
 #modalHeader .about-liuv-modal p {
-    font-size: 1.4rem;
-    line-height: 1.8;
+  font-size: 1.4rem;
+  line-height: 1.8;
 }
 
-.liuv-header nav a.btn{
-    background-color: transparent;
-    box-shadow: none;
+.liuv-header nav a.btn, .sidenav a.btn {
+  background-color: transparent;
+  box-shadow: none;
+  text-transform: inherit;
+  padding-left: 0;
+  margin-left: -8.5rem;
+}
+
+#modalHeader > a {
+  color: white;
+  background-color: rgba(223, 82, 113, 0.827);
+  border-radius: 50%;
+  border: 1px solid rgba(235, 132, 87, 0.468);
+  line-height: 2.5rem;
+  padding-right: 13px;
+  padding-left: 13px;
+
+  float: right;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--white-darker);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--white-darker);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--white-darker);
 }

@@ -96,6 +96,9 @@ main .pagamentos-aceitos .meios-pagamentos .vl {
   main .pagamentos-aceitos .pagamentos{
     padding: 1.4rem;
   }
+  main .pagamentos-aceitos .credito{
+    padding-right: 2rem;
+  }
   main .pagamentos-aceitos .meios-pagamentos .vl {
     display: flex;
     border-left: 0.5px solid var(--white-darker);
