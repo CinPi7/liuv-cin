@@ -116,7 +116,7 @@ li {
 }
 
 #help-body .collapsible-body, .collapsible-body span{
-  background: var(--white-darker);
+  background: var(--white);
   color: var(--titles) !important;
   padding-left: 2rem;
 }
