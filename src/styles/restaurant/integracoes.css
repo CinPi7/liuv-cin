@@ -1,32 +1,36 @@
 #restaurant-body main div.integracoes{
   background-color: var(--white-darker);
-  padding: 0 2rem 0.4rem 2rem;
 }
 
-div.integracoes > div.integra-container{
+#restaurant-body main div.integracoes div.integra-container{
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
 
   height: auto;
-  margin-top: 2rem;
-  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+  max-width: 1440px;
 }
 
-div.integracoes h2 {
+#restaurant-body main div.integracoes div.integra-container > h2 {
   font-size: 2.4rem;
   color: var(--titles);
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-div.integracoes div.box-integracoes > p {
+#restaurant-body main div.integracoes div.integra-container div.sidepositionintegra{
+  display: flex;
+  flex-direction: column;
+}
+
+#restaurant-body main div.integracoes div.integra-container div.box-integracoes > p {
   font-size: 1rem;
   color: var(--black);
-  margin-bottom: 1rem;
 }
 
-div.integracoes div.box-integracoes > a {
+#restaurant-body main div.integracoes div.integra-container div.box-integracoes > a {
   border: none;
   border-radius: 30px;
   background-color: var(--primary-color-pink);
@@ -46,66 +50,62 @@ div.integracoes div.box-integracoes > a {
   color: var(--white);
 }
 
-div.integracoes div.box-integracoes > a:hover {
+#restaurant-body main div.integracoes div.integra-container  div.box-integracoes > a:hover {
   background-color: var(--pink-hover);
   transition: ease-in-out 300ms;
 }
 
-div.integracoes div.box-integracoes .btn {
+#restaurant-body main div.integracoes div.integra-container div.box-integracoes .btn {
   text-transform: none !important;
   line-height: 0.5rem;
   font-size: 1rem;
 }
 
-div.integracoes div.organizer {
+#restaurant-body main div.integracoes div.integra-container div.organizer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
+  margin-top: 1rem;
   height: 15rem;
 }
 
-div.integracoes div.organizer > .carousel > .carousel-item {
+#restaurant-body main div.integracoes div.integra-container div.organizer > .carousel > .carousel-item {
   height: 8em !important;
   margin-top: 1rem;
 }
 
-div.integracoes div.organizer p {
+#restaurant-body main div.integracoes div.integra-container div.organizer p {
   font-size: 0.8rem;
   color: var(--black);
 }
 
+/* Responsive */
 @media (min-width: 900px) {
-  div.integracoes > div.integra-container{
-    margin: 0 auto;
-    max-width: 1440px;
-    
-    padding-left: 3%;
-    padding-bottom: 1rem;
-    justify-content: center;
-  }
-  div.integracoes div.sidepositionintegra{
-    display: flex;
+  #restaurant-body main div.integracoes div.integra-container div.sidepositionintegra{
     flex-direction: row;
-    margin-left: 2rem;
+    padding-left: 5.5%;
+    padding-right: 5%;
   }
-  div.integracoes div.organizer {
-    margin-top: -5rem;
+  #restaurant-body main div.integracoes div.integra-container > h2 {
+    padding-left: 3%;
+    max-width: 1440px;
+    margin: 2rem auto;
+  }
+  #restaurant-body main div.integracoes div.integra-container div.box-integracoes{
+    padding: 1.4rem;
+  }
+  #restaurant-body main div.integracoes div.integra-container div.organizer {
+    margin-top: -3rem;
     padding-left: 2rem;
   }
-  div.integracoes div.organizer > .carousel > .carousel-item {
+  #restaurant-body main div.integracoes div.integra-container div.organizer > .carousel > .carousel-item {
     margin-top: 0;
   }
 }
 
-@media (min-width: 1400px){
-  div.integracoes > div.integra-container h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 2rem;
+@media (min-width: 1470px){
+  #restaurant-body main div.integracoes div.integra-container > h2 {
+    padding-left: 4%;
   }
 }
-
-/* Modal Integrações em Modal */ 
