@@ -90,7 +90,7 @@
   #restaurant-body main div.integracoes div.integra-container > h2 {
     padding-left: 3%;
     max-width: 1440px;
-    margin: 2rem auto;
+    /*margin: 2rem auto;*/
   }
   #restaurant-body main div.integracoes div.integra-container div.box-integracoes{
     padding: 1.4rem;

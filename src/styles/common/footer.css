@@ -127,3 +127,11 @@ hr {
     margin-left: 2.6rem;
   }
 }
+
+.column .btn, .column .btn:hover{
+  background-color: transparent;
+  box-shadow: none;
+  text-transform: inherit;
+  padding: 0;
+  margin-top: -0.7rem;
+}

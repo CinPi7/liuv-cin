@@ -106,14 +106,19 @@ li {
   font-size: 1rem;
 }
 
-#help-body .collapsible-header,
-.collapsible-body {
+#help-body .collapsible-header {
   color: white;
   background: linear-gradient(
     90deg,
     rgba(255, 107, 43, 0.9) 0%,
     rgba(238, 47, 83, 0.9) 100%
   );
+}
+
+#help-body .collapsible-body, .collapsible-body span{
+  background: var(--white-darker);
+  color: var(--titles) !important;
+  padding-left: 2rem;
 }
 
 .faqs p {

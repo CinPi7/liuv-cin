@@ -30,12 +30,12 @@ header.main-header img {
 }
 
 header.main-header a,
-header.main-header button {
+header.main-header a.appLiuv {
   margin-right: 0.4em;
   font-size: 1rem;
 }
 
-header.main-header button:hover {
+header.main-header a.appLiuv:hover {
   border-color: var(--white-darker);
   color: var(--white-darker);
 }
@@ -55,7 +55,7 @@ header.main-header > div > a {
   padding-bottom: 0.6rem;
 }
 
-header.main-header button {
+header.main-header a.appLiuv {
   background-color: transparent;
   border: 2px solid var(--white);
   border-radius: 24px;
@@ -69,7 +69,7 @@ header.main-header button {
   header.main-header img {
     margin-left: 2rem;
   }
-  header.main-header button {
+  header.main-header a.appLiuv {
     margin-right: 1rem;
   }
   header.main-header > div {
@@ -170,7 +170,7 @@ header.main-header button {
     justify-content: center;
     flex-direction: row;
   }
-  header.main-header button {
+  header.main-header a.appLiuv {
     padding: 8px 30px;
     margin-right: 3rem;
   }
